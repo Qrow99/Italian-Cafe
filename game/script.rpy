@@ -4,10 +4,10 @@
 # name of the character.
 
 define e = Character("Eileen")
-image fuck = "IngredientIdle.png"
-image fuck2 = "IngredientIdle.png"
-image fuck3 = "IngredientIdle.png"
-image fuck4 = "IngredientIdle.png"
+image button1 = "IngredientIdle.png"
+image button2 = "IngredientIdle.png"
+image button3 = "IngredientIdle.png"
+image button4 = "IngredientIdle.png"
 image stepback = "NextStepIdle.png"
 image stepforward = "NextStepIdle.png"
 
@@ -41,10 +41,10 @@ label start:
     # directory.
 
     show him at Position(xalign=0.3, yalign=0.19)
-    show fuck at Position(xalign=0.853, yalign=0.22)
-    show fuck2 at Position(xalign=0.853, yalign=0.2995)
-    show fuck3 at Position(xalign=0.941, yalign=0.223)
-    show fuck4 at Position(xalign=0.941, yalign=0.2995)
+    show button1 at Position(xalign=0.853, yalign=0.22)
+    show button2 at Position(xalign=0.853, yalign=0.2995)
+    show button3 at Position(xalign=0.941, yalign=0.223)
+    show button4 at Position(xalign=0.941, yalign=0.2995)
     show stepback at Position(xalign=0.77, yalign=0.1846)
     show stepforward at Position(xalign=0.9882, yalign=0.1846)
 
