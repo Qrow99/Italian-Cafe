@@ -4,31 +4,27 @@
 # name of the character.
 
 define e = Character("Eileen")
-image button1 = "IngredientIdle.png"
-image button2 = "IngredientIdle.png"
-image button3 = "IngredientIdle.png"
-image button4 = "IngredientIdle.png"
+image milk = "MilkIdle.PNG"
+image Chocolate = "ChocolateIdle.PNG"
+image Cinnamon = "Cinnamonidle.PNG"
+image PumpkinSpice = "PumpkinIdle.PNG"
 image stepback = "NextStepIdle.png"
 image stepforward = "NextStepIdle.png"
 
-image him = "ThatGuy.png"
+image rick = "ThatGuy.png"
 
 # The game starts here.
 
 label start:
-
-
     show screen MenuButton
     show screen ResetButton
     show screen ConfirmButton
-    show screen Button11
-    show screen Button12
+    show screen CoffeeButton
+    show screen EspressoButton
     show screen NextButton
+    show screen Backbutton
 
-    $ drinksizes = 0
-    $ drinktypes = 0
-    $ step = 1
-    $ readyfornext = 0
+
 
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
@@ -40,11 +36,11 @@ label start:
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
 
-    show him at Position(xalign=0.3, yalign=0.19)
-    show button1 at Position(xalign=0.853, yalign=0.22)
-    show button2 at Position(xalign=0.853, yalign=0.2995)
-    show button3 at Position(xalign=0.941, yalign=0.223)
-    show button4 at Position(xalign=0.941, yalign=0.2995)
+    show rick at Position(xalign=0.3, yalign=0.19)
+    show milk at Position(xalign=0.853, yalign=0.22)
+    show Chocolate at Position(xalign=0.853, yalign=0.2995)
+    show Cinnamon at Position(xalign=0.941, yalign=0.223)
+    show PumpkinSpice at Position(xalign=0.941, yalign=0.2995)
     show stepback at Position(xalign=0.77, yalign=0.1846)
     show stepforward at Position(xalign=0.9882, yalign=0.1846)
 

@@ -1,3 +1,6 @@
+$ drinktypes = 0
+$ Ingredientspagecount = 0
+
 screen MenuButton():
     imagebutton:
         xalign 0.97 yalign 0.68
@@ -10,7 +13,7 @@ screen ResetButton():
         xalign 0.97 yalign 0.449
         idle "resetidle.PNG"
         hover "resethover.PNG"
-        action SetVariable("step", 1), SetVariable("drinksizes", 0), SetVariable("drinktypes", 0)
+        action Notify("reset order")
 
 screen ConfirmButton():
     imagebutton:
@@ -20,77 +23,42 @@ screen ConfirmButton():
         action Notify("ORDER UP")
 
 screen NextButton():
-    if readyfornext >= 1:
-        imagebutton:
-            xalign 0.9882 yalign 0.1846
-            idle "NextStepIdle.PNG"
-            hover "NextStepHover.PNG"
-            action SetVariable("step", 2), SetVariable("readyfornext", 0)
-    else:
-        imagebutton:
-            xalign 0.9882 yalign 0.1846
-            idle "NextStepIdle.PNG"
+    imagebutton:
+        xalign 0.9882 yalign 0.1846
+        idle "NextStepIdle.PNG"
+        hover "NextStepHover.PNG"
+        #$ Ingredientspagecount += 1
 
-screen Button11():
-    if step >= 2:
-        imagebutton:
-            xalign 0.853 yalign 0.145
-            idle "coffeeidle.PNG"
-            hover "coffeehover.PNG"
-            action SetVariable("drinktypes", 1), Show("DrinkType")
-    elif step >= 1:
-        imagebutton:
-            xalign 0.853 yalign 0.145
-            idle "smallidle.PNG"
-            hover "smallhover.PNG"
-            action SetVariable("drinksizes", 1), Show("DrinkSize"), SetVariable("readyfornext", 1)
+screen Backbutton():
+    imagebutton:
+        xalign 0.7719 yalign 0.1846
+        idle "NextStepIdle.PNG"
+        hover "NextStepHover.PNG"
+        #$ Ingredientspagecount -= 1
 
-screen Button12():
-    if step >= 2:
-        imagebutton:
-            xalign 0.941 yalign 0.145
-            idle "teaidle.PNG"
-            hover "teahover.PNG"
-            action SetVariable("drinktypes", 2), Show("DrinkType")
-    elif step >= 1:
-        imagebutton:
-            xalign 0.941 yalign 0.145
-            idle "largeidle.PNG"
-            hover "largehover.PNG"
-            action SetVariable("drinksizes", 2), Show("DrinkSize"), SetVariable("readyfornext", 1)
+screen CoffeeButton():
+    imagebutton:
+        xalign 0.853 yalign 0.145
+        idle "coffeeidle.PNG"
+        hover "coffeehover.PNG"
+        action Notify("coffee")
 
-screen DrinkSize():
-    if drinksizes >= 2:
-        imagebutton:
-            xalign 0.84 yalign 0.59
-            idle "CupLarge.PNG"
-    elif drinksizes >= 1:
-        imagebutton:
-            xalign 0.84 yalign 0.59
-            idle "CupSmall.PNG"
+screen EspressoButton():
+    imagebutton:
+        xalign 0.941 yalign 0.145
+        idle "teaidle.PNG"
+        hover "teahover.PNG"
+        action Notify("Tea")
 
 screen DrinkType():
-    if drinktypes >= 2:
-        if drinksizes >= 2:
-            imagebutton:
-                xalign 0.84 yalign 0.56
-                idle "DrinkTea.PNG"
-        else:
-            imagebutton:
-                xalign 0.84 yalign 0.59
-                idle "DrinkTea.PNG"
-    elif drinktypes >= 1:
-        if drinksizes >= 2:
-            imagebutton:
-                xalign 0.84 yalign 0.56
-                idle "DrinkCoffee.PNG"
-        else:
-            imagebutton:
-                xalign 0.84 yalign 0.59
-                idle "DrinkCoffee.PNG"
-
-
-
+    if drinktypes == 1:
+        imagebutton:
+            xalign 0.84 yalign 0.59
+            idle "DrinkTea.PNG"
+    elif drinktypes == 2:
+        imagebutton:
+            xalign 0.84 yalign 0.59
+            idle "DrinkCoffee.PNG"
 
 screen MenuList1():
     imagemap:

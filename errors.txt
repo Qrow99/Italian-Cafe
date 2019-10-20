@@ -1,0 +1,14 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/newscreens.rpy", line 30: expected a keyword argument or child statement.
+    $ Ingredientspagecount += 1
+    ^
+
+File "game/newscreens.rpy", line 37: expected a keyword argument or child statement.
+    $ Ingredientspagecount -= 1
+    ^
+
+Ren'Py Version: Ren'Py 7.3.3.568
+Sat Oct 19 22:56:58 2019
