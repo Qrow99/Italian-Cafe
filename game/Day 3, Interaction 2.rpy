@@ -1,6 +1,6 @@
     label D3I2:
 
-    define MAX = Character("Me", color="#34B7EB")
+    
     define KRN = Character("Mechanical Girl", color="#4BE54B")
 
     """

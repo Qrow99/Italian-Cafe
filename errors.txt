@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/Day 3, Interaction 2.rpy", line 1: expected ':' not found.
-    label D3I2
-              ^
+File "game/Day 1 Outline.rpy", line 5: end of line expected.
+    show ed neutral behind black box at
+                                 ^
 
 Ren'Py Version: Ren'Py 7.2.2.491
-Mon Nov 04 21:04:17 2019
+Fri Nov 08 13:36:45 2019

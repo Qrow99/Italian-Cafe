@@ -10,6 +10,18 @@
 # name of the character.
 
 define e = Character("Eileen")
+
+# Main Characters
+define MAX = Character("Me", color="#34B7EB")
+define ED = Character("Ed", color="#EBB134")
+define LAURA = Character("Laura", color="#ff3636")
+
+
+# Day 3 characters
+define KRN = Character("Mechanical Girl", color="#4BE54B")
+
+
+
 image milk = "MilkIdle.PNG"
 image Chocolate = "ChocolateIdle.PNG"
 image Cinnamon = "Cinnamonidle.PNG"
@@ -17,7 +29,6 @@ image PumpkinSpice = "PumpkinIdle.PNG"
 image stepback = "NextStepIdle.png"
 image stepforward = "NextStepIdle.png"
 
-image rick = "ThatGuy.png"
 
 # The game starts here.
 
@@ -32,17 +43,11 @@ label start:
 
 
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
-
+    # The Background
     scene bg room
 
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
 
-    show rick at Position(xalign=0.3, yalign=0.22)
+    # Buttons
     show milk at Position(xalign=0.853, yalign=0.22)
     show Chocolate at Position(xalign=0.853, yalign=0.2995)
     show Cinnamon at Position(xalign=0.941, yalign=0.223)
@@ -50,18 +55,13 @@ label start:
     show stepback at Position(xalign=0.77, yalign=0.1846)
     show stepforward at Position(xalign=0.9882, yalign=0.1846)
 
-    # These display lines of dialogue.
 
-    e "You've created a newish Ren'Py game."
+    # This jumps to day 1
+    jump DAY1
 
-    e "Once you add a story, pictures, and music, you can release it to the world!"
 
-    e "This whole coffee making thing also works IN THE BACKGROUND."
-    e "So you can make it while talking to people!"
-    e "Don't know why you'd want to do that, but you can."
 
-    hide rick
-
+    # This jumps to the Karen event
     jump D3I2
 
     # This ends the game.
