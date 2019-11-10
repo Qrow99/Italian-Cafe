@@ -1,5 +1,4 @@
-$ drinktypes = 0
-$ Ingredientspagecount = 0
+
 
 screen MenuButton():
     imagebutton:
@@ -27,35 +26,33 @@ screen NextButton():
         xalign 0.9882 yalign 0.1846
         idle "NextStepIdle.PNG"
         hover "NextStepHover.PNG"
-        #$ Ingredientspagecount += 1
 
 screen Backbutton():
     imagebutton:
         xalign 0.7719 yalign 0.1846
         idle "NextStepIdle.PNG"
         hover "NextStepHover.PNG"
-        #$ Ingredientspagecount -= 1
 
 screen CoffeeButton():
+    $ Coffee = False # variable for Coffeemaking, True = 0, False = 1
     imagebutton:
         xalign 0.853 yalign 0.145
         idle "coffeeidle.PNG"
         hover "coffeehover.PNG"
-        action Notify("coffee")
+        action Notify("coffee"),SetScreenVariable('Coffee', True)
 
 screen EspressoButton():
     imagebutton:
         xalign 0.941 yalign 0.145
         idle "teaidle.PNG"
         hover "teahover.PNG"
-        action Notify("Tea")
 
 screen DrinkType():
-    if drinktypes == 1:
+    if Coffee == 1:
         imagebutton:
             xalign 0.84 yalign 0.59
             idle "DrinkTea.PNG"
-    elif drinktypes == 2:
+    elif Tea == 1:
         imagebutton:
             xalign 0.84 yalign 0.59
             idle "DrinkCoffee.PNG"
