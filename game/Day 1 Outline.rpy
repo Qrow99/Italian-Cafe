@@ -235,6 +235,8 @@
 
     "{color=#34B7EB}As the customer left the building, I could hear the loud footsteps of a familiar body coming out from behind me."
 
+    show ed neutral at Position(xalign=0.3, yalign=0.22) with ease
+
     ED "{color=#EBB134}''You’re doing good so far.''"
 
     MAX "{color=#34B7EB}''You really think so? I keep feeling like I have no idea what to say when it’s just me and a customer alone together.''"
@@ -244,12 +246,15 @@
 
     MAX "{color=#34B7EB}''You sure? I don’t know if Laura would like that...''"
 
+    show ed think
+
     ED "{color=#EBB134}''If she doesn’t, she can tell me.
     Go take five in the break room.''"
 
     MAX "{color=#34B7EB}''Well, alright. Thanks Ed!''"
 
-    # (screen fades out)
+    show black box at Position(xalign=0, yalign=0) with dissolve
+    show ed neutral at Position(xpos=-400, xanchor=0, yalign=0.22) with ease
 
     """
     {color=#34B7EB}As I exited into the back room, Ed only gave a quick grunt and a slight nod.
@@ -258,7 +263,7 @@
     {color=#34B7EB}It seemed as though Ed had done a pretty good job cleaning up the break room, though I can’t actually remember what it looked like last week well enough to say for certain.
     """
 
-    # (screen fades back in)
+    hide black box with dissolve
 
     """
     {color=#34B7EB}Sure enough, five minutes had passed relatively quickly. As I stuck my head out of the break room, Ed was making idle chat with a customer and Laura was nowhere to be seen, so I figured returning to my post was the best option.
@@ -278,6 +283,8 @@
     {color=#34B7EB}I immediately went toward Laura’s office to inform her I was leaving, but the door swung open seconds before I could reach the handle.
     """
 
+    show laura neutral at Position(xalign=0.3, yalign=0.22) with ease
+
     LAURA "{color=#ff3636}''How’s the first day going, newbie?
     You manage to not screw up too bad yet?''"
 
@@ -285,7 +292,12 @@
 
     "{color=#34B7EB}Before I could meekly respond and likely embarrass myself, Ed steps in to my aid."
 
+    show laura neutral at Position(xalign=0.5, yalign=0.22) with ease
+    show ed neutral at Position(xalign=0.1, yalign=0.22) with ease
+
     ED "{color=#EBB134}''He did just fine. Now, he’s going home.''"
+
+    show laura angry
 
     LAURA "{color=#ff3636}''He is, huh?''"
 
@@ -295,17 +307,26 @@
     ED "{color=#EBB134}''I can take care of it. You go home and rest.''"
 
     LAURA "{color=#ff3636}''Hey, since when are you the boss here, bub?
-    Answer: you aren’t!
-    So newbie, your boss says: go home and get some rest! Ed can take care of the cleaning up.''"
+    Answer: you aren’t!''"
+
+    show laura happy
+
+    LAURA "{color=#ff3636}''So newbie, your boss says: go home and get some rest! Ed can take care of the cleaning up.''"
 
     MAX "{color=#34B7EB}''I, uh... Thanks! Both of you! Goodbye!''"
 
     ED "{color=#EBB134}''Safe travels.''"
 
+    show laura neutral
+
     LAURA "{color=#ff3636}''Yeah, yeah just get out of here. Or else I might have to pay you overtime.''"
+
+    show black box at Position(xalign=0, yalign=0) with dissolve
 
     """
     {color=#34B7EB}In retrospect, I think the day went relatively well. There may have been a few hiccups, maybe an awkward moment here and there, but I think Ed’s compliment might have actually been genuine, and not just a means to save me from Laura.
 
     {color=#34B7EB}I decided to keep said thought in my mind as a motivator to do well tomorrow, and to not disappoint Ed or Laura during my next shift.
     """
+
+    jump DAY2

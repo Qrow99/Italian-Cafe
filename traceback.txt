@@ -1,28 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/Day 1 Outline.rpy", line 63, in script
-    if coffee >= 1:
-  File "game/Day 1 Outline.rpy", line 63, in <module>
-    if coffee >= 1:
-NameError: name 'coffee' is not defined
+  File "game/Day 5 Outline.rpy", line 274, in script
+    BND "{color=#A103FC}''Wait, hold on, what did you just say?''"
+Exception: Sayer 'BND' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/Day 1 Outline.rpy", line 63, in script
-    if coffee >= 1:
-  File "C:\Users\Cornelius\Desktop\renpy-7.2.2-sdk\renpy\ast.py", line 1807, in execute
-    if renpy.python.py_eval(condition):
-  File "C:\Users\Cornelius\Desktop\renpy-7.2.2-sdk\renpy\python.py", line 1961, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "C:\Users\Cornelius\Desktop\renpy-7.2.2-sdk\renpy\python.py", line 1954, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/Day 1 Outline.rpy", line 63, in <module>
-    if coffee >= 1:
-NameError: name 'coffee' is not defined
+  File "game/Day 5 Outline.rpy", line 274, in script
+    BND "{color=#A103FC}''Wait, hold on, what did you just say?''"
+  File "C:\Users\Cornelius\Desktop\renpy-7.2.2-sdk\renpy\ast.py", line 664, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "C:\Users\Cornelius\Desktop\renpy-7.2.2-sdk\renpy\ast.py", line 564, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who.encode("utf-8"))
+Exception: Sayer 'BND' is not defined.
 
 Windows-8-6.2.9200
 Ren'Py 7.2.2.491
 MAKE SOME HECKING COFFEE 1.0
-Sat Nov 09 20:16:31 2019
+Sun Nov 10 00:40:21 2019

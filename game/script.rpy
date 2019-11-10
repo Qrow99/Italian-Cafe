@@ -20,6 +20,9 @@ define LAURA = Character("Laura", color="#ff3636")
 # Day 3 characters
 define KRN = Character("Mechanical Girl", color="#4BE54B")
 
+# Day 4 characters
+define BND = Character("Brenda", color="#b459ff")
+define UBND = Character("Headphone Girl", color="#b459ff")
 
 
 image milk = "MilkIdle.PNG"
@@ -42,6 +45,7 @@ label start:
     show screen Backbutton
 
 
+# Variables
     $ coffee = 0 # variable for Coffeemaking, False = 0, True = 1
 
 
