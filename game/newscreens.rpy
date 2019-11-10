@@ -34,12 +34,11 @@ screen Backbutton():
         hover "NextStepHover.PNG"
 
 screen CoffeeButton():
-    $ Coffee = False # variable for Coffeemaking, True = 0, False = 1
     imagebutton:
         xalign 0.853 yalign 0.145
         idle "coffeeidle.PNG"
         hover "coffeehover.PNG"
-        action Notify("coffee"),SetScreenVariable('Coffee', True)
+        action Notify("coffee"), SetVariable("coffee", 1)
 
 screen EspressoButton():
     imagebutton:

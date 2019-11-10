@@ -1,5 +1,6 @@
     label DAY1:
 
+
 # Despite just being the outline, both days 1 and 5 will contain drink making
 # sections in them, just a heads up.
 
@@ -60,7 +61,7 @@
 
     show ed think
 
-    if Coffee == True:
+    if coffee >= 1:
         jump good
     else:
         jump bad
@@ -74,7 +75,7 @@
 
     MAX "{color=#34B7EB}''Really?! You think so?!''"
 
-    ED "{color=#EBB134}''The proportions are off. There’s too much milk in it. Otherwise, it’s pretty decent.''"
+    ED "{color=#EBB134}''The proportions are off. There’s too much milk in it. Otherwise, it’s decent.''"
 
     MAX "{color=#34B7EB}''Is that bad?''"
 

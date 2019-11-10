@@ -42,6 +42,9 @@ label start:
     show screen Backbutton
 
 
+    $ coffee = 0 # variable for Coffeemaking, False = 0, True = 1
+
+
 
     # The Background
     scene bg room
