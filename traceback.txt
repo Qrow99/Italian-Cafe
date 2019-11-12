@@ -1,22 +1,72 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/Day 2, Interaction 3.rpy", line 130, in script
-    jump D2I4
-ScriptError: could not find label 'D2I4'.
+  File "game/Day 1 Outline.rpy", line 11, in script
+    ED "{color=#EBB134}''Today’s the day, Max. Think you’re ready?''"
+  File "renpy/common/000window.rpy", line 98, in _window_auto_callback
+    _window_show()
+  File "renpy/common/000window.rpy", line 60, in _window_show
+    renpy.with_statement(trans)
+  File "renpy/common/00action_data.rpy", line 79, in get_selected
+    return __get_field(self.object, self.field, self.kind) == self.value
+  File "renpy/common/00action_data.rpy", line 39, in _m1_00action_data__get_field
+    raise NameError("The {} {} does not exist.".format(kind, name))
+NameError: The variable Tea does not exist.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/Day 2, Interaction 3.rpy", line 130, in script
-    jump D2I4
-  File "C:\Users\Cornelius\Desktop\renpy-7.2.2-sdk\renpy\ast.py", line 1678, in execute
-    rv = renpy.game.script.lookup(target)
-  File "C:\Users\Cornelius\Desktop\renpy-7.2.2-sdk\renpy\script.py", line 886, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'D2I4'.
+  File "game/Day 1 Outline.rpy", line 11, in script
+    ED "{color=#EBB134}''Today’s the day, Max. Think you’re ready?''"
+  File "C:\Users\Qrow99\Documents\renpy-7.3.3-sdk\renpy\ast.py", line 671, in execute
+    statement_name("say")
+  File "C:\Users\Qrow99\Documents\renpy-7.3.3-sdk\renpy\ast.py", line 45, in statement_name
+    i(name)
+  File "renpy/common/000window.rpy", line 98, in _window_auto_callback
+    _window_show()
+  File "renpy/common/000window.rpy", line 60, in _window_show
+    renpy.with_statement(trans)
+  File "C:\Users\Qrow99\Documents\renpy-7.3.3-sdk\renpy\exports.py", line 1601, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "C:\Users\Qrow99\Documents\renpy-7.3.3-sdk\renpy\display\core.py", line 2251, in do_with
+    clear=clear)
+  File "C:\Users\Qrow99\Documents\renpy-7.3.3-sdk\renpy\display\core.py", line 2702, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
+  File "C:\Users\Qrow99\Documents\renpy-7.3.3-sdk\renpy\display\core.py", line 3094, in interact_core
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "C:\Users\Qrow99\Documents\renpy-7.3.3-sdk\renpy\display\core.py", line 541, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\Qrow99\Documents\renpy-7.3.3-sdk\renpy\display\core.py", line 541, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\Qrow99\Documents\renpy-7.3.3-sdk\renpy\display\core.py", line 541, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\Qrow99\Documents\renpy-7.3.3-sdk\renpy\display\core.py", line 541, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\Qrow99\Documents\renpy-7.3.3-sdk\renpy\display\screen.py", line 434, in visit_all
+    self.child.visit_all(callback, seen=None)
+  File "C:\Users\Qrow99\Documents\renpy-7.3.3-sdk\renpy\display\core.py", line 541, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\Qrow99\Documents\renpy-7.3.3-sdk\renpy\display\core.py", line 543, in visit_all
+    callback(self)
+  File "C:\Users\Qrow99\Documents\renpy-7.3.3-sdk\renpy\display\core.py", line 3094, in <lambda>
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "C:\Users\Qrow99\Documents\renpy-7.3.3-sdk\renpy\display\behavior.py", line 857, in per_interact
+    if self.is_selected():
+  File "C:\Users\Qrow99\Documents\renpy-7.3.3-sdk\renpy\display\behavior.py", line 845, in is_selected
+    return is_selected(self.action)
+  File "C:\Users\Qrow99\Documents\renpy-7.3.3-sdk\renpy\display\behavior.py", line 388, in is_selected
+    return any(is_selected(i) for i in action)
+  File "C:\Users\Qrow99\Documents\renpy-7.3.3-sdk\renpy\display\behavior.py", line 388, in <genexpr>
+    return any(is_selected(i) for i in action)
+  File "C:\Users\Qrow99\Documents\renpy-7.3.3-sdk\renpy\display\behavior.py", line 391, in is_selected
+    return action.get_selected()
+  File "renpy/common/00action_data.rpy", line 79, in get_selected
+    return __get_field(self.object, self.field, self.kind) == self.value
+  File "renpy/common/00action_data.rpy", line 39, in _m1_00action_data__get_field
+    raise NameError("The {} {} does not exist.".format(kind, name))
+NameError: The variable Tea does not exist.
 
 Windows-8-6.2.9200
-Ren'Py 7.2.2.491
+Ren'Py 7.3.5.606
 MAKE SOME HECKING COFFEE 1.0
-Mon Nov 11 18:35:17 2019
+Mon Nov 11 20:48:02 2019

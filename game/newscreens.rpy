@@ -38,13 +38,14 @@ screen CoffeeButton():
         xalign 0.853 yalign 0.145
         idle "coffeeidle.PNG"
         hover "coffeehover.PNG"
-        action Notify("coffee"), SetVariable("coffee", 1)
+        action Notify("coffee"), SetVariable("coffee", 1), SetVariable('Tea', 0)
 
 screen EspressoButton():
     imagebutton:
         xalign 0.941 yalign 0.145
         idle "teaidle.PNG"
         hover "teahover.PNG"
+        action Notify('Tea'), SetVariable("Tea", 1), SetVariable("coffee", 0)
 
 screen DrinkType():
     if Coffee == 1:
