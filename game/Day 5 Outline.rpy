@@ -107,11 +107,14 @@
 
     #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     # Interaction 1 here
+    jump D5I1
     #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     # Interaction 2 here
     #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    label D5Break:
 
     "{color=#34B7EB}Suddenly Ed bursts into the room from the break room, his face bright red and the rest of his body not looking much better."
 
@@ -167,7 +170,10 @@
 
     #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     # Interaction 3 here
+    jump D5I3
     #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    label D5I4:
 
     """
     {color=#34B7EB}Before the faded, yellow smile and wrinkled thumbs up given by the strange man fully fade away, a minor chill courses through my body in reaction to a hand being placed gently on my shoulder.

@@ -1,22 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/Day 5 Outline.rpy", line 274, in script
-    BND "{color=#A103FC}''Wait, hold on, what did you just say?''"
-Exception: Sayer 'BND' is not defined.
+  File "game/Day 2, Interaction 3.rpy", line 130, in script
+    jump D2I4
+ScriptError: could not find label 'D2I4'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/Day 5 Outline.rpy", line 274, in script
-    BND "{color=#A103FC}''Wait, hold on, what did you just say?''"
-  File "C:\Users\Cornelius\Desktop\renpy-7.2.2-sdk\renpy\ast.py", line 664, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "C:\Users\Cornelius\Desktop\renpy-7.2.2-sdk\renpy\ast.py", line 564, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who.encode("utf-8"))
-Exception: Sayer 'BND' is not defined.
+  File "game/Day 2, Interaction 3.rpy", line 130, in script
+    jump D2I4
+  File "C:\Users\Cornelius\Desktop\renpy-7.2.2-sdk\renpy\ast.py", line 1678, in execute
+    rv = renpy.game.script.lookup(target)
+  File "C:\Users\Cornelius\Desktop\renpy-7.2.2-sdk\renpy\script.py", line 886, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'D2I4'.
 
 Windows-8-6.2.9200
 Ren'Py 7.2.2.491
 MAKE SOME HECKING COFFEE 1.0
-Sun Nov 10 00:40:21 2019
+Mon Nov 11 18:35:17 2019

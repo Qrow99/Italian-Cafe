@@ -233,6 +233,8 @@
     # Interaction 2 here
     #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+    label D1Break:
+
     "{color=#34B7EB}As the customer left the building, I could hear the loud footsteps of a familiar body coming out from behind me."
 
     show ed neutral at Position(xalign=0.3, yalign=0.22) with ease
@@ -271,11 +273,14 @@
 
     #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     # Interaction 3 here
+    jump D1I3
     #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     # Interaction 4 here
     #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    label D1Outro:
 
     """
     {color=#34B7EB}Once the final customer left, I took a glance at my phone and noticed that my shift was over.

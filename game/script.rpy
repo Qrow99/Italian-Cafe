@@ -16,6 +16,11 @@ define MAX = Character("Me", color="#34B7EB")
 define ED = Character("Ed", color="#EBB134")
 define LAURA = Character("Laura", color="#ff3636")
 
+# Day 1 characters
+define JUNE = Character("Shifty Girl", color="#4969de")
+
+# Day 2 characters
+define BRAD = Character("Large Man", color="#d9d97e")
 
 # Day 3 characters
 define KRN = Character("Mechanical Girl", color="#4BE54B")
@@ -23,6 +28,9 @@ define KRN = Character("Mechanical Girl", color="#4BE54B")
 # Day 4 characters
 define BND = Character("Brenda", color="#b459ff")
 define UBND = Character("Headphone Girl", color="#b459ff")
+define CHASE = Character("Tall Boy", color="#FFCB70")
+define ROY = Character("Scrawny Boy", color="#82C26E")
+
 
 
 image milk = "MilkIdle.PNG"
@@ -45,7 +53,7 @@ label start:
     show screen Backbutton
 
 
-# Variables
+    # Variables
     $ coffee = 0 # variable for Coffeemaking, False = 0, True = 1
 
 

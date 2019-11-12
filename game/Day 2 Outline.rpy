@@ -87,6 +87,8 @@
     # Interaction 2 here
     #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+    label D2Break:
+
     "{color=#34B7EB}After standing in relative silence for a few minutes, I notice Ed emerging from the girl’s bathroom armed with a mop, a dish towel, and at least three half empty bottles of multipurpose cleaner."
 
     show ed inquire at Position(xalign=0.3, yalign=0.22) with ease
@@ -130,11 +132,14 @@
 
     #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     # Interaction 3 here
+    jump D2I3
     #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     # Interaction 4 here
     #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    label D2Outro:
 
     "{color=#34B7EB}Looking down at my watch, I come to find that my shift had ended over ten minutes ago. Ed isn’t anywhere to be seen, so I guess I should go to Laura’s office and tell her..."
 

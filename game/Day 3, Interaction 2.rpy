@@ -1,6 +1,6 @@
     label D3I2:
 
-    
+
     define KRN = Character("Mechanical Girl", color="#4BE54B")
 
     """
@@ -41,7 +41,7 @@
     KRN "{color=#4BE54B}''I see. Secondly, has this building changed ownership within the past two months?''"
 
     MAX "{color=#34B7EB}''I, uh... I think so?
-    I know it happened pretty recently, but I’ve only been here for, like, a week so I don’t know..."
+    I know it happened pretty recently, but I’ve only been here for, like, a week so I don’t know...''"
 
     KRN "{color=#4BE54B}''Any information is appreciated. Furthermore, may I ask the median caffeine content of all the beverages served here?''"
 
@@ -109,4 +109,4 @@
 
     # This is the end of the interaction
 
-    return
+    jump D3Break
