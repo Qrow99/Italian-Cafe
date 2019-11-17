@@ -48,7 +48,11 @@ label start:
     show screen ResetButton
     show screen ConfirmButton
     show screen CoffeeButton
-    show screen EspressoButton
+    show screen TeaButton
+    show screen PumpkinButton
+    show screen MilkButton
+    show screen ChocolateButton
+    show screen CinnamonButton
     show screen NextButton
     show screen Backbutton
 
@@ -65,7 +69,7 @@ label start:
         foam = 0
         espresso = 0
         creamer = 0
-        whip cream = 0
+        whip_cream = 0
     # The Background
     scene bg room
 

@@ -40,12 +40,48 @@ screen CoffeeButton():
         hover "coffeehover.PNG"
         action Notify("coffee"), SetVariable("coffee", 1), SetVariable('Tea', 0)
 
-screen EspressoButton():
+screen TeaButton():
     imagebutton:
         xalign 0.941 yalign 0.145
         idle "teaidle.PNG"
         hover "teahover.PNG"
         action Notify('Tea'), SetVariable("Tea", 1), SetVariable("coffee", 0)
+
+screen MilkButton():
+    imagebutton:
+        xalign 0.853 yalign 0.2235
+        idle "MilkIdle.PNG"
+        hover "Milkhover.PNG"
+        action Notify("Milk"), SetVariable("Milk", 1)
+
+screen CinnamonButton():
+    imagebutton:
+        xalign 0.941 yalign 0.2235
+        idle "Cinnamonidle.PNG"
+        hover "CinnamonHover.PNG"
+        action Notify("Cinnamon"), SetVariable("Cinnamon", 1)
+
+screen ChocolateButton():
+    imagebutton:
+        xalign 0.853 yalign 0.3
+        idle "ChocolateIdle.PNG"
+        hover "Chocolatehover.PNG"
+        action Notify("Chocolate"), SetVariable("Chocolate", 1)
+
+screen PumpkinButton():
+    imagebutton:
+        xalign 0.941 yalign 0.3
+        idle "PumpkinIdle.PNG"
+        hover "pumpkinhover.PNG"
+        action Notify("Pumpkin"), SetVariable("Pumpkin", 1)
+
+#screen foamButton():
+
+#screen espressoButton():
+
+#screen creamerButton():
+
+#screen whipButton():
 
 screen DrinkType():
     if Coffee == 1:

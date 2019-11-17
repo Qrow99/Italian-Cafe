@@ -2,9 +2,49 @@
 errors listed below, and try again.
 
 
-The label D4I4 is defined twice, at
-  File "game/(unfinished) Day 4, Interaction 4.rpyc", line 1 and
-  File "game/Day 4, Interaction 4.rpy", line 1.
+File "game/Day 1 Outline.rpy", line 138: expected statement.
+    coffee = 0
+           ^
 
-Ren'Py Version: Ren'Py 7.2.2.491
-Mon Nov 11 17:55:32 2019
+File "game/Day 1 Outline.rpy", line 139: expected statement.
+    Tea = 0
+        ^
+
+File "game/Day 1 Outline.rpy", line 140: expected statement.
+    Milk = 0
+         ^
+
+File "game/Day 1 Outline.rpy", line 141: expected statement.
+    Cinnamon = 0
+             ^
+
+File "game/Day 1 Outline.rpy", line 142: expected statement.
+    Chocolate = 0
+              ^
+
+File "game/Day 1 Outline.rpy", line 143: expected statement.
+    Pumpkin = 0
+            ^
+
+File "game/Day 1 Outline.rpy", line 144: expected statement.
+    pagenum = 0
+            ^
+
+File "game/Day 1 Outline.rpy", line 145: expected statement.
+    foam = 0
+         ^
+
+File "game/Day 1 Outline.rpy", line 146: expected statement.
+    espresso = 0
+             ^
+
+File "game/Day 1 Outline.rpy", line 147: expected statement.
+    creamer = 0
+            ^
+
+File "game/Day 1 Outline.rpy", line 148: expected statement.
+    whip_cream = 0
+               ^
+
+Ren'Py Version: Ren'Py 7.3.5.606
+Sun Nov 17 14:30:53 2019

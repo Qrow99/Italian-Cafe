@@ -61,7 +61,7 @@
 
     show ed think
 
-    if coffee >= 1:
+    if coffee == 1 and Milk == 1 and whip_cream == 1:
         jump good
     else:
         jump bad
@@ -134,6 +134,18 @@
     #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     label D1I1connect:
+    python:
+        coffee = 0
+        Tea = 0
+        Milk = 0
+        Cinnamon = 0
+        Chocolate = 0
+        Pumpkin = 0
+        pagenum = 0
+        foam = 0
+        espresso = 0
+        creamer = 0
+        whip_cream = 0
 
     show ed neutral at Position(xalign=0.1, yalign=0.22) with ease
 
