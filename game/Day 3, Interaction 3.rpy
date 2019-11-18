@@ -23,10 +23,16 @@
     JUNE "{color=#4969de}''Just the Dinkles or whatever you call it is fine.''"
 
     MAX "{color=#34B7EB}''Okay, coming right up.''"
-
-    "{color=#34B7EB}Man, that was a terrible joke. Maybe I should just stick to being a normal, non-comedic barista... Regardless, I guess I’d better start making a Dinkles."
+    while makingdrink == 0:
+        "{color=#34B7EB}Man, that was a terrible joke. Maybe I should just stick to being a normal, non-comedic barista... Regardless, I guess I’d better start making a Dinkles."
+        pause
+    $ makingdrink = 0
 
 # here's the drink. The order is the Dinkles.
+    if coffee == 1 and Milk == 1 and steamedMilk == 1:
+        jump d3i3good
+    else:
+        jump d3i3bad
 
     MAX "{color=#34B7EB}''Here you go! Enjoy!''"
 
@@ -38,21 +44,25 @@
 
 
     # if drink is correct
+    label d3i3good:
     """
     {color=#34B7EB}She picks up her cup and takes a large swig, keeping it in her mouth with puffed up cheeks. Her face scrunches up into a painful, red wince as she slowly gulps down the large mouthful she took.
 
     {color=#34B7EB}She then proceeds to take out her laptop and begin taking notes as she had last time, but the discomfort on her face lasts long after she finishes drinking.
     """
-
+    jump d3i3converge
 
     # if drink is incorrect
+    label d3i3bad:
     """
     {color=#34B7EB}She picks up her cup and takes a large swig, keeping it in her mouth with puffed up cheeks. Her face turns a bright red and she proceeds to spit the whole mouthful back into her cup, wincing and breathing heavily.
 
     {color=#34B7EB}She then proceeds to take out her laptop and begin taking notes as she had last time, but the discomfort on her face lasts long after she finishes drinking.
     """
+    jump d3i3converge
 
     # both options come back here
+    label d3i3converge:
     MAX "{color=#34B7EB}''So... how is it?''"
 
     show june neutral

@@ -58,8 +58,10 @@
     Questions 3-11 are all inquiries regarding this cafè’s menu. Perhaps an adequate place to start would be question 5: What is La Piovosita’s most popular menu item?''"
 
     MAX "{color=#34B7EB}''Our most popular drink? Coming right up!''"
-
-    "{color=#34B7EB}Most popular drink, huh? Weren’t Ed and Laura saying something about that earlier this afternoon...?"
+    while makingdrink == 0:
+        "{color=#34B7EB}Most popular drink, huh? Weren’t Ed and Laura saying something about that earlier this afternoon...?"
+        pause
+    $ makingdrink = 0
 
 
     # This is where the drink is made

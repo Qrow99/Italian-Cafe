@@ -50,8 +50,12 @@
 
     MAX "{color=#34B7EB}''A Deep Breath? Got it!''"
 
-
     "{color=#34B7EB}Alright, a Deep Breath, that shouldn’t be hard. I just gotta look it up in the menu, and then put everything together, just like he taught me..."
+    while makingdrink == 0:
+        "{color=#34B7EB}Alright, a Deep Breath, that shouldn’t be hard. I just gotta look it up in the menu, and then put everything together, just like he taught me..."
+        pause
+
+    $ makingdrink = 0
 
     MAX "{color=#34B7EB}''Here you go, sir!''"
 
@@ -62,14 +66,14 @@
     show ed think
 
     if coffee == 1 and Milk == 1 and whip_cream == 1:
-        jump good
+        jump interaction1good
     else:
-        jump bad
+        jump interaction1bad
 
     #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     # (if drink is correct)
     #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    label good:
+    label interaction1good:
 
     ED "{color=#EBB134}''Not bad.''"
 
@@ -110,7 +114,7 @@
     #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     # (if drink is incorrect)
     #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    label bad:
+    label interaction1bad:
     ED "{color=#EBB134}''It could use some work.''"
 
     MAX "{color=#34B7EB}''Oh, I see...''"
@@ -136,7 +140,7 @@
     label D1I1connect:
     python:
         coffee = 0
-        Tea = 0
+        Espresso = 0
         Milk = 0
         Cinnamon = 0
         Chocolate = 0
@@ -156,7 +160,7 @@
 
     ED "{color=#EBB134}''I’m testing Max before his shift.''"
 
-    LAURA "{color=#ff3636}''Testing, huh? Well that’s funny, because I didn’t think I was paying you to be a teacher!''"
+    LAURA "{color=#ff3636}''Testing, huh? Well that’s funny, because I didn’t think I was paying you to be a Espressocher!''"
 
     ED "{color=#EBB134}''You were last week.''"
 
@@ -241,6 +245,10 @@
     {color=#34B7EB}Not when my first real customer could be right around the corner! The last thing I’d want to do is screw up my first day just because of my stupid nerves…
     """
 
+    while makingdrink == 0:
+        pause
+
+    $ makingdrink = 0
     #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     # Interaction 2 here
     #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -282,7 +290,6 @@
     """
     {color=#34B7EB}Sure enough, five minutes had passed relatively quickly. As I stuck my head out of the break room, Ed was making idle chat with a customer and Laura was nowhere to be seen, so I figured returning to my post was the best option.
     """
-
     #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     # Interaction 3 here
     jump D1I3

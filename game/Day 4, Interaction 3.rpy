@@ -67,15 +67,23 @@
     BND "{color=#b459ff}''Sounds good to me. How about a Dark Sun?''"
 
     MAX "{color=#34B7EB}''I’m on it!''"
+    while makingdrink == 0:
+        "{color=#34B7EB}Alright, a Dark Sun. For some reason, I feel like I’m supposed to be doing something right now? Not sure why. Weird."
+        pause
+    $ makingdrink = 0
 
-    "{color=#34B7EB}Alright, a Dark Sun. For some reason, I feel like I’m supposed to be doing something right now? Not sure why. Weird."
 
 # Drink Minigame here
 # Correct answer is a Dark Sun with an extra shot of espresso
+    if espresso == 1 and chocolate == 1 and foam == 1:
+        jump d4i3good
+    else:
+        jump d4i3bad
 
     "{color=#34B7EB}I hand her the drink, and she gives it a few good puffs of air before taking a sip. She licks her lips and then puts on a face of rumination, as if she were pondering deeply on the flavor."
 
 # (if the drink is made normally)
+    label d4i3bad:
     show brenda confused
 
     BND "{color=#b459ff}''Hm... it’s different than usual.''"

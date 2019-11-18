@@ -2,49 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/Day 1 Outline.rpy", line 138: expected statement.
-    coffee = 0
-           ^
+File "game/Day 4, Interaction 4.rpy", line 86: expected ':' not found.
+    label d4i4good
+                  ^
 
-File "game/Day 1 Outline.rpy", line 139: expected statement.
-    Tea = 0
-        ^
-
-File "game/Day 1 Outline.rpy", line 140: expected statement.
-    Milk = 0
-         ^
-
-File "game/Day 1 Outline.rpy", line 141: expected statement.
-    Cinnamon = 0
-             ^
-
-File "game/Day 1 Outline.rpy", line 142: expected statement.
-    Chocolate = 0
-              ^
-
-File "game/Day 1 Outline.rpy", line 143: expected statement.
-    Pumpkin = 0
-            ^
-
-File "game/Day 1 Outline.rpy", line 144: expected statement.
-    pagenum = 0
-            ^
-
-File "game/Day 1 Outline.rpy", line 145: expected statement.
-    foam = 0
-         ^
-
-File "game/Day 1 Outline.rpy", line 146: expected statement.
-    espresso = 0
-             ^
-
-File "game/Day 1 Outline.rpy", line 147: expected statement.
-    creamer = 0
-            ^
-
-File "game/Day 1 Outline.rpy", line 148: expected statement.
-    whip_cream = 0
-               ^
+File "game/Day 4, Interaction 4.rpy", line 167: expected ':' not found.
+    label d4i4bad
+                 ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Sun Nov 17 14:30:53 2019
+Sun Nov 17 19:11:15 2019

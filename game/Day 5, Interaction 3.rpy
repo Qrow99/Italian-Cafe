@@ -53,8 +53,12 @@
     I’d be happy to do some rambling over a drink! Let’s see here... how about an Entertainer?''"
 
     MAX "{color=#34B7EB}''Coming right up, sir!''"
+    while makingdrink == 0:
+        "{color=#34B7EB}I’m still not sure how I feel about being called ‘lad,’ but I guess it doesn’t matter. One Entertainer coming up!"
+        pause
 
-    "{color=#34B7EB}I’m still not sure how I feel about being called ‘lad,’ but I guess it doesn’t matter. One Entertainer coming up!"
+    $ makingdrink = 0
+
 
 # Drink making minigame does here
 # Any drink works fine.

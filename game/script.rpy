@@ -48,7 +48,7 @@ label start:
     show screen ResetButton
     show screen ConfirmButton
     show screen CoffeeButton
-    show screen TeaButton
+    show screen EspressoButton
     show screen PumpkinButton
     show screen MilkButton
     show screen ChocolateButton
@@ -60,16 +60,16 @@ label start:
     # Variables
     python: # actually does the exact same thing as the $, except everything indented is 'real' python
         coffee = 0 # variable for Coffeemaking, False = 0, True = 1
-        Tea = 0
         Milk = 0
         Cinnamon = 0
         Chocolate = 0
         Pumpkin = 0
         pagenum = 0 #will be used later for switching pages (possibly, not quite sure how im gonna do that atm)
         foam = 0
-        espresso = 0
+        Espresso = 0
         creamer = 0
         whip_cream = 0
+        makingdrink = 0 # when = 1, means the player is done making the drink
     # The Background
     scene bg room
 

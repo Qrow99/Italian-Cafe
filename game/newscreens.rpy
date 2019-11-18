@@ -1,78 +1,76 @@
-
-
 screen MenuButton():
     imagebutton:
         xalign 0.97 yalign 0.68
-        idle "menuidle.PNG"
-        hover "menuhover.PNG"
+        idle "Menu_Idle.PNG"
+        hover "Menu_Highlight.PNG"
         action Show("MenuList1")
 
 screen ResetButton():
     imagebutton:
         xalign 0.97 yalign 0.449
-        idle "resetidle.PNG"
-        hover "resethover.PNG"
-        action Notify("reset order")
+        idle "Reset_Idle.PNG"
+        hover "Reset_Highlight.PNG"
+        action Notify("reset order"), SetVariable("coffee", 0), SetVariable('Espresso', 0), SetVariable("Milk", 0), SetVariable("Cinnamon", 0), SetVariable("Chocolate", 0), SetVariable("Pumpkin", 0)
 
 screen ConfirmButton():
     imagebutton:
         xalign 0.97 yalign 0.57
-        idle "confirmidle.PNG"
-        hover "confirmhover.PNG"
-        action Notify("ORDER UP")
+        idle "Submit_Idle.PNG"
+        hover "Submit_Highlight.PNG"
+        action Notify("ORDER UP"), SetVariable("makingdrink", 1)
 
 screen NextButton():
     imagebutton:
         xalign 0.9882 yalign 0.1846
-        idle "NextStepIdle.PNG"
-        hover "NextStepHover.PNG"
+        idle "Next_Page_Idle.PNG"
+        hover "Next_Page_Highlight.PNG"
 
 screen Backbutton():
     imagebutton:
         xalign 0.7719 yalign 0.1846
-        idle "NextStepIdle.PNG"
-        hover "NextStepHover.PNG"
+        idle "Next_Page_Idle.PNG"
+        hover "Next_Page_Highlight.PNG"
 
 screen CoffeeButton():
     imagebutton:
         xalign 0.853 yalign 0.145
-        idle "coffeeidle.PNG"
-        hover "coffeehover.PNG"
-        action Notify("coffee"), SetVariable("coffee", 1), SetVariable('Tea', 0)
+        idle "Coffee_Idle.PNG"
+        hover "Coffee_Highlight.PNG"
+        action Notify("coffee"), SetVariable("coffee", 1), SetVariable('Espresso', 0)
 
-screen TeaButton():
+screen EspressoButton():
     imagebutton:
         xalign 0.941 yalign 0.145
-        idle "teaidle.PNG"
-        hover "teahover.PNG"
-        action Notify('Tea'), SetVariable("Tea", 1), SetVariable("coffee", 0)
+        idle "Espresso_Idle.PNG"
+        hover "Espresso_Highlight.PNG"
+        action Notify('Espresso'), SetVariable("Espresso", 1), SetVariable("coffee", 0)
 
 screen MilkButton():
     imagebutton:
-        xalign 0.853 yalign 0.2235
-        idle "MilkIdle.PNG"
-        hover "Milkhover.PNG"
+        xalign 0.853 yalign 0.2205
+        idle "Milk_Idle.PNG"
+        hover "Milk_Highlight.PNG"
         action Notify("Milk"), SetVariable("Milk", 1)
 
 screen CinnamonButton():
     imagebutton:
         xalign 0.941 yalign 0.2235
-        idle "Cinnamonidle.PNG"
-        hover "CinnamonHover.PNG"
+        idle "Cinnamon_Idle.PNG"
+        hover "Cinnamon_Highlight.PNG"
         action Notify("Cinnamon"), SetVariable("Cinnamon", 1)
 
 screen ChocolateButton():
     imagebutton:
         xalign 0.853 yalign 0.3
-        idle "ChocolateIdle.PNG"
-        hover "Chocolatehover.PNG"
+        idle "Chocolate_Idle.PNG"
+        hover "Chocolate_Highlight.PNG"
         action Notify("Chocolate"), SetVariable("Chocolate", 1)
 
 screen PumpkinButton():
     imagebutton:
         xalign 0.941 yalign 0.3
-        idle "PumpkinIdle.PNG"
-        hover "pumpkinhover.PNG"
+        idle "PumpkinSpice_Idle.PNG"
+        hover "PumpkinSpice_Highlight.PNG"
         action Notify("Pumpkin"), SetVariable("Pumpkin", 1)
 
 #screen foamButton():
@@ -87,15 +85,15 @@ screen DrinkType():
     if Coffee == 1:
         imagebutton:
             xalign 0.84 yalign 0.59
-            idle "DrinkTea.PNG"
-    elif Tea == 1:
+            idle "DrinkEspresso.PNG"
+    elif Espresso == 1:
         imagebutton:
             xalign 0.84 yalign 0.59
             idle "DrinkCoffee.PNG"
 
 screen MenuList1():
     imagemap:
-        ground "Menu1.png"
+        ground "Menu_1.PNG"
         xalign 0.18 yalign 0.2
         hotspot (0, 0, 40, 85) action Show("MenuList1")
         hotspot (0, 86, 40, 166) action Show("MenuList2"), Hide("MenuList1")
@@ -106,7 +104,7 @@ screen MenuList1():
 
 screen MenuList2():
     imagemap:
-        ground "Menu2.png"
+        ground "Menu_2.PNG"
         xalign 0.18 yalign 0.2
         hotspot (0, 0, 40, 85) action Show("MenuList1"),  Hide("MenuList2")
         hotspot (0, 86, 40, 166) action Show("MenuList2")

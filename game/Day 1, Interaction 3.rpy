@@ -50,8 +50,19 @@
 
     "{color=#34B7EB}Alright, Song of Seasons. That should be pretty easy, but why ask for directions...?"
 
-# here's where the drink making minigame is. Customer asks for Song of Seasons, but it doesn't matter what's made.
+    while makingdrink == 0:
+        "{color=#34B7EB}Alright, Song of Seasons. That should be pretty easy, but why ask for directions...?"
+        pause
 
+    $ makingdrink = 0
+
+# here's where the drink making minigame is. Customer asks for Song of Seasons, but it doesn't matter what's made.
+    if Pumpkin == 1 and foam == 1:
+        jump interaction3good
+    else:
+        jump interaction3good
+
+    label interaction3good:
     MAX "{color=#34B7EB}''Here’s your drink! Enjoy!''"
 
     show june angry

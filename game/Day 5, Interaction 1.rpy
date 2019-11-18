@@ -7,8 +7,11 @@
     JUNE "{color=#4969de}''Hey, get me a Cinna-monster would you? I went around and tried all the stuff you told me to. Turns out, cinnamon doesn’t taste all that bad.''"
 
     MAX "{color=#34B7EB}''Really? Well, I’m happy to hear it! One Cinna-monster coming right up!''"
+    while makingdrink == 0:
+        "{color=#34B7EB}I sure hope she isn’t expecting the cinnamon to cancel out the coffee completely, but I guess we’ll find out. One Cinna-monster it is!"
+        pause
 
-    "{color=#34B7EB}I sure hope she isn’t expecting the cinnamon to cancel out the coffee completely, but I guess we’ll find out. One Cinna-monster it is!"
+    $ makingdrink = 0
 
     # Drink making goes here.
     # Doesn't matter what drink.

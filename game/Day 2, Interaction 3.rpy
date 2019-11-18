@@ -22,17 +22,30 @@
     BRAD "{color=#d9d97e}''...Yes.''"
 
     MAX "{color=#34B7EB}''Okay, then. I’ll see what I can do!''"
-
     "{color=#34B7EB}He didn’t sound totally certain about it, but I guess the customer is always right.
     So the drink with the most caffeine... that’d be the Entertainer, right? I think that’s its whole deal..."
+    while makingdrink == 0:
+        "{color=#34B7EB}He didn’t sound totally certain about it, but I guess the customer is always right.
+        So the drink with the most caffeine... that’d be the Entertainer, right? I think that’s its whole deal..."
+        pause
+
+    $ makingdrink = 0
+
 
 # Drink making minigame goes here.
 # Anything works
+    if coffee == 1 and Chocolate == 1 and espresso == 1:
+        jump D2I3good
+    else:
+        jump D2I3bad
 
+
+    label D2I3good:
     MAX "{color=#34B7EB}''Alright, this one’s called the Entertainer! It has the most caffeine of anything on the menu!''"
 
     show brad neutral
 
+    label D2I3bad:
     BRAD "{color=#d9d97e}''Thank you.''"
 
     "{color=#34B7EB}The man takes a hearty sip and shows no reaction. Wiping his beard of residual coffee, he places the drink back on the counter while failing to cover a burp with his fist."

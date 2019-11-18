@@ -51,12 +51,19 @@
     CHASE "{color=#FFCB70}''Yeah, I’m lactose intolerant. Is that okay?''"
 
     MAX "{color=#34B7EB}''Uh, sure! I’ll do the best I can!''"
+    while makingdrink == 0:
+        "{color=#34B7EB}I don’t think there’s much in the Deep Breath except milk... Guess I’ll just have to improvise?"
+        pause
 
-    "{color=#34B7EB}I don’t think there’s much in the Deep Breath except milk... Guess I’ll just have to improvise?"
+    $ makingdrink = 0
+
 
 # Drink minigame here
 # If the drink has milk in it, it's a fail. Anything else is fine.
-
+    if coffee == 1 and whip_cream == 1:
+        jump d4i4good
+    elif milk == 1:
+        jump d4i4bad
 
     MAX "{color=#34B7EB}''Alright, here you go! Two Deep Breaths, special ordered!''"
 
@@ -76,7 +83,7 @@
 
 
     # (if drink has no milk)
-
+    label d4i4good:
     MAX "{color=#34B7EB}''So, how do you guys like it?''"
 
     CHASE "{color=#FFCB70}''It’s great, thanks!''"
@@ -157,7 +164,7 @@
 
 
     # (if drink has milk)
-
+    label d4i4bad:
     MAX "{color=#34B7EB}''So, how do you guys like it?''"
 
     show roy neutral
