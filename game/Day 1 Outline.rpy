@@ -6,7 +6,7 @@
 
 
     show black box at Position(xalign=0, yalign=0)
-    show ed neutral behind black at Position(xalign=0.3, yalign=0.22)
+    show ed neutral behind black at Position(xalign=0.3, yalign=0.205)
 
     ED "{color=#EBB134}''Today’s the day, Max. Think you’re ready?''"
 
@@ -38,9 +38,9 @@
     {color=#34B7EB}Does everyone get this shaken up about their first job?
     """
 
-    ED "{color=#EBB134}''Before you start, how about a test?''"
-
     show ed inquire
+
+    ED "{color=#EBB134}''Before you start, how about a test?''"
 
     MAX "{color=#34B7EB}''A test!? What do you mean?''"
 
@@ -151,9 +151,9 @@
         creamer = 0
         whip_cream = 0
 
-    show ed neutral at Position(xalign=0.1, yalign=0.22) with ease
+    show ed neutral at Position(xalign=0.1, yalign=0.205) with ease
 
-    show laura angry at Position(xalign=0.5, yalign=0.22) with dissolve
+    show laura angry at Position(xalign=0.5, yalign=0.205) with dissolve
 
     LAURA "{color=#ff3636}''Hey! What’s going on out here?
     ‘Cause it sure doesn’t look like working!''"
@@ -175,8 +175,8 @@
     LAURA "{color=#ff3636}''It better be! Now that we’re all in agreement, no more dilly dallying you two! This fine establishment isn’t going to run itself, you hear?
     So Edward, get to cleaning!''"
 
-    show ed neutral at Position(xpos=-400, xanchor=0, yalign=0.22) with ease
-    show laura angry at Position(xalign=0.3, yalign=0.22) with ease
+    show ed neutral at Position(xpos=-400, xanchor=0, yalign=0.205) with ease
+    show laura angry at Position(xalign=0.3, yalign=0.205) with ease
 
     LAURA "{color=#ff3636}''And newbie!''"
 
@@ -194,11 +194,11 @@
     LAURA "{color=#ff3636}''An excellent question!
     It’s Italian! It means ‘the falling of the rain,’ isn’t it atmospheric?''"
 
-    show ed neutral at Position(xalign=0, yalign=0.22) with ease
+    show ed neutral at Position(xalign=0, yalign=0.205) with ease
 
     ED "{color=#EBB134}''That’s not what it means.''"
 
-    show ed neutral at Position(xpos=-400, xanchor=0, yalign=0.22) with ease
+    show ed neutral at Position(xpos=-400, xanchor=0, yalign=0.205) with ease
     show laura angry
 
     LAURA "{color=#ff3636}''Ah, whatever! Who’s gonna know the difference, anyway?''"
@@ -210,7 +210,7 @@
     LAURA "{color=#ff3636}''See? It’s great!
     Anyways, if that’s all you wanted, then I’ll let you get started...''"
 
-    show laura neutral at Position(xpos=-400, xanchor=0, yalign=0.22) with ease
+    show laura neutral at Position(xpos=-400, xanchor=0, yalign=0.205) with ease
 
     """
     {color=#34B7EB}I don’t know what it is about Laura, but I can’t help but feel on edge when she’s around. It’s probably just because she’s my boss, but it might be something more.
@@ -222,7 +222,7 @@
     {color=#34B7EB}For me, I always feel like she could sneak up behind me at any moment and blow out my eardrums...
     """
 
-    show laura angry at Position(xalign=0.3, yalign=0.22) with ease
+    show laura angry at Position(xalign=0.3, yalign=0.205) with ease
 
     LAURA "{color=#ff3636}''Oh yeah and one more thing, newbie!''"
 
@@ -236,7 +236,7 @@
 
     LAURA "{color=#ff3636}''You’d better.''"
 
-    show laura neutral at Position(xpos=-400, xanchor=0, yalign=0.22) with ease
+    show laura neutral at Position(xpos=-400, xanchor=0, yalign=0.205) with ease
 
     """
     {color=#34B7EB}Sheesh...
@@ -245,19 +245,20 @@
     {color=#34B7EB}Not when my first real customer could be right around the corner! The last thing I’d want to do is screw up my first day just because of my stupid nerves…
     """
 
-    while makingdrink == 0:
-        pause
+    # This part isn't an drink making minigame, so I'll just comment it in case you were saving it for something
+    # while makingdrink == 0:
+    #    pause
 
-    $ makingdrink = 0
+    #$ makingdrink = 0
     #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     # Interaction 2 here
     #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     label D1Break:
 
-    "{color=#34B7EB}As the customer left the building, I could hear the loud footsteps of a familiar body coming out from behind me."
+    "{color=#34B7EB}As the customer leaves the building, I can hear the loud footsteps of a familiar body coming out from behind me."
 
-    show ed neutral at Position(xalign=0.3, yalign=0.22) with ease
+    show ed neutral at Position(xalign=0.3, yalign=0.205) with ease
 
     ED "{color=#EBB134}''You’re doing good so far.''"
 
@@ -276,7 +277,7 @@
     MAX "{color=#34B7EB}''Well, alright. Thanks Ed!''"
 
     show black box at Position(xalign=0, yalign=0) with dissolve
-    show ed neutral at Position(xpos=-400, xanchor=0, yalign=0.22) with ease
+    show ed neutral at Position(xpos=-400, xanchor=0, yalign=0.205) with ease
 
     """
     {color=#34B7EB}As I exited into the back room, Ed only gave a quick grunt and a slight nod.
@@ -302,22 +303,22 @@
     label D1Outro:
 
     """
-    {color=#34B7EB}Once the final customer left, I took a glance at my phone and noticed that my shift was over.
+    {color=#34B7EB}Once Sahbreena fully leaves the building, I take a glance at my phone and notice that my shift is over.
 
-    {color=#34B7EB}I immediately went toward Laura’s office to inform her I was leaving, but the door swung open seconds before I could reach the handle.
+    {color=#34B7EB}I immediately shuffle toward Laura’s office to inform her I'm leaving, but the door swings open seconds before I can reach the handle.
     """
 
-    show laura neutral at Position(xalign=0.3, yalign=0.22) with ease
+    show laura neutral at Position(xalign=0.3, yalign=0.205) with ease
 
     LAURA "{color=#ff3636}''How’s the first day going, newbie?
     You manage to not screw up too bad yet?''"
 
     MAX "{color=#34B7EB}''Heheheh... well, you see...''"
 
-    "{color=#34B7EB}Before I could meekly respond and likely embarrass myself, Ed steps in to my aid."
+    "{color=#34B7EB}Before I can meekly respond and likely embarrass myself, Ed steps in to my aid."
 
-    show laura neutral at Position(xalign=0.5, yalign=0.22) with ease
-    show ed neutral at Position(xalign=0.1, yalign=0.22) with ease
+    show laura neutral at Position(xalign=0.5, yalign=0.205) with ease
+    show ed neutral at Position(xalign=0.1, yalign=0.205) with ease
 
     ED "{color=#EBB134}''He did just fine. Now, he’s going home.''"
 

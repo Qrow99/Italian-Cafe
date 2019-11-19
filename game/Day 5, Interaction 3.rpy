@@ -4,7 +4,7 @@
 
     "{color=#34B7EB}Through the doors enters an equally formidable and familiar man, head hung low and arms firmly crossed."
 
-    show brad neutral at Position(xalign=0.3, yalign=0.22) with dissolve
+    show brad neutral at Position(xalign=0.3, yalign=0.205) with dissolve
 
     MAX "{color=#34B7EB}''Welcome back to La Piovosita, mister!''"
 

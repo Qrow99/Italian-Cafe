@@ -190,7 +190,7 @@
     "{color=#34B7EB}The tall boy made a brisk speed walk in the direction I pointed while the short one glared in my direction."
 
     show chase neutral at Position(xpos=-400, xanchor=0, yalign=0.22) with ease
-    show roy inquire at Position(xalign=0.3, yalign=0.22) with ease
+    show roy inquire at Position(xalign=0.3, yalign=0.205) with ease
     show roy angry
 
     ROY "{color=#82C26E}''Hey, what part of ‘no milk’ didn’t you understand!?''"

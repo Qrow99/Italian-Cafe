@@ -1,7 +1,7 @@
     label DAY5:
 
-    show laura tired at Position(xpos=-400, xanchor=0, yalign=0.22) with ease
-    show ed sick neutral at Position(xalign=0.3, yalign=0.22) with ease
+    show laura tired at Position(xpos=-400, xanchor=0, yalign=0.205) with ease
+    show ed sick neutral at Position(xalign=0.3, yalign=0.205) with ease
 
     """
     {color=#34B7EB}Walking into work, I feel the effects of my first Friday taking hold of me. I’m simultaneously excited to be here and excited to leave. I’m both determined to work and too lazy to want to. I’m two other contradictory things.
@@ -73,8 +73,8 @@
     {color=#34B7EB}Right on cue, Laura found a way to sneak her way into the main room undetected, and for the first time I’m grateful for it.
     """
 
-    show ed sick think at Position(xalign=0.1, yalign=0.22) with ease
-    show laura angry at Position(xalign=0.5, yalign=0.22) with ease
+    show ed sick think at Position(xalign=0.1, yalign=0.205) with ease
+    show laura angry at Position(xalign=0.5, yalign=0.205) with ease
 
     LAURA "{color=#ff3636}''Edward, you look awful. Also, you’ve been slacking all day! Are you sure you’re actually fit to work today?''"
 
@@ -89,13 +89,13 @@
 
     ED "{color=#EBB134}''I’ll get the mop.''"
 
-    show ed sick neutral at Position(xpos=-400, xanchor=0, yalign=0.22) with ease
-    show laura inquire at Position(xalign=0.3, yalign=0.22) with ease
+    show ed sick neutral at Position(xpos=-400, xanchor=0, yalign=0.205) with ease
+    show laura inquire at Position(xalign=0.3, yalign=0.205) with ease
     show laura neutral
 
     LAURA "{color=#ff3636}''Perfect! And Max, I’m assuming you know what to do by this point, so just do it, alright!? I’m going back to my office.''"
 
-    show laura neutral at Position(xpos=-400, xanchor=0, yalign=0.22) with ease
+    show laura neutral at Position(xpos=-400, xanchor=0, yalign=0.205) with ease
 
     MAX "{color=#34B7EB}''Uh, yeah! Of course! I’ll just be here, I guess...''"
 
@@ -118,7 +118,7 @@
 
     "{color=#34B7EB}Suddenly Ed bursts into the room from the break room, his face bright red and the rest of his body not looking much better."
 
-    show ed sick neutral at Position(xalign=0.3, yalign=0.22) with ease
+    show ed sick neutral at Position(xalign=0.3, yalign=0.205) with ease
 
     ED "{color=#EBB134}''Max, break time.''"
 
@@ -164,7 +164,7 @@
 
     MAX "{color=#34B7EB}''Oh Ed, I’ll take this one! You just... keep doing what you’re doing.''"
 
-    show ed sick neutral at Position(xpos=-400, xanchor=0, yalign=0.22) with ease
+    show ed sick neutral at Position(xpos=-400, xanchor=0, yalign=0.205) with ease
 
     "{color=#34B7EB}He doesn’t make a move, but I figure that’s as close to an ‘okay’ as I’m getting at this point."
 
@@ -181,7 +181,7 @@
     {color=#34B7EB}Turning around, I find this hand belongs to the only other person behind the counter. Shocker.
     """
 
-    show ed sick think at Position(xalign=0.3, yalign=0.22) with ease
+    show ed sick think at Position(xalign=0.3, yalign=0.205) with ease
 
     """
     {color=#34B7EB}I don’t even know if I should give Ed any advice at this point. I mean, I’ve certainly accumulated a lot throughout the day, but it just seems so... I don’t know, obvious?
@@ -258,8 +258,8 @@
     "{color=#34B7EB}Before I could ask another stupid question, Ed turned around and started marching toward the table at the furthest corner of the room."
 
     show black box at Position(xalign=0, yalign=0) with dissolve
-    show ed sick surprise at Position(xalign=0.1, yalign=0.22) with ease
-    show brenda surprise behind black at Position(xalign=0.5, yalign=0.22)
+    show ed sick surprise at Position(xalign=0.1, yalign=0.205) with ease
+    show brenda surprise behind black at Position(xalign=0.5, yalign=0.205)
 
     """
     {color=#34B7EB}With as much confidence as a nervous, partially mute man with a fever could probably muster, my large friend positioned himself next to his target.

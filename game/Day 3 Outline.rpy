@@ -68,8 +68,8 @@
     {color=#34B7EB}With a quick deactivation of the ceiling fan and the plugging in of the electrical one, the overwhelming musk of artificial fruit soon exited the building.
     """
 
-    show laura angry at Position(xalign=0.5, yalign=0.22) with ease
-    show ed neutral at Position(xalign=0.1, yalign=0.22) with ease
+    show laura angry at Position(xalign=0.5, yalign=0.205) with ease
+    show ed neutral at Position(xalign=0.1, yalign=0.205) with ease
 
     MAX "{color=#34B7EB}''Thanks, Ed.''"
 
@@ -97,8 +97,8 @@
 
     LAURA "{color=#ff3636}''Great! I’m heading back to my office. Here’s the list. You two slackers just keep doing your jobs.''"
 
-    show laura neutral at Position(xpos=-400, xanchor=0, yalign=0.22) with ease
-    show ed neutral at Position(xalign=0.3, yalign=0.22) with ease
+    show laura neutral at Position(xpos=-400, xanchor=0, yalign=0.205) with ease
+    show ed neutral at Position(xalign=0.3, yalign=0.205) with ease
     show ed inquire
 
     ED "{color=#EBB134}''Max, I’m leaving. You okay on your own?''"
@@ -126,7 +126,7 @@
 
     "{color=#34B7EB}As I wiped down the counter and quietly hummed along to the song playing over the café’s speakers, Ed burst through the door, sweaty and breathing heavily. In his hands are what I assume to be the items Laura asked him to buy."
 
-    show ed neutral behind black at Position(xalign=0.3, yalign=0.22) with dissolve
+    show ed neutral behind black at Position(xalign=0.3, yalign=0.205) with dissolve
 
     MAX "{color=#34B7EB}''Woah! Ed, are you alright? You look exhausted!''"
 
@@ -146,7 +146,7 @@
     ED "{color=#EBB134}''I’m fine. Just put these in the break room.''"
 
     show black box at Position(xalign=0, yalign=0) with dissolve
-    show ed neutral at Position(xpos=-400, xanchor=0, yalign=0.22) with ease
+    show ed neutral at Position(xpos=-400, xanchor=0, yalign=0.205) with ease
 
     """
     {color=#34B7EB}Ed handed me a couple plastic bags filled with miscellaneous items and sent me into the break room with a pat on the back.
@@ -181,7 +181,7 @@
     {color=#34B7EB}After taking a minute to recover from my disappointment, I notice that my shift is almost over. Sure enough, someone else had come to this realization as well.
     """
 
-    show laura neutral behind black at Position(xalign=0.3, yalign=0.22) with ease
+    show laura neutral behind black at Position(xalign=0.3, yalign=0.205) with ease
 
     LAURA "{color=#ff3636}''Hey newbie, your shift’s over. By the way have you seen Edward around?''"
 

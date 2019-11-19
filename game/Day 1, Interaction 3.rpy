@@ -6,7 +6,7 @@
 
     "{color=#34B7EB}Soon, another figure enters the building. Her shifty eyes scan the room briefly before landing on a table near the counter. She moves in a slow, deliberate way, as though she were trying to avoid being seen, but her clothing does anything but blend in."
 
-    show june neutral at Position(xalign=0.3, yalign=0.22) with dissolve
+    show june neutral at Position(xalign=0.3, yalign=0.205) with dissolve
 
     MAX "{color=#34B7EB}''Hello there! Welcome to La Piovositá!''"
 

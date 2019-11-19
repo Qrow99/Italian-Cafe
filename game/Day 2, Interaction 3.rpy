@@ -4,13 +4,13 @@
 
     "{color=#34B7EB}As I scrub the counter for seemingly the twenty seventh time in the past minute, my endless monotony is thankfully cut short by the sound of heavy footsteps. At the door, an unusually wide man in a clean suit walks up to the counter."
 
-    show brad neutral at Position(xalign=0.3, yalign=0.22) with dissolve
+    show brad neutral at Position(xalign=0.3, yalign=0.205) with dissolve
 
     MAX "{color=#34B7EB}''Hello there, welcome to La Piovosita! Can I get you anything?''"
 
     BRAD "{color=#d9d97e}''Let me think...''"
 
-    "{color=#34B7EB}His voice is gruff and deep, like santa claus gargling a mouthful of nails. He takes a moment to eyeball the menu, audibly scratching his beard in the process, before answering me."
+    "{color=#34B7EB}His voice is gruff and deep, like Santa Claus gargling a mouthful of nails. He takes a moment to eyeball the menu, audibly scratching his beard in the process, before answering me."
 
     show brad think
 
@@ -108,7 +108,7 @@
     BRAD "{color=#d9d97e}''Ha! It seems like you don’t need a thing to be a riot!
     I’ll tell you what, I should be on my way right about now, but if you really want to humor me, then maybe I’ll come back sometime.''"
 
-    "{color=#34B7EB}The man got up to leave, but as he did so I noticed he left his drink on the counter."
+    "{color=#34B7EB}The man gets up to leave, but as he does so I notice he left his drink on the counter."
 
     hide brad with dissolve
 
@@ -120,14 +120,14 @@
 
     BRAD "{color=#d9d97e}''Son, there’s only one thing I want you to do for me...''"
 
-    "{color=#34B7EB}He stood in the doorframe, stopped for a second, and then turned his head back at me. He then cracked the biggest smile I’ve ever seen, pairing it with a thumbs up on his left hand."
+    "{color=#34B7EB}He stands in the doorframe, stops for a second, and then turns his head back at me. He then cracks the biggest smile I’ve ever seen, pairing it with a thumbs up on a heavily bandaged left hand."
 
     BRAD "{color=#d9d97e}''I want you to keep on the straight and narrow, and always do your best!''"
 
     play sound "sfx_room_footsteps_exit.ogg"
 
     """
-    {color=#34B7EB}The man then turned back around and left as if something unbelievably cheesy didn’t just come out of his mouth. Even ignoring the fact that he asked for two things, not one, I have no idea how to react to that.
+    {color=#34B7EB}The man then turns back around and leaves as if something unbelievably cheesy didn’t just come out of his mouth. Even ignoring the fact that he asked for two things, not one, I have no idea how to react to that.
 
     {color=#34B7EB}Thankfully I don’t have to since, you know, he left, but what actually just happened?
 

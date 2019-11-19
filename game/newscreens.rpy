@@ -47,7 +47,7 @@ screen EspressoButton():
 
 screen MilkButton():
     imagebutton:
-        xalign 0.853 yalign 0.2205
+        xalign 0.853 yalign 0.2235
         idle "Milk_Idle.PNG"
         hover "Milk_Highlight.PNG"
         action Notify("Milk"), SetVariable("Milk", 1)
@@ -145,3 +145,48 @@ screen MenuList5():
         hotspot (0, 248, 40, 328) action Show("MenuList4"),  Hide("MenuList5")
         hotspot (0, 329, 40, 410) action Show("MenuList5")
         hotspot (705, 0, 740, 35) action Hide("MenuList5")
+
+
+
+
+screen SaveButton():
+    imagebutton:
+        xalign 0.845 yalign 0.806
+        idle "Save_Idle.PNG"
+        hover "Save_Highlight.PNG"
+        action ShowMenu('save')
+
+screen BackButton():
+    imagebutton:
+        xalign 0.845 yalign 0.8863
+        idle "Back_Idle.PNG"
+        hover "Back_Highlight.PNG"
+        action Rollback()
+
+screen SkipButton():
+    imagebutton:
+        xalign 0.845 yalign 0.969
+        idle "Skip_Idle.PNG"
+        hover "Skip_Highlight.PNG"
+        action Skip() alternate Skip(fast=True, confirm=True)
+
+screen HistoryButton():
+    imagebutton:
+        xalign 0.965 yalign 0.8863
+        idle "History_Idle.PNG"
+        hover "History_Highlight.PNG"
+        action ShowMenu('history')
+
+screen PrefsButton():
+    imagebutton:
+        xalign 0.965 yalign 0.806
+        idle "Preferences_Idle.PNG"
+        hover "Preferences_Highlight.PNG"
+        action ShowMenu('preferences')
+
+screen AutoButton():
+    imagebutton:
+        xalign 0.965 yalign 0.969
+        idle "Auto_Idle.PNG"
+        hover "Auto_Highlight.PNG"
+        action Preference("auto-forward", "toggle")

@@ -38,7 +38,7 @@
 
     LAURA "{color=#ff3636}''It’s Edward! He’d better be calling to say his sickness miraculously disappeared, or else!''"
 
-    show laura angry at Position(xpos=-400, xanchor=0, yalign=0.22) with ease
+    show laura angry at Position(xpos=-400, xanchor=0, yalign=0.205) with ease
 
     """
     {color=#34B7EB}Laura left in a huff into her office and began wildly screaming at her cell phone.
@@ -62,7 +62,7 @@
     {color=#ff3636}''That’s not a no, so I’ll take it as a yes! See you tomorrow, bub!''
     """
 
-    show laura tired at Position(xalign=0.3, yalign=0.22) with ease
+    show laura tired at Position(xalign=0.3, yalign=0.205) with ease
 
     LAURA "{color=#ff3636}''Well, newbie, looks like it’s just me and you this afternoon.''"
     LAURA "{color=#ff3636}''But don’t fret, I know that you and Edward have been getting all chummy as of late, so in his absence, I shall be your replacement Edward!''"
@@ -92,7 +92,7 @@
 
     LAURA "{color=#ff3636}''I thought so! You just wait, newbie! When I’m done, it’ll be like Edward never left!''"
 
-    show laura happy at Position(xpos=-400, xanchor=0, yalign=0.22) with ease
+    show laura happy at Position(xpos=-400, xanchor=0, yalign=0.205) with ease
 
     """
     {color=#34B7EB}Laura took a jaunty strut to her office and left me completely alone.
@@ -112,7 +112,7 @@
 
     label D4Break:
 
-    show laura neutral at Position(xalign=0.3, yalign=0.22) with ease
+    show laura neutral at Position(xalign=0.3, yalign=0.205) with ease
 
     LAURA "{color=#ff3636}''How goes it, newbie?''"
 
@@ -155,7 +155,7 @@
     LAURA "{color=#ff3636}''I’m sure you understand, I can’t do all that AND work the counter!
     Tomorrow maybe, but I just told me that I gotta clean the bathrooms again, and I can’t be doing that and letting you slack off at the same time.''"
 
-    show laura tired at Position(xpos=-400, xanchor=0, yalign=0.22) with ease
+    show laura tired at Position(xpos=-400, xanchor=0, yalign=0.205) with ease
 
     """
     {color=#34B7EB}That was surprisingly pleasant, at least as far as interactions with Laura go. Maybe she isn’t as abrasive as I thought...
@@ -181,7 +181,7 @@
 
     "{color=#34B7EB}I began to reach down for my favorite counter-cleaning rag when a familiar shadow slunk its way toward my location."
 
-    show laura happy at Position(xalign=0.3, yalign=0.22) with ease
+    show laura happy at Position(xalign=0.3, yalign=0.205) with ease
 
     LAURA "{color=#ff3636}''Hey Max, shift’s over. Go home, you did good today.''"
 

@@ -5,7 +5,7 @@
 
     "{color=#34B7EB}Looking up, I’m met with a familiar, suspicious scowl. Unlike our previous encounter, though, the mysterious writer wastes no time in giving me her order."
 
-    show june neutral at Position(xalign=0.3, yalign=0.22) with dissolve
+    show june neutral at Position(xalign=0.3, yalign=0.205) with dissolve
 
     JUNE "{color=#4969de}''Hey you, what on the menu here has the least amount of flavor?''"
 

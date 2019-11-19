@@ -2,7 +2,7 @@
 
     # play sound "sfx_room_bell_enter.ogg"
     play sound "sfx_room_footsteps_enter.ogg"
-    show june neutral at Position(xalign=0.3, yalign=0.22) with dissolve
+    show june neutral at Position(xalign=0.3, yalign=0.205) with dissolve
 
     JUNE "{color=#4969de}''Hey, get me a Cinna-monster would you? I went around and tried all the stuff you told me to. Turns out, cinnamon doesn’t taste all that bad.''"
 

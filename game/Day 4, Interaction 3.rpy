@@ -5,7 +5,7 @@
 
     "{color=#34B7EB}A girl comes in and the faint sound of explosive EDM accompanies her. She hums along to the music as she walks in, and upon further inspection said music appears to be coming out of a massive headset she has positioned on her shoulders."
 
-    show brenda neutral at Position(xalign=0.3, yalign=0.22) with dissolve
+    show brenda neutral at Position(xalign=0.3, yalign=0.205) with dissolve
 
     MAX "{color=#34B7EB}''Welcome to La Piovosita! Can I get you something?''"
 

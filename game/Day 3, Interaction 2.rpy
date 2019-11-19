@@ -23,7 +23,7 @@
 
     play music "WBoK_music1_v3.ogg" loop fadein 5.0
 
-    show karen neutral at Position(xalign=0.3, yalign=0.22) with dissolve
+    show karen neutral at Position(xalign=0.3, yalign=0.205) with dissolve
 
     MAX "{color=#34B7EB}''Welcome to La Piovositá’s, miss! How can I help you?''"
 

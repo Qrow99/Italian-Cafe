@@ -18,9 +18,13 @@ define LAURA = Character("Laura", color="#ff3636")
 
 # Day 1 characters
 define JUNE = Character("Shifty Girl", color="#4969de")
+define USBNA = Character("Loud Girl", color="#fa9def")
+define SBNA = Character("Sahbreena", color="#fa9def")
+
 
 # Day 2 characters
 define BRAD = Character("Large Man", color="#d9d97e")
+define SM = Character("Strange Man", color="#d1bc88")
 
 # Day 3 characters
 define KRN = Character("Mechanical Girl", color="#4BE54B")
@@ -37,8 +41,9 @@ image milk = "MilkIdle.PNG"
 image Chocolate = "ChocolateIdle.PNG"
 image Cinnamon = "Cinnamonidle.PNG"
 image PumpkinSpice = "PumpkinIdle.PNG"
-image stepback = "NextStepIdle.png"
-image stepforward = "NextStepIdle.png"
+# The original step buttons have thick outlines so they're going, too
+# image stepback = "NextStepIdle.png"
+# image stepforward = "NextStepIdle.png"
 
 
 # The game starts here.
@@ -55,6 +60,14 @@ label start:
     show screen CinnamonButton
     show screen NextButton
     show screen Backbutton
+
+# Quick menu, now in a more convenient location
+    show screen SaveButton
+    show screen BackButton
+    show screen SkipButton
+    show screen AutoButton
+    show screen HistoryButton
+    show screen PrefsButton
 
 
     # Variables
@@ -75,12 +88,14 @@ label start:
 
 
     # Buttons
-    show milk at Position(xalign=0.853, yalign=0.22)
+    # Turns out the milk button was asymmetrical on the original background
+    # so I'm removing this one. I fixed the actual button, as well
+    # show milk at Position(xalign=0.853, yalign=0.223)
     show Chocolate at Position(xalign=0.853, yalign=0.2995)
     show Cinnamon at Position(xalign=0.941, yalign=0.223)
     show PumpkinSpice at Position(xalign=0.941, yalign=0.2995)
-    show stepback at Position(xalign=0.77, yalign=0.1846)
-    show stepforward at Position(xalign=0.9882, yalign=0.1846)
+    # show stepback at Position(xalign=0.77, yalign=0.1846)
+    # show stepforward at Position(xalign=0.9882, yalign=0.1846)
 
 
     # This jumps to day 1

@@ -54,8 +54,8 @@
     But you two better make it worth my while, alright?!
     So I better see someone on their phone during their shift, or else!''"
 
-    show laura neutral at Position(xpos=-400, xanchor=0, yalign=0.22) with ease
-    show ed neutral at Position(xalign=0.3, yalign=0.22) with ease
+    show laura neutral at Position(xpos=-400, xanchor=0, yalign=0.205) with ease
+    show ed neutral at Position(xalign=0.3, yalign=0.205) with ease
 
     ED "{color=#EBB134}''Thanks, I owe you one.''"
 
@@ -71,7 +71,7 @@
 
     ED "{color=#EBB134}''Anyways, I’m cleaning again today. Good luck with your shift.''"
 
-    show ed neutral at Position(xpos=-400, xanchor=0, yalign=0.22) with ease
+    show ed neutral at Position(xpos=-400, xanchor=0, yalign=0.205) with ease
 
     """
     {color=#34B7EB}I wonder what that was about. But not enough to distract me from my job! It’s day number two alright, and whatever Laura and Ed are expecting of me, I intend to deliver!
@@ -81,6 +81,7 @@
 
     #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     # Interaction 1 here
+    jump D2I1
     #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -91,7 +92,7 @@
 
     "{color=#34B7EB}After standing in relative silence for a few minutes, I notice Ed emerging from the girl’s bathroom armed with a mop, a dish towel, and at least three half empty bottles of multipurpose cleaner."
 
-    show ed inquire at Position(xalign=0.3, yalign=0.22) with ease
+    show ed inquire at Position(xalign=0.3, yalign=0.205) with ease
 
     ED "{color=#EBB134}''You want a break?''"
 
@@ -114,7 +115,7 @@
     MAX "{color=#34B7EB}''You’re welcome?''"
 
     show black box at Position(xalign=0, yalign=0) with dissolve
-    show ed neutral at Position(xpos=-400, xanchor=0, yalign=0.22) with ease
+    show ed neutral at Position(xpos=-400, xanchor=0, yalign=0.205) with ease
 
     """
     {color=#34B7EB}I’m not sure I feel totally confident in being thanked for taking a break, but whatever.
@@ -143,7 +144,7 @@
 
     "{color=#34B7EB}Looking down at my watch, I come to find that my shift had ended over ten minutes ago. Ed isn’t anywhere to be seen, so I guess I should go to Laura’s office and tell her..."
 
-    show laura angry at Position(xalign=0.3, yalign=0.22) with ease
+    show laura angry at Position(xalign=0.3, yalign=0.205) with ease
 
     LAURA "{color=#ff3636}''Hey! What are you still doing here?''"
 
