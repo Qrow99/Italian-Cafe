@@ -24,12 +24,14 @@ screen NextButton():
         xalign 0.9882 yalign 0.1846
         idle "Next_Page_Idle.PNG"
         hover "Next_Page_Highlight.PNG"
+        action Notify("next"), SetVariable("pagenum", 2),Hide("MilkButton"), Hide("CinnamonButton"),Hide("ChocolateButton"), Hide("PumpkinButton"), Show("foamButton"), Show("espressoSHOTButton"), Show("whipButton"), Show("creamerButton")
 
-screen Backbutton():
+screen Prevbutton():
     imagebutton:
         xalign 0.7719 yalign 0.1846
-        idle "Next_Page_Idle.PNG"
-        hover "Next_Page_Highlight.PNG"
+        idle "Prev_Page_Idle.PNG"
+        hover "Prev_Page_Highlight.PNG"
+        action Notify("Previous"), SetVariable("pagenum", 1),Show("MilkButton"), Show("CinnamonButton"),Show("ChocolateButton"), Show("PumpkinButton"), Hide("foamButton"), Hide("espressoSHOTButton"), Hide("whipButton"), Hide("creamerButton")
 
 screen CoffeeButton():
     imagebutton:
@@ -73,13 +75,33 @@ screen PumpkinButton():
         hover "PumpkinSpice_Highlight.PNG"
         action Notify("Pumpkin"), SetVariable("Pumpkin", 1)
 
-#screen foamButton():
+screen foamButton():
+    imagebutton:
+        xalign 0.853 yalign 0.2235
+        idle "Foam_Idle.PNG"
+        hover "Foam_Highlight.PNG"
+        action Notify("foam"), SetVariable("foam", 1)
 
-#screen espressoButton():
+screen espressoSHOTButton():
+    imagebutton:
+        xalign 0.941 yalign 0.2235
+        idle "EspressoShot_Idle.PNG"
+        hover "EspressoShot_Highlight.PNG"
+        action Notify("Extra Shot"), SetVariable("ExtraShot", 1)
 
-#screen creamerButton():
+screen creamerButton():
+    imagebutton:
+        xalign 0.853 yalign 0.3
+        idle "Creamer_Idle.PNG"
+        hover "Creamer_Highlight.PNG"
+        action Notify("Creamer"), SetVariable("creamer", 1)
 
-#screen whipButton():
+screen whipButton():
+    imagebutton:
+        xalign 0.941 yalign 0.3
+        idle "WhippedCream_Idle.PNG"
+        hover "WhippedCream_Highlight.PNG"
+        action Notify("Whip"), SetVariable("whip_cream", 1)
 
 screen DrinkType():
     if Coffee == 1:
@@ -112,42 +134,6 @@ screen MenuList2():
         hotspot (0, 248, 40, 328) action Show("MenuList4"),  Hide("MenuList2")
         hotspot (0, 329, 40, 410) action Show("MenuList5"),  Hide("MenuList2")
         hotspot (705, 0, 740, 35) action Hide("MenuList2")
-
-screen MenuList3():
-    imagemap:
-        ground "Menu3.png"
-        xalign 0.18 yalign 0.2
-        hotspot (0, 0, 40, 85) action Show("MenuList1"),  Hide("MenuList3")
-        hotspot (0, 86, 40, 166) action Show("MenuList2"),  Hide("MenuList3")
-        hotspot (0, 167, 40, 247) action Show("MenuList3")
-        hotspot (0, 248, 40, 328) action Show("MenuList4"),  Hide("MenuList3")
-        hotspot (0, 329, 40, 410) action Show("MenuList5"),  Hide("MenuList3")
-        hotspot (705, 0, 740, 35) action Hide("MenuList3")
-
-screen MenuList4():
-    imagemap:
-        ground "Menu4.png"
-        xalign 0.18 yalign 0.2
-        hotspot (0, 0, 40, 85) action Show("MenuList1"),  Hide("MenuList4")
-        hotspot (0, 86, 40, 166) action Show("MenuList2"),  Hide("MenuList4")
-        hotspot (0, 167, 40, 247) action Show("MenuList3"),  Hide("MenuList4")
-        hotspot (0, 248, 40, 328) action Show("MenuList4")
-        hotspot (0, 329, 40, 410) action Show("MenuList5"),  Hide("MenuList4")
-        hotspot (705, 0, 740, 35) action Hide("MenuList4")
-
-screen MenuList5():
-    imagemap:
-        ground "Menu5.png"
-        xalign 0.18 yalign 0.2
-        hotspot (0, 0, 40, 85) action Show("MenuList1"),  Hide("MenuList5")
-        hotspot (0, 86, 40, 166) action Show("MenuList2"),  Hide("MenuList5")
-        hotspot (0, 167, 40, 247) action Show("MenuList3"),  Hide("MenuList5")
-        hotspot (0, 248, 40, 328) action Show("MenuList4"),  Hide("MenuList5")
-        hotspot (0, 329, 40, 410) action Show("MenuList5")
-        hotspot (705, 0, 740, 35) action Hide("MenuList5")
-
-
-
 
 screen SaveButton():
     imagebutton:

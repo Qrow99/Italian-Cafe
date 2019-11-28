@@ -1,22 +1,65 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/Day 2, Interaction 1.rpy", line 78, in script
-    jump D2I2
-ScriptError: could not find label 'D2I2'.
+  File "game/Day 1 Outline.rpy", line 62, in script
+    '''
+  File "game/newscreens.rpy", line 78, in execute
+    screen foamButton():
+  File "game/newscreens.rpy", line 78, in execute
+    screen foamButton():
+  File "game/newscreens.rpy", line 79, in execute
+    imagebutton:
+  File "game/newscreens.rpy", line 79, in keywords
+    imagebutton:
+NameError: name 'setVariable' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/Day 2, Interaction 1.rpy", line 78, in script
-    jump D2I2
-  File "C:\Users\Cornelius\Desktop\renpy-7.2.2-sdk\renpy\ast.py", line 1678, in execute
-    rv = renpy.game.script.lookup(target)
-  File "C:\Users\Cornelius\Desktop\renpy-7.2.2-sdk\renpy\script.py", line 886, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'D2I2'.
+  File "game/Day 1 Outline.rpy", line 62, in script
+    '''
+  File "C:\Users\Qrow99\Documents\renpy-7.3.3-sdk\renpy\ast.py", line 708, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\Users\Qrow99\Documents\renpy-7.3.3-sdk\renpy\exports.py", line 1345, in say
+    who(what, *args, **kwargs)
+  File "C:\Users\Qrow99\Documents\renpy-7.3.3-sdk\renpy\character.py", line 1142, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, **display_args)
+  File "C:\Users\Qrow99\Documents\renpy-7.3.3-sdk\renpy\character.py", line 842, in do_display
+    **display_args)
+  File "C:\Users\Qrow99\Documents\renpy-7.3.3-sdk\renpy\character.py", line 591, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "C:\Users\Qrow99\Documents\renpy-7.3.3-sdk\renpy\ui.py", line 297, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\Qrow99\Documents\renpy-7.3.3-sdk\renpy\display\core.py", line 2702, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
+  File "C:\Users\Qrow99\Documents\renpy-7.3.3-sdk\renpy\display\core.py", line 3094, in interact_core
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "C:\Users\Qrow99\Documents\renpy-7.3.3-sdk\renpy\display\core.py", line 541, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\Qrow99\Documents\renpy-7.3.3-sdk\renpy\display\core.py", line 541, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\Qrow99\Documents\renpy-7.3.3-sdk\renpy\display\core.py", line 541, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\Qrow99\Documents\renpy-7.3.3-sdk\renpy\display\screen.py", line 430, in visit_all
+    callback(self)
+  File "C:\Users\Qrow99\Documents\renpy-7.3.3-sdk\renpy\display\core.py", line 3094, in <lambda>
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "C:\Users\Qrow99\Documents\renpy-7.3.3-sdk\renpy\display\screen.py", line 440, in per_interact
+    self.update()
+  File "C:\Users\Qrow99\Documents\renpy-7.3.3-sdk\renpy\display\screen.py", line 625, in update
+    self.screen.function(**self.scope)
+  File "game/newscreens.rpy", line 78, in execute
+    screen foamButton():
+  File "game/newscreens.rpy", line 78, in execute
+    screen foamButton():
+  File "game/newscreens.rpy", line 79, in execute
+    imagebutton:
+  File "game/newscreens.rpy", line 79, in keywords
+    imagebutton:
+  File "<screen language>", line 83, in <module>
+NameError: name 'setVariable' is not defined
 
 Windows-8-6.2.9200
-Ren'Py 7.2.2.491
+Ren'Py 7.3.5.606
 Scenes From an Italian Cafe 0.10
-Mon Nov 18 20:31:57 2019
+Wed Nov 27 17:06:51 2019

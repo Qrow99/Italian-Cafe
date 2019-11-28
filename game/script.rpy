@@ -42,9 +42,10 @@ image Chocolate = "ChocolateIdle.PNG"
 image Cinnamon = "Cinnamonidle.PNG"
 image PumpkinSpice = "PumpkinIdle.PNG"
 # The original step buttons have thick outlines so they're going, too
-# image stepback = "NextStepIdle.png"
-# image stepforward = "NextStepIdle.png"
-
+'''
+image stepback = "NextStepIdle.png"
+image stepforward = "NextStepIdle.png"
+'''
 
 # The game starts here.
 
@@ -59,7 +60,7 @@ label start:
     show screen ChocolateButton
     show screen CinnamonButton
     show screen NextButton
-    show screen Backbutton
+    show screen Prevbutton
 
 # Quick menu, now in a more convenient location
     show screen SaveButton
@@ -80,9 +81,11 @@ label start:
         pagenum = 0 #will be used later for switching pages (possibly, not quite sure how im gonna do that atm)
         foam = 0
         Espresso = 0
+        ExtraShot = 0
         creamer = 0
         whip_cream = 0
-        makingdrink = 0 # when = 1, means the player is done making the drink
+        makingdrink = 0
+        pagenum = 1
     # The Background
     scene bg room
 

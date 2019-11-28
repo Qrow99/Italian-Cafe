@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-The label D2I4 is defined twice, at
-  File "game/(unfinished) Day 2, Interaction 4.rpyc", line 1 and
-  File "game/Day 2, Interaction 4.rpy", line 1.
+File "game/newscreens.rpy", line 14: Line is indented, but the preceding action statement does not expect a block. Please check this line's indentation.
+    SetVariable("coffee", 0),
+    ^
 
-Ren'Py Version: Ren'Py 7.2.2.491
-Mon Nov 18 20:54:46 2019
+Ren'Py Version: Ren'Py 7.3.5.606
+Wed Nov 27 17:13:52 2019
