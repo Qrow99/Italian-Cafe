@@ -1,15 +1,7 @@
-# NEW THINGS
-# A sample interaction is now in
-# it only uses placeholder art as well as sounds from the last project
-# also the in game ui is darker now, but again still a placeholder so whatever
-
-
 # The script of the game goes in this file.
 
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
-
-define e = Character("Eileen")
 
 # Main Characters
 define MAX = Character("Me", color="#34B7EB")
@@ -20,6 +12,8 @@ define LAURA = Character("Laura", color="#ff3636")
 define JUNE = Character("Shifty Girl", color="#4969de")
 define USBNA = Character("Loud Girl", color="#fa9def")
 define SBNA = Character("Sahbreena", color="#fa9def")
+define AMC = Character("Amnesty", color="#ff7566")
+define UAMC = Character("Redhead Girl", color="#ff7566")
 
 
 # Day 2 characters
@@ -28,12 +22,24 @@ define SM = Character("Strange Man", color="#d1bc88")
 
 # Day 3 characters
 define KRN = Character("Mechanical Girl", color="#4BE54B")
+define URTO  = Character("Beatnik Guy", color="#e0e0e0")
+define UCYN = Character("Beatnik Girl 1", color="#d4d4d4")
+define UBGT = Character("Beatnik Girl 2", color="#e8e8e8")
+
 
 # Day 4 characters
 define BND = Character("Brenda", color="#b459ff")
 define UBND = Character("Headphone Girl", color="#b459ff")
 define CHASE = Character("Tall Boy", color="#FFCB70")
 define ROY = Character("Scrawny Boy", color="#82C26E")
+define ERN = Character("Thin Girl", color="#ffd6ff")
+define ALL = Character("All Beatniks", color="#cccccc")
+
+# Day 5 characters
+define RTO  = Character("Roberto", color="#e0e0e0")
+define CYN = Character("Cynthia", color="#d4d4d4")
+define BGT = Character("Bridget", color="#e8e8e8")
+
 
 
 

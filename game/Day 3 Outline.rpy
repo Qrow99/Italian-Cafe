@@ -16,7 +16,7 @@
 
     LAURA "{color=#ff3636}''Check it out, I just came up with a brilliant idea!''"
 
-    "{color=#34B7EB}Laura extended her arms toward me, revealing a large bottle of air freshener in each hand. I don’t know what to say to that."
+    "{color=#34B7EB}Laura extends her arms toward me, revealing a large bottle of air freshener in each hand. I don’t know what to say to that."
 
     MAX "{color=#34B7EB}''Wow, that is a great idea!''"
 
@@ -47,7 +47,7 @@
     LAURA "{color=#ff3636}''You don’t sound convinced. But that’s fine, I didn’t expect you to understand. Just watch, you’ll see! Once this place smells sufficiently fruity, we’ll have customers up the wazoo!''"
 
     """
-    {color=#34B7EB}Laura confidently aimed both of the bottles at the active ceiling fan and sprayed about a dozen times.
+    {color=#34B7EB}Laura confidently aims both of the bottles at the active ceiling fan and sprays about a dozen times.
 
     {color=#34B7EB}I could see the exact moment she began to regret her life choices as the concentrated scent of mango and apple blasted back toward the ground and, presumably, right back at her.
 
@@ -63,7 +63,7 @@
     MAX "{color=#34B7EB}*cough* ''I’m sorry!'' *cough*"
 
     """
-    {color=#34B7EB}I was too busy trying to keep down my recently consumed lunch to get offended. Thankfully, me and Laura’s chorus of violent coughing was interrupted by Ed, who emerged from the break room with a small electric fan in hand.
+    {color=#34B7EB}I'm too busy trying to keep down my recently consumed lunch to get offended. Thankfully, me and Laura’s chorus of violent coughing is interrupted by Ed, who emerges from the break room with a small electric fan in hand.
 
     {color=#34B7EB}With a quick deactivation of the ceiling fan and the plugging in of the electrical one, the overwhelming musk of artificial fruit soon exited the building.
     """
@@ -108,18 +108,18 @@
     hide ed with dissolve
 
     """
-    {color=#34B7EB}Ed responded with a slight raise of his eyebrows and a meager grunt before leaving me alone in the café lobby. Honestly, it’s more than I expected.
+    {color=#34B7EB}Ed responds with a slight raise of his eyebrows and a meager grunt before leaving me alone in the café lobby. Honestly, it’s more than I expected.
 
     {color=#34B7EB}Not that that matters now, though. Because he’s counting on me to hold the fort while he’s gone, and I won’t let a little anxiety and air freshener induced lightheadedness stop me from doing this café proud!
     """
 
     #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     # Interaction 1 here
+    jump D3I1
     #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     # Interaction 2 here
-    jump D3I2
     #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     label D3Break:

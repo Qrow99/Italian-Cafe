@@ -91,7 +91,7 @@
 
     MAX "{color=#34B7EB}''I mean, it’s not like I have anything better to do.''"
 
-    "{color=#34B7EB}The man strokes his beard thoughtfully once more, grunting solemnly to himself. He then let out a hearty laugh, the strength of which caused me to physically flinch."
+    "{color=#34B7EB}The man strokes his beard thoughtfully once more, grunting solemnly to himself. He then lets out a hearty laugh, the strength of which causes me to physically flinch."
 
     show brad happy
 

@@ -1,7 +1,7 @@
     label D2I1:
 
     """
-    {color=#34B7EB}The cafe is quiet. Outside the sun looks like it's just about to begin its descent into the horizon.
+    {color=#34B7EB}Outside the sun looks like it's just about to begin its descent into the horizon.
     """
 
     # sound effects
@@ -43,8 +43,8 @@
 
     SM "{color=#d1bc88}''Sorry. Translator's broken.''"
 
-    MAX "{color=#34B7EB}''Ah, I see..."
-    MAX "{color=#34B7EB}''Here...you go..."
+    MAX "{color=#34B7EB}''Ah, I see...''"
+    MAX "{color=#34B7EB}''Here...you go...''"
 
     "{color=#34B7EB}The man takes the latte. Then he eats it. Cup and all."
 

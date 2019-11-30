@@ -46,7 +46,7 @@
     MAX "{color=#34B7EB}''I mean, I’d never slack off during my shift!!!
     But theoretically, if I did, I guess it could be useful for doing homework or readings... theoretically!''"
 
-    "{color=#34B7EB}Laura paused for a moment and gave a long sigh, which eventually transitioned into her making a fart noise with her tongue."
+    "{color=#34B7EB}Laura pauses for a moment and gives a long sigh, which eventually transitions into her making a fart noise with her tongue."
 
     show laura neutral
 
@@ -76,7 +76,7 @@
     """
     {color=#34B7EB}I wonder what that was about. But not enough to distract me from my job! It’s day number two alright, and whatever Laura and Ed are expecting of me, I intend to deliver!
 
-    {color=#34B7EB}I continued to hype myself up for about twenty seven minutes straight, until a customer walked in and I immediately transitioned through all five stages of grief with the knowledge that I’d have to converse with random strangers again.
+    {color=#34B7EB}I continued to hype myself up for about twenty seven minutes straight, until the sound of the front doors opening fell on my ears and I immediately transitioned through all five stages of grief with the knowledge that I’d have to converse with random strangers again.
     """
 
     #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

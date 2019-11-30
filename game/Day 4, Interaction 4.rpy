@@ -1,5 +1,8 @@
     label D4I4:
 
+    python:
+        milk = 0
+
     play sound "sfx_room_footsteps_enter.ogg"
 
     """
@@ -131,9 +134,9 @@
     ROY "{color=#82C26E}''Well you didn’t have to say it...''"
 
     """
-    {color=#34B7EB}The tall boy finished his drink and exerted a mild sigh as the short one sipped his slowly. He doesn’t look like he’s going to finish it any time soon.
+    {color=#34B7EB}The tall boy finishes his drink and exerts a mild sigh as the short one sips his slowly. He doesn’t look like he’s going to finish it any time soon.
 
-    {color=#34B7EB}I guess both of them knew that too, since they both got up as soon as the first one was finished.
+    {color=#34B7EB}I guess both of them know that too, since they both got up as soon as the first one was finished.
     """
 
     CHASE "{color=#FFCB70}''Well, that was nice. Thanks for the drink, mister barista guy! We’ll be heading out now.''"
@@ -161,6 +164,7 @@
 
     "{color=#34B7EB}The last thing I hear before the doors close is the short boy making a wide range of unintelligible, goblin-like noises."
 
+    jump D4Outro
 
 
     # (if drink has milk)
@@ -174,8 +178,7 @@
     show chase neutral
     # play stomach gurgling sound effect
 
-    CHASE "{color=#FFCB70}''...
-    That isn’t good.''"
+    CHASE "{color=#FFCB70}''...That isn’t good.''"
 
     show roy inquire
 

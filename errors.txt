@@ -2,9 +2,18 @@
 errors listed below, and try again.
 
 
-File "game/newscreens.rpy", line 14: Line is indented, but the preceding action statement does not expect a block. Please check this line's indentation.
-    SetVariable("coffee", 0),
-    ^
+File "game/Day 4, Interaction 1.rpy", line 49: end of line expected.
+(Perhaps you left out a " at the end of the first line.)
+    """
+        {color=#34B7EB}He stands on a table and starts dancing to an upbeat piano tune. The girls stand in shock and they snap in support of him.
+    
+        {color=#34B7EB}They look back at me and give me a nonchalant thumbs up. Does that mean they like their drinks?"
+    
+        {color=#34B7EB}But wow, I didn't expect that...I need to clean that table immediately.
+             ^
+    
+        {color=#34B7EB}He hops from the table and bursts through the door and the girls hurry immediately, trying to catch up with him.
+        """
 
-Ren'Py Version: Ren'Py 7.3.5.606
-Wed Nov 27 17:13:52 2019
+Ren'Py Version: Ren'Py 7.2.2.491
+Sat Nov 30 01:37:54 2019

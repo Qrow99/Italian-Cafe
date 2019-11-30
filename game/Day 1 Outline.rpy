@@ -141,7 +141,7 @@
     python:
         coffee = 0
         Espresso = 0
-        Milk = 0
+        milk = 0
         Cinnamon = 0
         Chocolate = 0
         Pumpkin = 0
@@ -252,6 +252,7 @@
     #$ makingdrink = 0
     #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     # Interaction 2 here
+    jump D1I2
     #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     label D1Break:

@@ -4,7 +4,7 @@
     define KRN = Character("Mechanical Girl", color="#4BE54B")
 
     """
-    {color=#34B7EB}As the customer made their way out the door, I decided to clean up the counter space in the meantime.
+    {color=#34B7EB}As the customers snap their way out the door, I decided to clean up the counter space in the meantime.
 
     {color=#34B7EB}It’s essentially just as clean as it was when I got here, save for a minor stain of condensation where the last customer’s drink was, but I still feel like I should be doing... something.
 
