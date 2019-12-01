@@ -31,14 +31,80 @@ label D4I1:
 
     {color=#34B7EB}I pick three drinks from the coffee menu because if I remember correctly, they picked espressos. Hmmm ...I'll choose Deep Breath, The Entertainer, and The Dinkles—two simple drinks and one with a shot of energy.
     """
+    while makingdrink == 0:
+        "{color=#34B7EB}Alright, another big order, just need to take a deep breath and... make a Deep Breath."
+        pause
 
-    #*coffee gameplay ensues*
+    $ makingdrink = 0
 
-    """
-    {color=#34B7EB}I stand there and admiring my work, hoping they like it or tolerate it at least.
+    if coffee == 1 and Milk == 1 and whip_cream == 1:
+        $ thirdguy = 1
 
-    {color=#34B7EB}I hand Deep Breath and The Dinkles to the two girls, and I hand The Entertainer to the main leader. I wonder how it'll affect him?
-    """
+    python:
+        coffee = 0
+        Espresso = 0
+        milk = 0
+        Cinnamon = 0
+        Chocolate = 0
+        Pumpkin = 0
+        pagenum = 0
+        foam = 0
+        espresso = 0
+        creamer = 0
+        whip_cream = 0
+        steam = 0
+
+    while makingdrink == 0:
+        "{color=#34B7EB}Thats one, next up, I should try making an Entertainer"
+        pause
+
+    $ makingdrink = 0
+
+
+    if coffee == 1 and Chocolate == 1 and espresso == 1:
+        $ secondguy = 1
+
+    python:
+        coffee = 0
+        Espresso = 0
+        milk = 0
+        Cinnamon = 0
+        Chocolate = 0
+        Pumpkin = 0
+        pagenum = 0
+        foam = 0
+        espresso = 0
+        creamer = 0
+        whip_cream = 0
+        steam = 0
+
+    while makingdrink == 0:
+        "{color=#34B7EB}Two down, one dinkle to go. Is it still dinkles if there's just one?."
+        pause
+
+    $ makingdrink = 0
+
+    if coffee == 1 and Milk == 1 and whip_cream == 1:
+        $ firstguy = 1
+
+    python:
+        coffee = 0
+        Espresso = 0
+        milk = 0
+        Cinnamon = 0
+        Chocolate = 0
+        Pumpkin = 0
+        pagenum = 0
+        foam = 0
+        espresso = 0
+        creamer = 0
+        whip_cream = 0
+        steam = 0
+
+    "{color=#34B7EB}I stand there and admiring my work, hoping they like it or tolerate it at least."
+    if firstguy == 1 and secondguy == 1 and thirdguy == 1:
+        "{color=#34B7EB}I hand Deep Breath and The Dinkles to the two girls, and I hand The Entertainer to the main leader. I wonder how it'll affect him?"
+
 
     show roberto happy
 

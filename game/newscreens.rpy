@@ -24,14 +24,14 @@ screen NextButton():
         xalign 0.9882 yalign 0.1846
         idle "Next_Page_Idle.PNG"
         hover "Next_Page_Highlight.PNG"
-        action Notify("next"), SetVariable("pagenum", 2),Hide("MilkButton"), Hide("CinnamonButton"),Hide("ChocolateButton"), Hide("PumpkinButton"), Show("foamButton"), Show("espressoSHOTButton"), Show("whipButton"), Show("creamerButton")
+        action Notify("next"), SetVariable("pagenum", 2),Hide("MilkButton"), Hide("CinnamonButton"),Hide("ChocolateButton"), Hide("PumpkinButton"),Hide("CoffeeButton"), Hide("EspressoButton"), Show("foamButton"), Show("espressoSHOTButton"), Show("whipButton"), Show("creamerButton"), Show("steamedMilk")
 
 screen Prevbutton():
     imagebutton:
         xalign 0.7719 yalign 0.1846
         idle "Prev_Page_Idle.PNG"
         hover "Prev_Page_Highlight.PNG"
-        action Notify("Previous"), SetVariable("pagenum", 1),Show("MilkButton"), Show("CinnamonButton"),Show("ChocolateButton"), Show("PumpkinButton"), Hide("foamButton"), Hide("espressoSHOTButton"), Hide("whipButton"), Hide("creamerButton")
+        action Notify("Previous"), SetVariable("pagenum", 1),Show("MilkButton"), Show("CinnamonButton"),Show("ChocolateButton"), Show("PumpkinButton"), Hide("foamButton"), Hide("espressoSHOTButton"), Hide("whipButton"), Hide("creamerButton") , Hide("steamedMilk"), Show("CoffeeButton"), Show("EspressoButton")
 
 screen CoffeeButton():
     imagebutton:
@@ -47,6 +47,12 @@ screen EspressoButton():
         hover "Espresso_Highlight.PNG"
         action Notify('Espresso'), SetVariable("Espresso", 1), SetVariable("coffee", 0)
 
+screen steamedMilk():
+    imagebutton:
+        xalign 0.853 yalign 0.145
+        idle "SteamedMilk_Idle.PNG"
+        hover "SteamedMilk_Highlight.PNG"
+        action Notify("Steamed Milk"), SetVariable("steam", 1)
 screen MilkButton():
     imagebutton:
         xalign 0.853 yalign 0.2235

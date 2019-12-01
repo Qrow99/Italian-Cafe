@@ -34,10 +34,6 @@
 
 # Drink making minigame goes here.
 # Anything works
-    if coffee == 1 and Chocolate == 1 and espresso == 1:
-        jump D2I3good
-    else:
-        jump D2I3bad
 
 
     label D2I3good:

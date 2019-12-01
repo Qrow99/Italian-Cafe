@@ -1,26 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/Day 4, Interaction 4.rpy", line 3, in script
-    play sound "sfx_room_footsteps_enter.ogg"
-  File "game/Day 4, Interaction 4.rpy", line 4, in <module>
-    
-NameError: name 'milk' is not defined
+  File "game/Day 4, Interaction 3.rpy", line 78, in script
+    if Espresso == 1 and chocolate == 1 and foam == 1 and ExtraShot == 0:
+  File "game/Day 4, Interaction 3.rpy", line 78, in <module>
+    if Espresso == 1 and chocolate == 1 and foam == 1 and ExtraShot == 0:
+NameError: name 'chocolate' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/Day 4, Interaction 4.rpy", line 3, in script
-    play sound "sfx_room_footsteps_enter.ogg"
-  File "C:\Users\Cornelius\Desktop\renpy-7.2.2-sdk\renpy\ast.py", line 900, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\Cornelius\Desktop\renpy-7.2.2-sdk\renpy\python.py", line 1930, in py_exec_bytecode
-    exec bytecode in globals, locals
-  File "game/Day 4, Interaction 4.rpy", line 4, in <module>
-    
-NameError: name 'milk' is not defined
+  File "game/Day 4, Interaction 3.rpy", line 78, in script
+    if Espresso == 1 and chocolate == 1 and foam == 1 and ExtraShot == 0:
+  File "C:\Users\Qrow99\Documents\renpy-7.3.3-sdk\renpy\ast.py", line 1832, in execute
+    if renpy.python.py_eval(condition):
+  File "C:\Users\Qrow99\Documents\renpy-7.3.3-sdk\renpy\python.py", line 2059, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "C:\Users\Qrow99\Documents\renpy-7.3.3-sdk\renpy\python.py", line 2052, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/Day 4, Interaction 3.rpy", line 78, in <module>
+    if Espresso == 1 and chocolate == 1 and foam == 1 and ExtraShot == 0:
+NameError: name 'chocolate' is not defined
 
 Windows-8-6.2.9200
-Ren'Py 7.2.2.491
+Ren'Py 7.3.5.606
 Scenes From an Italian Cafe 0.10
-Sat Nov 30 01:44:39 2019
+Sat Nov 30 21:54:38 2019

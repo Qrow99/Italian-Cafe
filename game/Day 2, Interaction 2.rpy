@@ -23,8 +23,17 @@
     MAX "{color=#34B7EB}''Congrats! One Song of Seasons coming right up!''"
     "{color=#34B7EB}I make the drink. Song of Seasons isn't too complicated."
     #(No change in interaction if you get it wrong.)
-    MAX "{color=#34B7EB}''Amnesty, I have your Song of Seasons with one espresso shot!''"
+    while makingdrink == 0:
+        "{color=#34B7EB}I make the drink. Song of Seasons isn't too complicated."
+        pause
 
+    $ makingdrink = 0
+    if chichi == 1:
+        jump chichihappy
+    else:
+        jump chichisad
+    MAX "{color=#34B7EB}''Amnesty, I have your Song of Seasons with one espresso shot!''"
+    label chichihappy:
     show amecie happy
 
     AMC "{color=#ff7566}''Thanks! Hey I forgot to tell you! My audition went really well too and my friends and I are in the dance show tomorrow night! Do you want to come?''"
@@ -33,9 +42,11 @@
     MAX "{color=#34B7EB}''Can't wait! See you then!''"
 
     hide amecie with dissolve
+    jump D2Break
 
+    #If you got the last drink wrong
 
-    #If you got the last drink wrong:
+    label chichisad:
     AMC "{color=#ff7566}''Life sucks. I did bad on my midterm, didn't get in to the dance show, and worst of all, I have work right now! I just need a pick me up.''"
     "{color=#34B7EB}My guilty conscience weighs me down."
     MAX "{color=#34B7EB}''I'm sorry to hear that. Can I get you anything?''"

@@ -140,5 +140,17 @@
     hide june with dissolve
     # play sound "sfx_room_bell_enter.ogg"
     play sound "sfx_room_footsteps_exit.ogg"
-
+    python:
+        coffee = 0
+        Espresso = 0
+        milk = 0
+        Cinnamon = 0
+        Chocolate = 0
+        Pumpkin = 0
+        pagenum = 0
+        foam = 0
+        espresso = 0
+        creamer = 0
+        whip_cream = 0
+        steam = 0
     jump D1I4

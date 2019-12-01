@@ -99,6 +99,11 @@ label D4I2:
     "{color=#34B7EB}What the heck am I even supposed to make here? I guess I'll get her... something."
 
     #(literally any drink works)
+    while makingdrink == 0:
+        "{color=#34B7EB}What the heck am I even supposed to make here? I guess I'll get her... something."
+        pause
+
+    $ makingdrink = 0
 
     MAX "{color=#34B7EB}''Alright, here's a drink! I hope you like it!''"
 

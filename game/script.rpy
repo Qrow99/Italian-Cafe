@@ -90,8 +90,13 @@ label start:
         ExtraShot = 0
         creamer = 0
         whip_cream = 0
+        steam = 0
         makingdrink = 0
-        pagenum = 1
+        chichi = 0
+        thirdguy = 0
+        secondguy = 0
+        firstguy = 0
+        Brenda = 0
     # The Background
     scene bg room
 

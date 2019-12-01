@@ -13,6 +13,30 @@
     "{color=#34B7EB}She winks. Well, no way to mess this one up. Time to make some coffee!"
 
     #here's where the coffee's made
+    while makingdrink == 0:
+        "{color=#34B7EB}She winks. Well, no way to mess this one up. Time to make some coffee!"
+        pause
+
+    $ makingdrink = 0
+
+    if coffee == 1 and Pumpkin == 1 and foam == 1:
+        "{color=#34B7EB}Ok! Four seasons, sounds about right."
+    else:
+        "{color=#34B7EB}Ok I think thats right? Only one way to find out..."
+
+    python:
+        coffee = 0
+        Espresso = 0
+        milk = 0
+        Cinnamon = 0
+        Chocolate = 0
+        Pumpkin = 0
+        pagenum = 0
+        foam = 0
+        espresso = 0
+        creamer = 0
+        whip_cream = 0
+        steam = 0
 
     MAX "{color=#34B7EB}''Amnesty, I have your four coffees!''"
 

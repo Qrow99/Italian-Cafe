@@ -150,7 +150,7 @@
         espresso = 0
         creamer = 0
         whip_cream = 0
-
+        steam = 0
     show ed neutral at Position(xalign=0.1, yalign=0.205) with ease
 
     show laura angry at Position(xalign=0.5, yalign=0.205) with dissolve
@@ -354,5 +354,17 @@
 
     {color=#34B7EB}I decided to keep said thought in my mind as a motivator to do well tomorrow, and to not disappoint Ed or Laura during my next shift.
     """
-
+    python:
+        coffee = 0
+        Espresso = 0
+        milk = 0
+        Cinnamon = 0
+        Chocolate = 0
+        Pumpkin = 0
+        pagenum = 0
+        foam = 0
+        espresso = 0
+        creamer = 0
+        whip_cream = 0
+        steam = 0
     jump DAY2

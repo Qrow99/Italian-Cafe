@@ -42,7 +42,19 @@ label D1I2:
     {color=#34B7EB}Amnesty laughs like a hyena, not answering my rhetorical question. Three shots might be too much considering her current energy level...
     {color=#34B7EB}Then again she probably knows her limits right? Right?? Time to make her drink!
     """
+    while makingdrink == 0:
+        "{color=#34B7EB}Then again she probably knows her limits right? Right?? Time to make her drink!"
+        pause
+
+    $ makingdrink = 0
     #Make it as she asks it, with extra shots
+    if coffee == 1 and Pumpkin == 1 and foam == 1 and ExtraShot == 1:
+        $ chichi = 1
+        jump godwhy
+    else:
+        jump missingshot
+
+    label godwhy:
     "{color=#34B7EB}Against my better judgement, I make the drink – with as much espresso as I put in it."
     MAX "{color=#34B7EB}''Amnesty, I have your Song of Seasons with three espresso shots!''"
     AMC "{color=#ff7566}''Thank you so much!!''"
@@ -56,7 +68,10 @@ label D1I2:
     hide amecie with dissolve
 
     "{color=#34B7EB}I accept her complement with a small wave. She bounces out of the cafe, leaving only a fiery red blur on her way out."
+    jump D1I2END
 
+
+    label missingshot:
     #Make it without an extra shot
     "{color=#34B7EB}I decide it's probably for the best not to fuel this fire."
     MAX "{color=#34B7EB}''Amnesty, I have your Song of Seasons with three espresso shots!''"
@@ -73,6 +88,20 @@ label D1I2:
     hide amecie with dissolve
 
     "{color=#34B7EB}She walks out of the cafe, a little more sluggish than before."
+    jump D1I2END
 
-
+    label D1I2END:
+    python:
+        coffee = 0
+        Espresso = 0
+        milk = 0
+        Cinnamon = 0
+        Chocolate = 0
+        Pumpkin = 0
+        pagenum = 0
+        foam = 0
+        espresso = 0
+        creamer = 0
+        whip_cream = 0
+        steam = 0
     jump D1Break

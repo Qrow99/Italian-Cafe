@@ -34,6 +34,11 @@
 
     {color=#34B7EB}He said he wanted a latte, right? The Fairytale of New York is a latte I'm pretty sure. Guess I should just make that...
     """
+    while makingdrink == 0:
+        "{color=#34B7EB}He said he wanted a latte, right? The Fairytale of New York is a latte I'm pretty sure. Guess I should just make that..."
+        pause
+
+    $ makingdrink = 0
 
     """
     {color=#34B7EB}As I finish making the drink, the man jolts to attention, staring at me now instead of the wall.
@@ -73,6 +78,17 @@
 
     {color=#34B7EB}I suddenly remember that I absolutely hate wasps.
     """
-
-
+    python:
+        coffee = 0
+        Espresso = 0
+        milk = 0
+        Cinnamon = 0
+        Chocolate = 0
+        Pumpkin = 0
+        pagenum = 0
+        foam = 0
+        espresso = 0
+        creamer = 0
+        whip_cream = 0
+        steam = 0
     jump D2I2

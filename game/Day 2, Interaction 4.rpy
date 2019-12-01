@@ -55,8 +55,13 @@
 
     hide sahbreena with dissolve
 
-    "{color=#34B7EB}She tiptoes carefully to a nearby table and stubs her toe in the process. Weirdly out of character, she says a resounding 'FUCK.'"
+    "{color=#34B7EB}She tiptoes carefully to a nearby table and stubs her toe in the process. Weirdly out of character, she says a resounding 'FRICK.'"
     "{color=#34B7EB}Ignoring that, did she ask for a Dinkles or a Benny Goodman...? I don't actually remember if she wanted to take my suggestion or not."
+    while makingdrink == 0:
+        "{color=#34B7EB}Ignoring that, did she ask for a Dinkles or a Benny Goodman...? I don't actually remember if she wanted to take my suggestion or not."
+        pause
+
+    $ makingdrink = 0
     # Coffee making gameplay ensues. You're not allowed to fail because you just can't.
 
     MAX "{color=#34B7EB}''Sahbreena! You're order is ready!''"

@@ -66,10 +66,66 @@ label D3I1:
     UBGT "{color=#d4d4d4}''Benny Goodman.''"
 
     "{color=#34B7EB}They walk back in step and shimmy their shoulders as they sit down to wait."
-
-    #*Coffee gameplay ensues*
-
     "{color=#34B7EB}I'm a little perplexed if they'll like them or not. Guess I'll find out in a bit...maybe an intense bongo solo will play?"
+    #*Coffee gameplay ensues*
+    while makingdrink == 0:
+        "{color=#34B7EB}Bongos aside, what did they want again? I think one was a Dark Sun..."
+        pause
+    $ makingdrink = 0
+
+    python:
+        coffee = 0
+        Espresso = 0
+        milk = 0
+        Cinnamon = 0
+        Chocolate = 0
+        Pumpkin = 0
+        pagenum = 0
+        foam = 0
+        espresso = 0
+        creamer = 0
+        whip_cream = 0
+        steam = 0
+
+    while makingdrink == 0:
+        "{color=#34B7EB}Ok one down, next one was a Goodmoon? Wait, crap we dont serve that! Then what was it...?"
+        pause
+
+    $ makingdrink = 0
+
+    python:
+        coffee = 0
+        Espresso = 0
+        milk = 0
+        Cinnamon = 0
+        Chocolate = 0
+        Pumpkin = 0
+        pagenum = 0
+        foam = 0
+        espresso = 0
+        creamer = 0
+        whip_cream = 0
+        steam = 0
+
+    while makingdrink == 0:
+        "{color=#34B7EB}Ok, then the last one was a Jhonny Moonman... or was it a fly me to Benny?"
+        pause
+
+    $ makingdrink = 0
+
+    python:
+        coffee = 0
+        Espresso = 0
+        milk = 0
+        Cinnamon = 0
+        Chocolate = 0
+        Pumpkin = 0
+        pagenum = 0
+        foam = 0
+        espresso = 0
+        creamer = 0
+        whip_cream = 0
+        steam = 0
 
     MAX "{color=#34B7EB}''Here you go!''"
 

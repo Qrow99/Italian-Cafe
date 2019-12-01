@@ -56,12 +56,21 @@
 
     "{color=#34B7EB}She walks away, almost tripping on a discarded paper straw in the process."
     "{color=#34B7EB}Anyways, she said the Dinkles right? That shouldn't be too hard..."
+    while makingdrink == 0:
+        "{color=#34B7EB}Anyways, she said the Dinkles right? That shouldn't be too hard..."
+        pause
+
+    $ makingdrink = 0
 
     # Coffee gameplay ensues. Correct drink is the Dinkles.
 
+    if coffee == 1 and Milk == 1 and whip_cream == 1 and steam == 1:
+        jump D1I4GOOD
+    else:
+        jump D1I4BAD
 
     # Bad outcome:
-
+    label D1I4BAD:
     MAX "{color=#34B7EB}''Order for Sahbreena? Your drink is ready!''"
 
     "{color=#34B7EB}She bolts upright from her chair like an excited puppy and lets out the phrase 'AnD I OoP!' before walking over to the counter and getting her drink."
@@ -106,10 +115,8 @@
 
     jump D1Outro
 
-
-
     # Good outcome:
-
+    label D1I4GOOD:
     MAX "{color=#34B7EB}''Order for Sahbreena? Your drink is ready!''"
 
     "{color=#34B7EB}She bolts upright from her chair like an excited puppy and lets out the phrase 'AnD I OoP!' before walking over to the counter and getting her drink."
@@ -149,5 +156,18 @@
 
     "{color=#34B7EB}With lightning speed, she's gone, almost tripping on nothing whatsoever. I think the scrunchie is a good omen, and I wear it on my wrist. It radiates with chaotic energy."
 
+    python:
+        coffee = 0
+        Espresso = 0
+        milk = 0
+        Cinnamon = 0
+        Chocolate = 0
+        Pumpkin = 0
+        pagenum = 0
+        foam = 0
+        espresso = 0
+        creamer = 0
+        whip_cream = 0
+        steam = 0
 
     jump D1Outro

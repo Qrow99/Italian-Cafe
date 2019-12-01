@@ -75,8 +75,9 @@
 
 # Drink Minigame here
 # Correct answer is a Dark Sun with an extra shot of espresso
-    if espresso == 1 and chocolate == 1 and foam == 1:
+    if Espresso == 1 and Chocolate == 1 and foam == 1 and ExtraShot == 1:
         jump d4i3good
+        $ Brenda = 1
     else:
         jump d4i3bad
 
@@ -100,8 +101,10 @@
     Oh yeah, and tell the big guy I said hi when he comes back, alright?''"
 
     MAX "{color=#34B7EB}''I’ll be sure to tell him!''"
+    jump D4I3Converge
 
 # (if the drink has an espresso shot)
+    label d4i3good:
     show brenda happy
 
     BND "{color=#b459ff}''Perfection, as usual. Man, you guys have the best drinks here.''"
@@ -142,9 +145,11 @@
     Oh yeah, and tell the big guy I said hi when he comes back, alright?''"
 
     MAX "{color=#34B7EB}''I’ll be sure to tell him!''"
+    jump D4I3Converge
 
 
 # Both correct and incorrect drinks converge here
+    label D4I3Converge:
 
     play sound "sfx_room_footsteps_exit.ogg"
     hide brenda with dissolve

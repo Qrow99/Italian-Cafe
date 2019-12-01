@@ -29,7 +29,7 @@
     $ makingdrink = 0
 
 # here's the drink. The order is the Dinkles.
-    if coffee == 1 and Milk == 1 and steamedMilk == 1:
+    if coffee == 1 and Milk == 1 and steam == 1:
         jump d3i3good
     else:
         jump d3i3bad

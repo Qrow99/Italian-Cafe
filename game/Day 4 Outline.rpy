@@ -223,11 +223,17 @@
 
     {color=#34B7EB}Unlike her usual bombastic, angry reaction to my poor choice of phrasing, she seemed genuinely offended by my surprise for a moment, and then became bombastically angry.
     """
+    if Brenda == 1:
+        jump BrendaHappy
+    else:
+        jump BrendaSad
 
     # (if Brenda didn’t say much)
+    label BrendaSad:
     "{color=#34B7EB}Maybe she was just tired from working all day? I hope I didn’t actually hurt her feelings..."
 
     # (if Brenda told Max everything)
+    label BrendaHappy:
     "{color=#34B7EB}But I can’t be thinking about that now! I’ve got something more important to do, and that’s call Ed! If my hunch is right and Ed does have a crush, then I’ve got something to tell him..."
 
     jump DAY5

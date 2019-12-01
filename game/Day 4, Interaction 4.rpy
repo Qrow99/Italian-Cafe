@@ -65,7 +65,7 @@
 # If the drink has milk in it, it's a fail. Anything else is fine.
     if coffee == 1 and whip_cream == 1:
         jump d4i4good
-    elif milk == 1:
+    else:
         jump d4i4bad
 
     MAX "{color=#34B7EB}''Alright, here you go! Two Deep Breaths, special ordered!''"
@@ -87,6 +87,23 @@
 
     # (if drink has no milk)
     label d4i4good:
+
+    MAX "{color=#34B7EB}''Alright, here you go! Two Deep Breaths, special ordered!''"
+
+    show chase happy
+
+    CHASE "{color=#FFCB70}''Thank you very much!''"
+
+    show roy neutral
+
+    ROY "{color=#82C26E}''Yeah.''"
+
+    """
+    {color=#34B7EB}The two boys take radically different approaches to consuming their drinks.
+
+    {color=#34B7EB}The tall one immediately takes a large slurp of his beverage, while the short one blows on his before taking a cautious sip. Neither make a particularly disgusted reaction, so that’s at least comforting.
+    """
+
     MAX "{color=#34B7EB}''So, how do you guys like it?''"
 
     CHASE "{color=#FFCB70}''It’s great, thanks!''"
@@ -169,6 +186,23 @@
 
     # (if drink has milk)
     label d4i4bad:
+
+    MAX "{color=#34B7EB}''Alright, here you go! Two Deep Breaths, special ordered!''"
+
+    show chase happy
+
+    CHASE "{color=#FFCB70}''Thank you very much!''"
+
+    show roy neutral
+
+    ROY "{color=#82C26E}''Yeah.''"
+
+    """
+    {color=#34B7EB}The two boys take radically different approaches to consuming their drinks.
+
+    {color=#34B7EB}The tall one immediately takes a large slurp of his beverage, while the short one blows on his before taking a cautious sip. Neither make a particularly disgusted reaction, so that’s at least comforting.
+    """
+    
     MAX "{color=#34B7EB}''So, how do you guys like it?''"
 
     show roy neutral
