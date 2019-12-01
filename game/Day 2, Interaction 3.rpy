@@ -1,9 +1,11 @@
     label D2I3:
 
+    play sound2 "sfx_room_door_main_open.ogg"
+    play sound "sfx_room_door_main_bellchime.ogg"
+
+    "{color=#34B7EB}As I scrub the counter for seemingly the twenty seventh time in the past hour, my endless monotony is thankfully cut short by the sound of heavy footsteps. At the door, an unusually wide man in a clean suit walks up to the counter."
+
     play sound "sfx_room_footsteps_enter.ogg"
-
-    "{color=#34B7EB}As I scrub the counter for seemingly the twenty seventh time in the past minute, my endless monotony is thankfully cut short by the sound of heavy footsteps. At the door, an unusually wide man in a clean suit walks up to the counter."
-
     show brad neutral at Position(xalign=0.3, yalign=0.205) with dissolve
 
     MAX "{color=#34B7EB}''Hello there, welcome to La Piovosita! Can I get you anything?''"
@@ -27,7 +29,7 @@
     while makingdrink == 0:
         "{color=#34B7EB}He didn’t sound totally certain about it, but I guess the customer is always right.
         So the drink with the most caffeine... that’d be the Entertainer, right? I think that’s its whole deal..."
-        pause
+        #pause
 
     $ makingdrink = 0
 
@@ -106,6 +108,7 @@
 
     "{color=#34B7EB}The man gets up to leave, but as he does so I notice he left his drink on the counter."
 
+    play sound "sfx_room_footsteps_exit.ogg"
     hide brad with dissolve
 
     MAX "{color=#34B7EB}''Oh, sir, you left your coffee!''"
@@ -120,7 +123,7 @@
 
     BRAD "{color=#d9d97e}''I want you to keep on the straight and narrow, and always do your best!''"
 
-    play sound "sfx_room_footsteps_exit.ogg"
+    play sound2 "sfx_room_door_main_close.ogg"
 
     """
     {color=#34B7EB}The man then turns back around and leaves as if something unbelievably cheesy didn’t just come out of his mouth. Even ignoring the fact that he asked for two things, not one, I have no idea how to react to that.

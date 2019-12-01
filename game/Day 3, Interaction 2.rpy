@@ -11,9 +11,8 @@
     {color=#34B7EB}Thankfully, the opportunity to do something revealed itself, as another customer made her way through the front door.
     """
 
-    # here is where the sound effects will go when they are made
-    # play sound "sfx_room_bell_enter.ogg"
-    play sound "sfx_room_footsteps_enter.ogg"
+    play sound2 "sfx_room_door_main_open.ogg"
+    play sound "sfx_room_door_main_bellchime.ogg"
 
     """
     {color=#34B7EB}As she approached the counter she stared intently around the building, quickly darting her eyes back and forth, though her head remained completely motionless.
@@ -21,8 +20,8 @@
     {color=#34B7EB}In fact, a lot of things about her seem kind of... off. Her footsteps are unusually rhythmic, and I don’t think I’ve seen her blink once since she entered the room.
     """
 
-    play music "WBoK_music1_v3.ogg" loop fadein 5.0
-
+    play music "WBoK_music1_v3.ogg" loop fadein 3.0
+    play sound "sfx_room_footsteps_enter.ogg"
     show karen neutral at Position(xalign=0.3, yalign=0.205) with dissolve
 
     MAX "{color=#34B7EB}''Welcome to La Piovositá’s, miss! How can I help you?''"
@@ -60,7 +59,7 @@
     MAX "{color=#34B7EB}''Our most popular drink? Coming right up!''"
     while makingdrink == 0:
         "{color=#34B7EB}Most popular drink, huh? Weren’t Ed and Laura saying something about that earlier this afternoon...?"
-        pause
+        #pause
     $ makingdrink = 0
 
 
@@ -70,7 +69,7 @@
 
     MAX "{color=#34B7EB}''Alright, here it is! The most popular drink on the menu! I think. Be careful, it’s hot!''"
 
-    "{color=#34B7EB}Without hesitation, the girl looked down at her drink, stuck out her hand, and gently placed her index finger into the cup. After a few seconds of complete silence, she removed it and returned her gaze to my direction."
+    "{color=#34B7EB}Without hesitation, the girl looks down at her drink, sticks out her hand, and gently places her index finger into the cup. After a few seconds of complete silence, she removes it and returns her gaze to my direction."
 
     KRN "{color=#4BE54B}''You are correct. The beverage is significantly above room temperature.''"
 
@@ -101,12 +100,12 @@
 
     MAX "{color=#34B7EB}''Really? Well, uh, goodbye then! Have a nice day!''"
 
-    stop music fadeout 5.0
-    hide karen with dissolve
-    # play sound "sfx_room_bell_enter.ogg"
     play sound "sfx_room_footsteps_exit.ogg"
+    hide karen with dissolve
+    play sound2 "sfx_room_door_main_close.ogg"
+    stop music fadeout 3.0
 
-    "{color=#34B7EB}In the same straight faced, rhythmic fashion she entered, the girl left the building. It then suddenly dawned upon me that she hadn’t taken with her the drink she purchased, nor did she actually, you know, drink any of it. I’m honestly not that surprised."
+    "{color=#34B7EB}In the same straight faced, rhythmic fashion she entered, the girl leaves the building. It then suddenly dawned upon me that she hadn’t taken with her the drink she purchased, nor did she actually, you know, drink any of it. I’m honestly not that surprised."
 
 
     # This is the end of the interaction

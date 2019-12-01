@@ -1,5 +1,9 @@
     label DAY4:
 
+    "{color=#34B7EB}{b}The next day..."
+
+    pause
+
     """
     {color=#34B7EB}As it turned out, I had completely forgotten whatever questions I wanted to ask Ed overnight. I’m sure they weren’t that important, right?
 

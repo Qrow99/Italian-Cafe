@@ -37,7 +37,7 @@ define gui.about = _p("""
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 
-define build.name = "MAKESOMEHECKINGCOFFEE"
+define build.name = "Scenes_From_An_Italian_Cafe"
 
 
 ## Sounds and music ############################################################
@@ -48,6 +48,10 @@ define build.name = "MAKESOMEHECKINGCOFFEE"
 define config.has_sound = True
 define config.has_music = True
 define config.has_voice = True
+
+
+init -1 python:
+    renpy.music.register_channel("sound2", mixer= "sfx", loop=False)
 
 
 ## To allow the user to play a test sound on the sound or voice channel,
@@ -61,7 +65,7 @@ define config.has_voice = True
 ## the player is at the main menu. This file will continue playing into the
 ## game, until it is stopped or another file is played.
 
-# define config.main_menu_music = "main-menu-theme.ogg"
+define config.main_menu_music = "mus_main_loop_cafejazz2.ogg"
 
 
 ## Transitions #################################################################

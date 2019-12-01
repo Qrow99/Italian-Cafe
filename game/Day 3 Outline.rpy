@@ -2,6 +2,10 @@
 
     show laura happy
 
+    "{color=#34B7EB}{b}The next day..."
+
+    pause
+
     """
     {color=#34B7EB}Today’s classes were not quite as smooth as yesterday’s. Wednesday is my busiest day of the week, and I have classes one after the other all day until I have to go to work.
 
@@ -9,6 +13,7 @@
     """
 
     hide black box with dissolve
+    play music "mus_main_loop_cafejazz9.ogg"
 
     LAURA "{color=#ff3636}''Ah newbie, I’m glad you’re here!''"
 
@@ -53,7 +58,7 @@
 
     {color=#34B7EB}And although I got to see that moment unfold quite clearly, the rest cannot be said about any moment soon after.
 
-    {color=#34B7EB}As the intense cloud of fresh scent permeated the room, causing my eyes to water and plunging both Laura and myself into a fit of coughs and wheezes.
+    {color=#34B7EB}The intense cloud of fresh scent permeated the room, causing my eyes to water and plunging both Laura and myself into a fit of coughs and wheezes.
     """
 
     show laura angry
@@ -69,6 +74,7 @@
     """
 
     show laura angry at Position(xalign=0.5, yalign=0.205) with ease
+    play sound2 "<from 1.5 to 2.75>sfx_room_footsteps_enter.ogg"
     show ed neutral at Position(xalign=0.1, yalign=0.205) with ease
 
     MAX "{color=#34B7EB}''Thanks, Ed.''"
@@ -97,7 +103,9 @@
 
     LAURA "{color=#ff3636}''Great! I’m heading back to my office. Here’s the list. You two slackers just keep doing your jobs.''"
 
+    play sound2 "<from 1.5 to 2.75>sfx_room_footsteps_exit.ogg"
     show laura neutral at Position(xpos=-400, xanchor=0, yalign=0.205) with ease
+    play sound "sfx_room_door_wood_close.ogg"
     show ed neutral at Position(xalign=0.3, yalign=0.205) with ease
     show ed inquire
 
@@ -105,7 +113,9 @@
 
     MAX "{color=#34B7EB}''Yeah, I think so! How hard could it be, right...?''"
 
+    play sound "sfx_room_footsteps_exit.ogg"
     hide ed with dissolve
+    play sound2 "sfx_room_door_main_close.ogg"
 
     """
     {color=#34B7EB}Ed responds with a slight raise of his eyebrows and a meager grunt before leaving me alone in the café lobby. Honestly, it’s more than I expected.
@@ -124,8 +134,11 @@
 
     label D3Break:
 
-    "{color=#34B7EB}As I wiped down the counter and quietly hummed along to the song playing over the café’s speakers, Ed burst through the door, sweaty and breathing heavily. In his hands are what I assume to be the items Laura asked him to buy."
+    "{color=#34B7EB}As I wipe down the counter and quietly hum along to the song playing over the café’s speakers, Ed bursts through the door, sweaty and breathing heavily. In his hands are what I assume to be the items Laura asked him to buy."
 
+    play music "mus_main_loop_cafejazz9.ogg" fadein 3.0
+    play sound2 "sfx_room_door_main_open.ogg"
+    play sound "sfx_room_door_main_bellchime.ogg"
     show ed neutral behind black at Position(xalign=0.3, yalign=0.205) with dissolve
 
     MAX "{color=#34B7EB}''Woah! Ed, are you alright? You look exhausted!''"
@@ -146,22 +159,24 @@
     ED "{color=#EBB134}''I’m fine. Just put these in the break room.''"
 
     show black box at Position(xalign=0, yalign=0) with dissolve
-    show ed neutral at Position(xpos=-400, xanchor=0, yalign=0.205) with ease
+    play sound2 "sfx_room_door_wood_open.ogg"
+    show ed neutral at Position(xpos=-400, xanchor=0, yalign=0.205)
 
     """
-    {color=#34B7EB}Ed handed me a couple plastic bags filled with miscellaneous items and sent me into the break room with a pat on the back.
+    {color=#34B7EB}Ed hands me a couple plastic bags filled with miscellaneous items and sends me into the break room with a pat on the back.
 
     {color=#34B7EB}In response to my fear of potentially putting something in the wrong place, I decide to place the bags on a table so that Ed or Laura can take care of them later.
 
-    {color=#34B7EB}During my break, I decide to do some reading for tomorrow’s classes. It’s difficult to do so without being distracted by the absolute beauty of the break room, but somehow I’ll manage.
+    {color=#34B7EB}During my break, I decide to do some reading for tomorrow’s classes. It’s difficult to do so without being distracted by the absolute beauty of the break room, but somehow I manage.
 
     {color=#34B7EB}I have to admit it’s pretty hard, though. With the sheer comfort of the cushion under my rear mixed with the perfect amount of light illuminating the walls, all I want to do is sit back and bask in the glory of such a pleasant room.
     """
 
     hide black box with dissolve
+    play sound2 "sfx_room_door_wood_close.ogg"
 
     """
-    {color=#34B7EB}As I finished up my reading and went back up to the counter, I saw Laura pushing Ed out the door, yelling about some more errands for him to run. As she went back to her office, she saw me with my phone in my hand and gave an uncharacteristically serious nod.
+    {color=#34B7EB}As I finish up my reading and head back up to the counter, I see Laura pushing Ed out the door, yelling about some more errands for him to run. As she walks back to her office, she sees me with my phone in my hand and gives an uncharacteristically serious nod.
     """
 
     #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -181,6 +196,7 @@
     {color=#34B7EB}After taking a minute to recover from my disappointment, I notice that my shift is almost over. Sure enough, someone else had come to this realization as well.
     """
 
+    play sound2 "<from 1.5 to 2.75>sfx_room_footsteps_enter.ogg"
     show laura neutral behind black at Position(xalign=0.3, yalign=0.205) with ease
 
     LAURA "{color=#ff3636}''Hey newbie, your shift’s over. By the way have you seen Edward around?''"
@@ -211,7 +227,10 @@
 
     MAX "{color=#34B7EB}''N-n-n-no!!! Not at all! In fact, I’m leaving right now! See you tomorrow ma’am!!!''"
 
+    play sound "sfx_room_footsteps_exit.ogg"
     show black box at Position(xalign=0, yalign=0) with dissolve
+    play sound2 "sfx_room_door_main_close.ogg"
+    stop music fadeout 5.0
 
     """
     {color=#34B7EB}And with that, I was out the door. I hope that uneasy encounters with my boss at the end of my shift won’t become a pattern from here on out...
@@ -222,5 +241,7 @@
 
     {color=#34B7EB}Maybe I’ll just ask him about it tomorrow.
     """
+
+    pause
 
     jump DAY4

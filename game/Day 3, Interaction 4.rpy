@@ -1,7 +1,12 @@
     label D3I4:
 
+    play sound2 "sfx_room_door_main_open.ogg"
+    play sound "sfx_room_door_main_bellchime.ogg"
+
     "{color=#34B7EB}Amnesty, everyone's favorite dancing chemist parking attendant, dances her way into the cafe and up to the counter. I can see her impeccable eyeshadow."
 
+    play music "mus_main_loop_cafejazz9.ogg" fadein 3.0
+    play sound "sfx_room_footsteps_enter.ogg"
     show amecie happy at Position(xalign=0.3, yalign=0.205) with dissolve
 
     AMC "{color=#ff7566}''How's it going Coffee Queen!''"
@@ -15,7 +20,7 @@
     #here's where the coffee's made
     while makingdrink == 0:
         "{color=#34B7EB}She winks. Well, no way to mess this one up. Time to make some coffee!"
-        pause
+        #pause
 
     $ makingdrink = 0
 
@@ -56,7 +61,9 @@
     AMC "{color=#ff7566}''That's ok, maybe next time. Thanks for the drinks! And remember to follow my MUA Instagram @red.ysetbeauty #ad #sponsored ;)''"
     "{color=#34B7EB}I wonder why she said 'semicolon, close parenthesis.' Must be an influencer thing."
 
+    play sound "sfx_room_footsteps_exit.ogg"
     hide amecie with dissolve
+    play sound2 "sfx_room_door_main_close.ogg"
 
     "{color=#34B7EB}I prepare to take the orders of the small line that was forming behind her, but they all leave the building along with her. Guess I could've seen her performance after all."
 

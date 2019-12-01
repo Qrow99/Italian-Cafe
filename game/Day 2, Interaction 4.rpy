@@ -4,12 +4,14 @@
     {color=#34B7EB}Before I can spend too much time thinking about it, I hear a familiar stomping and clanging, and I immediately see Sahbreena burst through the doors of the coffee shop.
     """
 
-    # sound effects
+    play sound2 "sfx_room_door_main_open.ogg"
+    play sound "sfx_room_door_main_bellchime.ogg"
 
     """
     {color=#34B7EB}She seems to be in a good mood because she's flashing a tight smile—so tight her braces look like they're about to pop off of her teeth. She immediately darts to the counter and slams what seems to be a new neon pink hydro flask.
     """
 
+    play sound "sfx_room_footsteps_enter.ogg"
     show sahbreena happy at Position(xalign=0.3, yalign=0.205) with dissolve
 
     """
@@ -53,19 +55,21 @@
 
     SBNA "{color=#fa9def}''Okie dokiesksk! Here's my reusable coffee cup and its extra large! I'll wait over there.''"
 
+    play sound2 "<from 1.5 to 2.75>sfx_room_footsteps_exit.ogg"
     hide sahbreena with dissolve
 
     "{color=#34B7EB}She tiptoes carefully to a nearby table and stubs her toe in the process. Weirdly out of character, she says a resounding 'FRICK.'"
     "{color=#34B7EB}Ignoring that, did she ask for a Dinkles or a Benny Goodman...? I don't actually remember if she wanted to take my suggestion or not."
     while makingdrink == 0:
         "{color=#34B7EB}Ignoring that, did she ask for a Dinkles or a Benny Goodman...? I don't actually remember if she wanted to take my suggestion or not."
-        pause
+        #pause
 
     $ makingdrink = 0
     # Coffee making gameplay ensues. You're not allowed to fail because you just can't.
 
     MAX "{color=#34B7EB}''Sahbreena! You're order is ready!''"
 
+    play sound2 "<from 1.5 to 2.75>sfx_room_footsteps_enter.ogg"
     show sahbreena neutral at Position(xalign=0.3, yalign=0.205) with dissolve
 
     SBNA "{color=#fa9def}''And I OoP! And I OOp! Wow I'm so excited for my celebratory drink! Yayzies! I knew I could trust your coffee brain Maxieeeee!!''"
@@ -82,8 +86,9 @@
 
     SBNA "{color=#fa9def}''This one will get thousands of likes heheheh. Don't worry, it'll be good free publicity for your coffee shop! Your manager will have to thank me for all that free moniesss so she'll have to buy those cherries. 'Kay 'kay? I'll be waitinggggg!''"
 
+    play sound "sfx_room_footsteps_exit.ogg"
     hide sahbreena with dissolve
-    # exit sound effects
+    play sound2 "sfx_room_door_main_close.ogg"
 
     "{color=#34B7EB}In a flash, I barely get a word in, much less, say goodbye. She's already on her way on who knows where, clanging and almost tripping on the sidewalk. I hope Laura buys cherries."
 

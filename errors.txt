@@ -2,17 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/Day 4, Interaction 1.rpy", line 36: expected statement.
-    thirdguy = 1
-             ^
+File "game/Day 3, Interaction 3.rpy", line 138: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    play sound "sfx_room_footsteps_exit.ogg"
+    ^
 
-File "game/Day 4, Interaction 1.rpy", line 43: expected statement.
-    secondguy = 1
-              ^
-
-File "game/Day 4, Interaction 1.rpy", line 50: expected statement.
-    firstguy = 1
-             ^
-
-Ren'Py Version: Ren'Py 7.3.5.606
-Sat Nov 30 21:31:20 2019
+Ren'Py Version: Ren'Py 7.2.2.491
+Sun Dec 01 02:01:03 2019

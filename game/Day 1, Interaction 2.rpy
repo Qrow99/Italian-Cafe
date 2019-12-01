@@ -1,11 +1,15 @@
 label D1I2:
 
     "{color=#34B7EB}My first customer bounds up to the coun-"
+
+    play sound2 "sfx_room_door_main_open.ogg"
+    play sound "sfx_room_door_main_bellchime.ogg"
+
     UAMC "{color=#ff7566}''HEEELLLLLOOOOOO''"
     """
     {color=#34B7EB}Her guttural greeting booms through the cafe, turning the heads of all the other patrons. The redhead in front of me is already vibrating with energy, despite the early morning hour. I brace yourself for whatever comes next.
     """
-
+    play sound "sfx_room_footsteps_enter.ogg"
     show amecie happy at Position(xalign=0.3, yalign=0.205) with dissolve
 
     MAX "{color=#34B7EB}''Good morning! What can I get for yo-''"
@@ -27,7 +31,7 @@ label D1I2:
 
     show amecie neutral
 
-    UAMC "{color=#ff7566}''OH yeah can I have a Song of Seasons with whip?''"
+    UAMC "{color=#ff7566}''OH yeah can I have a Song of Seasons pretty please?''"
     MAX "{color=#34B7EB}''Of course, can I get a name?''"
     UAMC "{color=#ff7566}''Amnesty! But you can call me Nesty.''"
     "{color=#34B7EB}She winks and sticks her tongue out."
@@ -44,7 +48,7 @@ label D1I2:
     """
     while makingdrink == 0:
         "{color=#34B7EB}Then again she probably knows her limits right? Right?? Time to make her drink!"
-        pause
+        #pause
 
     $ makingdrink = 0
     #Make it as she asks it, with extra shots
@@ -65,7 +69,9 @@ label D1I2:
 
     AMC "{color=#ff7566} *GASP* ''I can even study for the midterm today!! AND IM READY FOR MY AUDITION!!! THANK YOU SO MUCH COFFEE QUEEN!!''"
 
+    play sound "sfx_room_footsteps_exit.ogg"
     hide amecie with dissolve
+    play sound2 "sfx_room_door_main_close.ogg"
 
     "{color=#34B7EB}I accept her complement with a small wave. She bounces out of the cafe, leaving only a fiery red blur on her way out."
     jump D1I2END
@@ -85,7 +91,9 @@ label D1I2:
 
     AMC "{color=#ff7566}''Hmm maybe three just isn't enough. Guess I'll have to order more next time. See you later!''"
 
+    play sound "sfx_room_footsteps_exit.ogg"
     hide amecie with dissolve
+    play sound2 "sfx_room_door_main_close.ogg"
 
     "{color=#34B7EB}She walks out of the cafe, a little more sluggish than before."
     jump D1I2END

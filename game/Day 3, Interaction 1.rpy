@@ -1,11 +1,17 @@
 label D3I1:
 
+    play sound2 "sfx_room_door_main_open.ogg"
+    play sound "sfx_room_door_main_bellchime.ogg"
+    stop music fadeout 5.0
+
     """
     {color=#34B7EB}As I shuffle around the coffee shop, I hear a faint sound of bongos, snapping, and synchronized steps.
 
     {color=#34B7EB}It seems like they're crescendoing? What's going on? Suddenly a group of three people smoothly waltz in, snapping and walking in perfect step.
     """
 
+    play music "mus_main_loop_cafejazz3.ogg" fadein 3.0
+    play sound "sfx_room_footsteps_enter.ogg"
     show roberto neutral at Position(xalign=0.3, yalign=0.205) with dissolve
     show cynthia neutral at Position(xalign=0.0, yalign=0.205) with dissolve
     show bridget neutral at Position(xalign=0.6, yalign=0.205) with dissolve
@@ -70,7 +76,7 @@ label D3I1:
     #*Coffee gameplay ensues*
     while makingdrink == 0:
         "{color=#34B7EB}Bongos aside, what did they want again? I think one was a Dark Sun..."
-        pause
+        #pause
     $ makingdrink = 0
 
     python:
@@ -89,7 +95,7 @@ label D3I1:
 
     while makingdrink == 0:
         "{color=#34B7EB}Ok one down, next one was a Goodmoon? Wait, crap we dont serve that! Then what was it...?"
-        pause
+        #pause
 
     $ makingdrink = 0
 
@@ -109,7 +115,7 @@ label D3I1:
 
     while makingdrink == 0:
         "{color=#34B7EB}Ok, then the last one was a Jhonny Moonman... or was it a fly me to Benny?"
-        pause
+        #pause
 
     $ makingdrink = 0
 
@@ -143,9 +149,12 @@ label D3I1:
 
     "{color=#34B7EB}The two other girls wink at me in agreement and I feel a little pride. Should I be worried that my drinks can throw babies off balconies?"
 
+    play sound "sfx_room_footsteps_exit.ogg"
     hide bridget with dissolve
     hide cynthia with dissolve
     hide roberto with dissolve
+    play sound2 "sfx_room_door_main_close.ogg"
+    stop music fadeout 3.0
 
     "{color=#34B7EB}They slide the money on the counter in union—change and extra tips—and smoothly walk and snap out of the café. The sound of the bongos get fainter as they disappear from my line of vision."
 

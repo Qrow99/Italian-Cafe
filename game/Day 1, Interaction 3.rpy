@@ -1,11 +1,13 @@
     label D1I3:
 
-    # here is where the sound effects will go when they are made
-    # play sound "sfx_room_bell_enter.ogg"
-    play sound "sfx_room_footsteps_enter.ogg"
+    play sound2 "sfx_room_door_main_open.ogg"
+    play sound "sfx_room_door_main_bellchime.ogg"
+    stop music fadeout 5.0
 
     "{color=#34B7EB}Soon, another figure enters the building. Her shifty eyes scan the room briefly before landing on a table near the counter. She moves in a slow, deliberate way, as though she were trying to avoid being seen, but her clothing does anything but blend in."
 
+    play music "mus_main_loop_cafejazz10.ogg" fadein 3.0
+    play sound "sfx_room_footsteps_enter.ogg"
     show june neutral at Position(xalign=0.3, yalign=0.205) with dissolve
 
     MAX "{color=#34B7EB}''Hello there! Welcome to La Piovositá!''"
@@ -28,7 +30,11 @@
 
     """
     {color=#34B7EB}Well, ‘no’ is technically something, but not really what I was hoping for.
+    """
 
+    play sound "sfx_room_typing_soft_many.ogg"
+
+    """
     {color=#34B7EB}The girl then proceeds to take out a slim laptop and begin typing furiously. Between bouts of loud, mechanical clacking on her keyboard, she takes a few moments to look up and stare directly at me.
 
     {color=#34B7EB}I have no idea what to make of this. She goes through the pattern of typing, staring, and back to typing again enough times to make me so uncomfortable that I have to say literally anything just to break the tension.
@@ -40,11 +46,14 @@
 
     "{color=#34B7EB}The girl continues to look down at her laptop, as if deaf to my question, but then after a few seconds she finally decides to respond."
 
+    stop sound
+
     JUNE "{color=#4969de}''I want the Song of Seasons, and I want you to tell me how you made it.''"
 
     MAX "{color=#34B7EB}''Uh, sure thing? You want like directions, or...?''"
 
     show june neutral
+
 
     JUNE "{color=#4969de}''That would be nice, yes.''"
 
@@ -52,7 +61,7 @@
 
     while makingdrink == 0:
         "{color=#34B7EB}Alright, Song of Seasons. That should be pretty easy, but why ask for directions...?"
-        pause
+        #pause
 
     $ makingdrink = 0
 
@@ -86,6 +95,8 @@
 
     JUNE "{color=#4969de}''Hm...''"
 
+    play sound "sfx_room_typing_soft_many.ogg"
+
     """
     {color=#34B7EB}The girl resumes clacking on her keyboard silently, now spending the rare moments she looks up to inspect the coffee machine or her drink instead of myself, which gives me some relief.
 
@@ -101,6 +112,8 @@
     "{color=#34B7EB}For at least a solid ten seconds she didn’t respond, again appearing as if she hadn’t heard me. Though, once again, she eventually manages to get some words out."
 
     show june neutral
+
+    stop sound
 
     JUNE "{color=#4969de}''It’s for a project.''"
 
@@ -137,9 +150,11 @@
 
     JUNE "{color=#4969de}''Yeah, alright.''"
 
-    hide june with dissolve
-    # play sound "sfx_room_bell_enter.ogg"
     play sound "sfx_room_footsteps_exit.ogg"
+    hide june with dissolve
+    play sound2 "sfx_room_door_main_close.ogg"
+    stop music fadeout 3.0
+
     python:
         coffee = 0
         Espresso = 0

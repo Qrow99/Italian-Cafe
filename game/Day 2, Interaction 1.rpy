@@ -1,15 +1,14 @@
     label D2I1:
 
+    play sound2 "sfx_room_door_main_open.ogg"
+    play sound "sfx_room_door_main_bellchime.ogg"
+
     """
     {color=#34B7EB}Outside the sun looks like it's just about to begin its descent into the horizon.
-    """
-
-    # sound effects
-
-    """
     {color=#34B7EB}A man enters the café, drenched head-to-toe. It isn't raining. He approaches the counter, an eerie smile on his face. His arms are long and thin, and his hands twitch nervously. He's dressed in an oversized trenchcoat. I feel unnerved.
     """
 
+    play sound "sfx_room_footsteps_enter.ogg"
     show alien neutral at Position(xalign=0.3, yalign=0.205) with dissolve
 
     MAX "{color=#34B7EB}''Hello, sir? How may I help you?''"
@@ -36,7 +35,7 @@
     """
     while makingdrink == 0:
         "{color=#34B7EB}He said he wanted a latte, right? The Fairytale of New York is a latte I'm pretty sure. Guess I should just make that..."
-        pause
+        #pause
 
     $ makingdrink = 0
 
@@ -71,7 +70,9 @@
 
     SM "{color=#d1bc88}''Speaking of which, I should get going soon. Those crazy UFO people don't rest, do they? Anyway, thanks for the snack! Ciao!''"
 
+    play sound "sfx_room_footsteps_exit.ogg"
     hide alien with dissolve
+    play sound2 "sfx_room_door_main_close.ogg"
 
     """
     {color=#34B7EB}The man leaves. Through the window I can see his silhouette. He takes off his trenchcoat, and four long, insect-like wings spring out. The silhouette changes as he grows four arms, two barbed legs, and a stinger. The creature buzzes away.

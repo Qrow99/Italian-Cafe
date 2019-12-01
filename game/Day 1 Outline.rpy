@@ -25,6 +25,7 @@
     You’re not my assistant anymore. Today...''"
 
     hide black box with dissolve
+    play music "mus_main_loop_cafejazz5.ogg"
 
     ED "{color=#EBB134}''You’re La Piovositá’s second official barista.''"
 
@@ -53,7 +54,7 @@
     "{color=#34B7EB}Alright, a Deep Breath, that shouldn’t be hard. I just gotta look it up in the menu, and then put everything together, just like he taught me..."
     while makingdrink == 0:
         "{color=#34B7EB}Alright, a Deep Breath, that shouldn’t be hard. I just gotta look it up in the menu, and then put everything together, just like he taught me..."
-        pause
+        # pause
 
     $ makingdrink = 0
 
@@ -153,6 +154,8 @@
         steam = 0
     show ed neutral at Position(xalign=0.1, yalign=0.205) with ease
 
+    play sound2 "<from 1.5 to 2.75>sfx_room_footsteps_enter.ogg"
+
     show laura angry at Position(xalign=0.5, yalign=0.205) with dissolve
 
     LAURA "{color=#ff3636}''Hey! What’s going on out here?
@@ -160,7 +163,7 @@
 
     ED "{color=#EBB134}''I’m testing Max before his shift.''"
 
-    LAURA "{color=#ff3636}''Testing, huh? Well that’s funny, because I didn’t think I was paying you to be a Espressocher!''"
+    LAURA "{color=#ff3636}''Testing, huh? Well that’s funny, because I didn’t think I was paying you to be a Teacher!''"
 
     ED "{color=#EBB134}''You were last week.''"
 
@@ -174,6 +177,8 @@
 
     LAURA "{color=#ff3636}''It better be! Now that we’re all in agreement, no more dilly dallying you two! This fine establishment isn’t going to run itself, you hear?
     So Edward, get to cleaning!''"
+
+    play sound2 "<from 1.5 to 2.75>sfx_room_footsteps_exit.ogg"
 
     show ed neutral at Position(xpos=-400, xanchor=0, yalign=0.205) with ease
     show laura angry at Position(xalign=0.3, yalign=0.205) with ease
@@ -210,6 +215,7 @@
     LAURA "{color=#ff3636}''See? It’s great!
     Anyways, if that’s all you wanted, then I’ll let you get started...''"
 
+    play sound2 "<from 1.5 to 2.75>sfx_room_footsteps_exit.ogg"
     show laura neutral at Position(xpos=-400, xanchor=0, yalign=0.205) with ease
 
     """
@@ -222,6 +228,7 @@
     {color=#34B7EB}For me, I always feel like she could sneak up behind me at any moment and blow out my eardrums...
     """
 
+    play sound2 "<from 1.5 to 2.75>sfx_room_footsteps_enter.ogg"
     show laura angry at Position(xalign=0.3, yalign=0.205) with ease
 
     LAURA "{color=#ff3636}''Oh yeah and one more thing, newbie!''"
@@ -236,7 +243,9 @@
 
     LAURA "{color=#ff3636}''You’d better.''"
 
+    play sound2 "<from 1.5 to 2.75>sfx_room_footsteps_exit.ogg"
     show laura neutral at Position(xpos=-400, xanchor=0, yalign=0.205) with ease
+    play sound "sfx_room_door_wood_close.ogg"
 
     """
     {color=#34B7EB}Sheesh...
@@ -259,11 +268,12 @@
 
     "{color=#34B7EB}As the customer leaves the building, I can hear the loud footsteps of a familiar body coming out from behind me."
 
+    play sound2 "<from 1.5 to 2.75>sfx_room_footsteps_enter.ogg"
     show ed neutral at Position(xalign=0.3, yalign=0.205) with ease
 
     ED "{color=#EBB134}''You’re doing good so far.''"
 
-    MAX "{color=#34B7EB}''You really think so? I keep feeling like I have no idea what to say when it’s just me and a customer alone together.''"
+    MAX "{color=#34B7EB}''You really think so? I feel like I have no idea what to say when it’s just me and a customer alone together.''"
 
     ED "{color=#EBB134}''It happens, don’t sweat it.
     Take a quick break. I’ll cover you.''"
@@ -278,7 +288,8 @@
     MAX "{color=#34B7EB}''Well, alright. Thanks Ed!''"
 
     show black box at Position(xalign=0, yalign=0) with dissolve
-    show ed neutral at Position(xpos=-400, xanchor=0, yalign=0.205) with ease
+    play sound2 "sfx_room_door_wood_open.ogg"
+    show ed neutral at Position(xpos=-400, xanchor=0, yalign=0.205)
 
     """
     {color=#34B7EB}As I exited into the back room, Ed only gave a quick grunt and a slight nod.
@@ -288,9 +299,10 @@
     """
 
     hide black box with dissolve
+    play sound2 "sfx_room_door_wood_close.ogg"
 
     """
-    {color=#34B7EB}Sure enough, five minutes had passed relatively quickly. As I stuck my head out of the break room, Ed was making idle chat with a customer and Laura was nowhere to be seen, so I figured returning to my post was the best option.
+    {color=#34B7EB}Sure enough, five minutes had passed relatively quickly. As I stick my head out of the break room, I see making idle chat with a customer while Laura is nowhere to be seen, so I figure returning to my post is the best option.
     """
     #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     # Interaction 3 here
@@ -309,6 +321,7 @@
     {color=#34B7EB}I immediately shuffle toward Laura’s office to inform her I'm leaving, but the door swings open seconds before I can reach the handle.
     """
 
+    play sound "sfx_room_door_wood_open.ogg"
     show laura neutral at Position(xalign=0.3, yalign=0.205) with ease
 
     LAURA "{color=#ff3636}''How’s the first day going, newbie?
@@ -319,6 +332,7 @@
     "{color=#34B7EB}Before I can meekly respond and likely embarrass myself, Ed steps in to my aid."
 
     show laura neutral at Position(xalign=0.5, yalign=0.205) with ease
+    play sound2 "<from 1.5 to 2.75>sfx_room_footsteps_enter.ogg"
     show ed neutral at Position(xalign=0.1, yalign=0.205) with ease
 
     ED "{color=#EBB134}''He did just fine. Now, he’s going home.''"
@@ -347,13 +361,18 @@
 
     LAURA "{color=#ff3636}''Yeah, yeah just get out of here. Or else I might have to pay you overtime.''"
 
+    play sound "sfx_room_footsteps_exit.ogg"
     show black box at Position(xalign=0, yalign=0) with dissolve
+    play sound2 "sfx_room_door_main_close.ogg"
+    stop music fadeout 5.0
 
     """
     {color=#34B7EB}In retrospect, I think the day went relatively well. There may have been a few hiccups, maybe an awkward moment here and there, but I think Ed’s compliment might have actually been genuine, and not just a means to save me from Laura.
 
     {color=#34B7EB}I decided to keep said thought in my mind as a motivator to do well tomorrow, and to not disappoint Ed or Laura during my next shift.
     """
+    pause
+
     python:
         coffee = 0
         Espresso = 0

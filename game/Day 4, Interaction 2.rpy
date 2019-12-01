@@ -115,6 +115,8 @@ label D4I2:
 
     ERN "{color=#ffd6ff}''Hm...''"
 
+    show errin gross
+
     "{color=#34B7EB}For a moment she sits in silence, and a moment after she looks as though she's about the throw up. The expression didn't last long, but it was nearly enough to make me regret getting out of bed this morning."
 
     show errin neutral

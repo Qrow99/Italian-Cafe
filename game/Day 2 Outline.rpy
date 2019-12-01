@@ -2,6 +2,10 @@
 
     show laura angry
 
+    "{color=#34B7EB}{b}The next day..."
+
+    pause
+
     """
     {color=#34B7EB}The day’s events pretty much flew by in an instant - from the second I woke up to this very moment.
 
@@ -11,6 +15,7 @@
     """
 
     hide black box with dissolve
+    play music "mus_main_loop_cafejazz8.ogg"
 
     LAURA "{color=#ff3636}''That’s a load of crap and you know it, bub!''"
 
@@ -21,7 +26,7 @@
     LAURA "{color=#ff3636}''Oh really? Well good!
     Hey newbie, who’s right me, or tubby over here?''"
 
-    MAX "{color=#34B7EB}''What?! I, uh..."
+    MAX "{color=#34B7EB}''What?! I, uh...''"
 
     ED "{color=#EBB134}''He doesn’t understand the question.''"
 
@@ -54,7 +59,9 @@
     But you two better make it worth my while, alright?!
     So I better see someone on their phone during their shift, or else!''"
 
+    play sound2 "<from 1.5 to 2.75>sfx_room_footsteps_exit.ogg"
     show laura neutral at Position(xpos=-400, xanchor=0, yalign=0.205) with ease
+    play sound "sfx_room_door_wood_close.ogg"
     show ed neutral at Position(xalign=0.3, yalign=0.205) with ease
 
     ED "{color=#EBB134}''Thanks, I owe you one.''"
@@ -71,7 +78,9 @@
 
     ED "{color=#EBB134}''Anyways, I’m cleaning again today. Good luck with your shift.''"
 
+    play sound2 "<from 1.5 to 2.75>sfx_room_footsteps_enter.ogg"
     show ed neutral at Position(xpos=-400, xanchor=0, yalign=0.205) with ease
+    play sound "sfx_room_door_wood_close.ogg"
 
     """
     {color=#34B7EB}I wonder what that was about. But not enough to distract me from my job! It’s day number two alright, and whatever Laura and Ed are expecting of me, I intend to deliver!
@@ -92,6 +101,7 @@
 
     "{color=#34B7EB}After standing in relative silence for a few minutes, I notice Ed emerging from the girl’s bathroom armed with a mop, a dish towel, and at least three half empty bottles of multipurpose cleaner."
 
+    play sound2 "<from 1.5 to 2.75>sfx_room_footsteps_enter.ogg"
     show ed inquire at Position(xalign=0.3, yalign=0.205) with ease
 
     ED "{color=#EBB134}''You want a break?''"
@@ -115,7 +125,8 @@
     MAX "{color=#34B7EB}''You’re welcome?''"
 
     show black box at Position(xalign=0, yalign=0) with dissolve
-    show ed neutral at Position(xpos=-400, xanchor=0, yalign=0.205) with ease
+    play sound2 "sfx_room_door_wood_open.ogg"
+    show ed neutral at Position(xpos=-400, xanchor=0, yalign=0.205)
 
     """
     {color=#34B7EB}I’m not sure I feel totally confident in being thanked for taking a break, but whatever.
@@ -124,6 +135,7 @@
     """
 
     hide black box with dissolve
+    play sound2 "sfx_room_door_wood_close.ogg"
 
     """
     {color=#34B7EB}Regardless, as my fifth minute in the break room drew to its close, I resume my position at the bar next to Ed, who is once again busy with a customer.
@@ -144,6 +156,7 @@
 
     "{color=#34B7EB}Looking down at my watch, I come to find that my shift had ended over ten minutes ago. Ed isn’t anywhere to be seen, so I guess I should go to Laura’s office and tell her..."
 
+    play sound2 "<from 1.5 to 2.75>sfx_room_footsteps_enter.ogg"
     show laura angry at Position(xalign=0.3, yalign=0.205) with ease
 
     LAURA "{color=#ff3636}''Hey! What are you still doing here?''"
@@ -182,14 +195,19 @@
 
     LAURA "{color=#ff3636}''Yeah, sounds good.''"
 
+    play sound "sfx_room_footsteps_exit.ogg"
     show black box at Position(xalign=0, yalign=0) with dissolve
+    play sound2 "sfx_room_door_main_close.ogg"
+    stop music fadeout 5.0
 
     """
-    {color=#34B7EB}At a pace that was significantly quicker than my walking speed but not quite as fast as a full sprint, I left the premises. The end of my shift certainly could’ve gone better, but the rest of it wasn’t too bad, I don’t think.
+    {color=#34B7EB}At a pace that was significantly quicker than my walking speed but not quite as fast as a full sprint, I leave the premises. The end of my shift certainly could’ve gone better, but the rest of it wasn’t too bad, I don’t think.
 
     {color=#34B7EB}Regardless, I decide at home that maybe my best course of action in the future would be to question Laura less. Or, maybe it should be to question her more.
 
     {color=#34B7EB}Strike what I said earlier, I didn’t decide on anything.
     """
+
+    pause
 
     jump DAY3

@@ -1,13 +1,17 @@
     label D2I2:
 
+    play sound2 "sfx_room_door_main_open.ogg"
+    play sound "sfx_room_door_main_bellchime.ogg"
+
     "{color=#34B7EB}The energetic redhead is back, looking less energetic and more worse for wear. Yikes."
 
+    play sound "sfx_room_footsteps_enter.ogg"
     show amecie angry at Position(xalign=0.3, yalign=0.205) with dissolve
 
     MAX "{color=#34B7EB}''How are you doing today?''"
 
     #Got previous order right:
-    AMC "{color=#ff7566}''Really tired. Work sucks, am i right?''"
+    AMC "{color=#ff7566}''Really tired. Work sucks, am I right?''"
     "{color=#34B7EB}She opens her jacket to reveal a parking attendant badge. My boss looks over and locks eyes with me."
     MAX "{color=#34B7EB}''I am legally obligated to say I'm having a good time.''"
 
@@ -25,7 +29,7 @@
     #(No change in interaction if you get it wrong.)
     while makingdrink == 0:
         "{color=#34B7EB}I make the drink. Song of Seasons isn't too complicated."
-        pause
+        #pause
 
     $ makingdrink = 0
     if chichi == 1:
@@ -41,7 +45,9 @@
     AMC "{color=#ff7566}''Awww that's ok, I'll come visit after!''"
     MAX "{color=#34B7EB}''Can't wait! See you then!''"
 
+    play sound "sfx_room_footsteps_exit.ogg"
     hide amecie with dissolve
+    play sound2 "sfx_room_door_main_close.ogg"
     jump D2Break
 
     #If you got the last drink wrong
@@ -63,7 +69,9 @@
     MAX "{color=#34B7EB}''Cafe policy. Sorry, it's too dangerous.''"
     AMC "{color=#ff7566}''Ugh, fine.''"
 
+    play sound "sfx_room_footsteps_exit.ogg"
     hide amecie with dissolve
+    play sound2 "sfx_room_door_main_close.ogg"
 
     "{color=#34B7EB}Amnesty storms off. I feel really bad. Maybe I should have listened to her the first time, huh?"
 

@@ -47,6 +47,7 @@ image milk = "MilkIdle.PNG"
 image Chocolate = "ChocolateIdle.PNG"
 image Cinnamon = "Cinnamonidle.PNG"
 image PumpkinSpice = "PumpkinIdle.PNG"
+image Ingredeints1 = "Page1.PNG"
 # The original step buttons have thick outlines so they're going, too
 '''
 image stepback = "NextStepIdle.png"
@@ -76,6 +77,8 @@ label start:
     show screen HistoryButton
     show screen PrefsButton
 
+    stop music fadeout 3.0
+
 
     # Variables
     python: # actually does the exact same thing as the $, except everything indented is 'real' python
@@ -104,10 +107,11 @@ label start:
     # Buttons
     # Turns out the milk button was asymmetrical on the original background
     # so I'm removing this one. I fixed the actual button, as well
+    show Ingredeints1 at Position(xalign=0.9125, yalign=0.039)
     # show milk at Position(xalign=0.853, yalign=0.223)
     show Chocolate at Position(xalign=0.853, yalign=0.2995)
     show Cinnamon at Position(xalign=0.941, yalign=0.223)
-    show PumpkinSpice at Position(xalign=0.941, yalign=0.2995)
+    # show PumpkinSpice at Position(xalign=0.941, yalign=0.2995)
     # show stepback at Position(xalign=0.77, yalign=0.1846)
     # show stepforward at Position(xalign=0.9882, yalign=0.1846)
 

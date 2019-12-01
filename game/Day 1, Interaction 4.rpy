@@ -3,8 +3,9 @@
     """
     {color=#34B7EB}I patiently wait at the counter and I suddenly hear a loud clanging outside.
     """
-
-    # sound effects
+    play music "mus_main_loop_cafejazz5.ogg" fadein 3.0
+    play sound2 "sfx_room_door_main_open.ogg"
+    play sound "sfx_room_door_main_bellchime.ogg"
 
     """
     {color=#34B7EB}A blonde girl carrying a large metal water bottle and wearing a bright, purple backpack that looks like it was meant especially for Swedish kindergarteners bursts into the coffee shop.
@@ -12,6 +13,7 @@
     {color=#34B7EB}She walks in there with purpose like she was on a mission. She's glued on to her phone, almost running into a chair and table, and says 'and I Oop' in response.
     """
 
+    play sound "sfx_room_footsteps_enter.ogg"
     show sahbreena neutral at Position(xalign=0.3, yalign=0.205) with dissolve
 
     """
@@ -52,13 +54,14 @@
 
     SBNA "{color=#fa9def}''Thanksksksksks a bunchhhh.''"
 
+    play sound2 "<from 1.5 to 2.75>sfx_room_footsteps_exit.ogg"
     hide sahbreena with dissolve
 
     "{color=#34B7EB}She walks away, almost tripping on a discarded paper straw in the process."
-    "{color=#34B7EB}Anyways, she said the Dinkles right? That shouldn't be too hard..."
+    "{color=#34B7EB}Anyways, she said the Dinkles with whipped cream, right? That shouldn't be too hard..."
     while makingdrink == 0:
-        "{color=#34B7EB}Anyways, she said the Dinkles right? That shouldn't be too hard..."
-        pause
+        "{color=#34B7EB}Anyways, she said the Dinkles with whipped cream, right? That shouldn't be too hard..."
+        #pause
 
     $ makingdrink = 0
 
@@ -75,6 +78,7 @@
 
     "{color=#34B7EB}She bolts upright from her chair like an excited puppy and lets out the phrase 'AnD I OoP!' before walking over to the counter and getting her drink."
 
+    play sound2 "<from 1.5 to 2.75>sfx_room_footsteps_enter.ogg"
     show sahbreena happy at Position(xalign=0.3, yalign=0.205) with dissolve
 
     SBNA "{color=#fa9def}''Wooowwww, Thanksksksksk a bunch! You didn't damage any of my stickers and shells, and you put a lot of whipped cream just like I asked you too!''"
@@ -104,8 +108,9 @@
 
     SBNA "{color=#fa9def}''Sksksksksksksksksksk!''"
 
-    # exit sound effects
+    play sound "sfx_room_footsteps_exit.ogg"
     hide sahbreena with dissolve
+    play sound2 "sfx_room_door_main_close.ogg"
 
     """
     {color=#34B7EB}From the looks of it, she doesn't hear me. In fact, it doesn't seem like she notices much at all. Drink in hand, Sahbreena walks out the door in a fuss, nearly tripping on a a misaligned floor tile on her way out.
@@ -121,6 +126,7 @@
 
     "{color=#34B7EB}She bolts upright from her chair like an excited puppy and lets out the phrase 'AnD I OoP!' before walking over to the counter and getting her drink."
 
+    play sound2 "<from 1.5 to 2.75>sfx_room_footsteps_enter.ogg"
     show sahbreena happy at Position(xalign=0.3, yalign=0.205) with dissolve
 
     SBNA "{color=#fa9def}''Wooowwww, Thanksksksksk a bunch! You didn't damage any of my stickers and shells, and you put a lot of whipped cream just like I asked you too!''"
@@ -151,8 +157,9 @@
 
     SBNA "{color=#fa9def}''It's fake. Like her. You didn't hear that from me though. Anywaysksks, Byeeeee! Toodles!''"
 
+    play sound "sfx_room_footsteps_exit.ogg"
     hide sahbreena with dissolve
-    # exit sound effects
+    play sound2 "sfx_room_door_main_close.ogg"
 
     "{color=#34B7EB}With lightning speed, she's gone, almost tripping on nothing whatsoever. I think the scrunchie is a good omen, and I wear it on my wrist. It radiates with chaotic energy."
 

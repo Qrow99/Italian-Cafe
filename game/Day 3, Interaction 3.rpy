@@ -1,10 +1,13 @@
     label D3I3:
 
-    # play sound "sfx_room_bell_enter.ogg"
-    play sound "sfx_room_footsteps_enter.ogg"
+    play sound2 "sfx_room_door_main_open.ogg"
+    play sound "sfx_room_door_main_bellchime.ogg"
+    stop music fadeout 5.0
 
     "{color=#34B7EB}Looking up, I’m met with a familiar, suspicious scowl. Unlike our previous encounter, though, the mysterious writer wastes no time in giving me her order."
 
+    play music "mus_main_loop_cafejazz10.ogg" fadein 3.0
+    play sound "sfx_room_footsteps_enter.ogg"
     show june neutral at Position(xalign=0.3, yalign=0.205) with dissolve
 
     JUNE "{color=#4969de}''Hey you, what on the menu here has the least amount of flavor?''"
@@ -25,7 +28,7 @@
     MAX "{color=#34B7EB}''Okay, coming right up.''"
     while makingdrink == 0:
         "{color=#34B7EB}Man, that was a terrible joke. Maybe I should just stick to being a normal, non-comedic barista... Regardless, I guess I’d better start making a Dinkles."
-        pause
+        #pause
     $ makingdrink = 0
 
 # here's the drink. The order is the Dinkles.
@@ -47,7 +50,9 @@
     label d3i3good:
     """
     {color=#34B7EB}She picks up her cup and takes a large swig, keeping it in her mouth with puffed up cheeks. Her face scrunches up into a painful, red wince as she slowly gulps down the large mouthful she took.
-
+    """
+    play sound "sfx_room_typing_soft_many.ogg"
+    """
     {color=#34B7EB}She then proceeds to take out her laptop and begin taking notes as she had last time, but the discomfort on her face lasts long after she finishes drinking.
     """
     jump d3i3converge
@@ -56,7 +61,9 @@
     label d3i3bad:
     """
     {color=#34B7EB}She picks up her cup and takes a large swig, keeping it in her mouth with puffed up cheeks. Her face turns a bright red and she proceeds to spit the whole mouthful back into her cup, wincing and breathing heavily.
-
+    """
+    play sound "sfx_room_typing_soft_many.ogg"
+    """
     {color=#34B7EB}She then proceeds to take out her laptop and begin taking notes as she had last time, but the discomfort on her face lasts long after she finishes drinking.
     """
     jump d3i3converge
@@ -66,6 +73,7 @@
     MAX "{color=#34B7EB}''So... how is it?''"
 
     show june neutral
+    stop sound
 
     JUNE "{color=#4969de}''It’s fine. I just hate coffee.''"
 
@@ -125,10 +133,11 @@
 
     MAX "{color=#34B7EB}''Not having to make everything on the menu is its own reward, but maybe you could show me what you’re writing when it’s done? If I’m going to be helping you this much, I want to at least know what it’s for.''"
 
-    JUNE "{color=#4969de}''You actually want to read it? Alright, it’s a deal then. See you later.''"
+    JUNE "{color=#4969de}''You actually want to read it? Fine then. It’s a deal. See you later.''"
 
-    hide june with dissolve
-    # play sound "sfx_room_bell_enter.ogg"
     play sound "sfx_room_footsteps_exit.ogg"
+    hide june with dissolve
+    play sound2 "sfx_room_door_main_close.ogg"
+    stop music fadeout 3.0
 
     jump D3I4
