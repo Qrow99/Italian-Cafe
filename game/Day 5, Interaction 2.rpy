@@ -37,11 +37,15 @@
 
     """
     {color=#34B7EB}The Beatniks cheer and give me the money with a large tip. They wait nearby while bobbing their heads to the jazz music—I gave up on trying to find out where the source is.
-
-    {color=#34B7EB}I make the coffee with a sway in my hips. I'm pretty confident in my ability to make the Entertainer at this point.
     """
+    "{color=#34B7EB}I make the coffee with a sway in my hips. I'm pretty confident in my ability to make the Entertainer at this point."
 
     #*coffee gameplay*
+    while makingdrink == 0:
+        "{color=#34B7EB}I make the coffee with a sway in my hips. I'm pretty confident in my ability to make the Entertainer at this point."
+        pause
+
+    $ makingdrink = 0
 
     "{color=#34B7EB}I put the drinks on the counter and call them out."
 

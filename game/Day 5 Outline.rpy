@@ -16,36 +16,36 @@
     ED "{color=#EBB134}''I’m fine.''"
 
     # (if Brenda)
-    ED "{color=#EBB134}''I just didn’t sleep.''"
+    if Brenda == 1:
+        ED "{color=#EBB134}''I just didn’t sleep.''"
 
-    MAX "{color=#34B7EB}''Really? Why?! Aren’t you sick?''"
+        MAX "{color=#34B7EB}''Really? Why?! Aren’t you sick?''"
 
-    show ed sick think
+        show ed sick think
 
-    ED "{color=#EBB134}''I played 'Guild of Greats' all night.''"
+        ED "{color=#EBB134}''I played 'Guild of Greats' all night.''"
 
-    MAX "{color=#34B7EB}''All night!? Even when you’re sick!?''"
+        MAX "{color=#34B7EB}''All night!? Even when you’re sick!?''"
 
-    show ed sick neutral
+        show ed sick neutral
 
-    "{color=#34B7EB}Ed offered a meager shrug in response."
+        "{color=#34B7EB}Ed offered a meager shrug in response."
 
+    else:
+        ED "{color=#EBB134}''I’m just nervous.''"
 
-    # (if no Brenda)
-    ED "{color=#EBB134}''I’m just nervous.''"
+        MAX "{color=#34B7EB}''Nervous? Why?''"
 
-    MAX "{color=#34B7EB}''Nervous? Why?''"
+        show ed sick think
 
-    show ed sick think
+        ED "{color=#EBB134}''...''"
+        ED "{color=#EBB134}''I meant tired. I’m still sick.''"
 
-    ED "{color=#EBB134}''...''"
-    ED "{color=#EBB134}''I meant tired. I’m still sick.''"
+        MAX "{color=#34B7EB}''Um, okay. Those are pretty different things, but alright.''"
 
-    MAX "{color=#34B7EB}''Um, okay. Those are pretty different things, but alright.''"
+        show ed sick neutral
 
-    show ed sick neutral
-
-    "{color=#34B7EB}Ed offered a meager shrug in response."
+        "{color=#34B7EB}Ed offered a meager shrug in response."
 
 
     # converge here
@@ -242,6 +242,11 @@
     "{color=#34B7EB}Ignoring the potential judgement that could befall me from revealing such information to him, I make Ed my favorite beverage..."
 
     #(another drink making section goes here. it doesn’t matter what the result is, though.)
+    while makingdrink == 0:
+        "{color=#34B7EB}Ignoring the potential judgement that could befall me from revealing such information to him, I make Ed my favorite beverage..."
+        pause
+
+    $ makingdrink = 0
 
     "{color=#34B7EB}In a single gulp, Ed finishes the drink. He closes his eyes, scratches his chin, and then nods."
 

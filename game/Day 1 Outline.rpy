@@ -54,7 +54,7 @@
     "{color=#34B7EB}Alright, a Deep Breath, that shouldn’t be hard. I just gotta look it up in the menu, and then put everything together, just like he taught me..."
     while makingdrink == 0:
         "{color=#34B7EB}Alright, a Deep Breath, that shouldn’t be hard. I just gotta look it up in the menu, and then put everything together, just like he taught me..."
-        # pause
+        pause
 
     $ makingdrink = 0
 
