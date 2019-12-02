@@ -56,11 +56,13 @@
     CHASE "{color=#FFCB70}''Yeah, I’m lactose intolerant. Is that okay?''"
 
     MAX "{color=#34B7EB}''Uh, sure! I’ll do the best I can!''"
+    $ order = 1
     while makingdrink == 0:
         "{color=#34B7EB}I don’t think there’s much in the Deep Breath except milk... Guess I’ll just have to improvise?"
         #pause
 
     $ makingdrink = 0
+    $ order = 0
 
 
 # Drink minigame here
@@ -88,6 +90,20 @@
 
     # (if drink has no milk)
     label d4i4good:
+    python:
+        coffee = 0
+        Espresso = 0
+        Milk = 0
+        Cinnamon = 0
+        Chocolate = 0
+        Pumpkin = 0
+        foam = 0
+        ExtraShot = 0
+        creamer = 0
+        whip_cream = 0
+        steam = 0
+        reset = 1
+
 
     MAX "{color=#34B7EB}''Alright, here you go! Two Deep Breaths, special ordered!''"
 
@@ -188,6 +204,20 @@
 
     # (if drink has milk)
     label d4i4bad:
+    python:
+        coffee = 0
+        Espresso = 0
+        Milk = 0
+        Cinnamon = 0
+        Chocolate = 0
+        Pumpkin = 0
+        foam = 0
+        ExtraShot = 0
+        creamer = 0
+        whip_cream = 0
+        steam = 0
+        reset = 1
+
 
     MAX "{color=#34B7EB}''Alright, here you go! Two Deep Breaths, special ordered!''"
 

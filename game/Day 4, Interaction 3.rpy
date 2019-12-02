@@ -68,10 +68,14 @@
     BND "{color=#b459ff}''Sounds good to me. How about a Dark Sun?''"
 
     MAX "{color=#34B7EB}''I’m on it!''"
+
+    $ order = 1
+
     while makingdrink == 0:
         "{color=#34B7EB}Alright, a Dark Sun. For some reason, I feel like I’m supposed to be doing something right now? Not sure why. Weird."
         #pause
     $ makingdrink = 0
+    $ order = 0
 
 
 # Drink Minigame here
@@ -86,6 +90,20 @@
 
 # (if the drink is made normally)
     label d4i3bad:
+    python:
+        coffee = 0
+        Espresso = 0
+        Milk = 0
+        Cinnamon = 0
+        Chocolate = 0
+        Pumpkin = 0
+        foam = 0
+        ExtraShot = 0
+        creamer = 0
+        whip_cream = 0
+        steam = 0
+        reset = 1
+
     show brenda confused
 
     BND "{color=#b459ff}''Hm... it’s different than usual.''"
@@ -106,6 +124,20 @@
 
 # (if the drink has an espresso shot)
     label d4i3good:
+    python:
+        coffee = 0
+        Espresso = 0
+        Milk = 0
+        Cinnamon = 0
+        Chocolate = 0
+        Pumpkin = 0
+        foam = 0
+        ExtraShot = 0
+        creamer = 0
+        whip_cream = 0
+        steam = 0
+        reset = 1
+
     show brenda happy
 
     BND "{color=#b459ff}''Perfection, as usual. Man, you guys have the best drinks here.''"

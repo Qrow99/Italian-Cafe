@@ -26,10 +26,12 @@
     JUNE "{color=#4969de}''Just the Dinkles or whatever you call it is fine.''"
 
     MAX "{color=#34B7EB}''Okay, coming right up.''"
+    $ order = 1
     while makingdrink == 0:
         "{color=#34B7EB}Man, that was a terrible joke. Maybe I should just stick to being a normal, non-comedic barista... Regardless, I guess I’d better start making a Dinkles."
         #pause
     $ makingdrink = 0
+    $ order = 0
 
 # here's the drink. The order is the Dinkles.
     if coffee == 1 and Milk == 1 and steam == 1:
@@ -48,6 +50,20 @@
 
     # if drink is correct
     label d3i3good:
+    python:
+        coffee = 0
+        Espresso = 0
+        Milk = 0
+        Cinnamon = 0
+        Chocolate = 0
+        Pumpkin = 0
+        foam = 0
+        ExtraShot = 0
+        creamer = 0
+        whip_cream = 0
+        steam = 0
+        reset = 1
+
     """
     {color=#34B7EB}She picks up her cup and takes a large swig, keeping it in her mouth with puffed up cheeks. Her face scrunches up into a painful, red wince as she slowly gulps down the large mouthful she took.
     """
@@ -59,6 +75,20 @@
 
     # if drink is incorrect
     label d3i3bad:
+    python:
+        coffee = 0
+        Espresso = 0
+        Milk = 0
+        Cinnamon = 0
+        Chocolate = 0
+        Pumpkin = 0
+        foam = 0
+        ExtraShot = 0
+        creamer = 0
+        whip_cream = 0
+        steam = 0
+        reset = 1
+
     """
     {color=#34B7EB}She picks up her cup and takes a large swig, keeping it in her mouth with puffed up cheeks. Her face turns a bright red and she proceeds to spit the whole mouthful back into her cup, wincing and breathing heavily.
     """

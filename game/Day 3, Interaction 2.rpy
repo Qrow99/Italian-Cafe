@@ -4,9 +4,9 @@
     define KRN = Character("Mechanical Girl", color="#4BE54B")
 
     """
-    {color=#34B7EB}As the customers snap their way out the door, I decided to clean up the counter space in the meantime.
+    {color=#34B7EB}As the customers snap their way out the door, I decide to clean up the counter space in the meantime.
 
-    {color=#34B7EB}It’s essentially just as clean as it was when I got here, save for a minor stain of condensation where the last customer’s drink was, but I still feel like I should be doing... something.
+    {color=#34B7EB}It’s essentially just as clean as it was when I got here, save for a minor stain of condensation where the beatniks' drinks were, but I still feel like I should be doing... something.
 
     {color=#34B7EB}Thankfully, the opportunity to do something revealed itself, as another customer made her way through the front door.
     """
@@ -57,10 +57,26 @@
     Questions 3-11 are all inquiries regarding this cafè’s menu. Perhaps an adequate place to start would be question 5: What is La Piovosita’s most popular menu item?''"
 
     MAX "{color=#34B7EB}''Our most popular drink? Coming right up!''"
+
+    $ order = 1
     while makingdrink == 0:
         "{color=#34B7EB}Most popular drink, huh? Weren’t Ed and Laura saying something about that earlier this afternoon...?"
         #pause
     $ makingdrink = 0
+    $ order = 0
+    python:
+        coffee = 0
+        Espresso = 0
+        Milk = 0
+        Cinnamon = 0
+        Chocolate = 0
+        Pumpkin = 0
+        foam = 0
+        ExtraShot = 0
+        creamer = 0
+        whip_cream = 0
+        steam = 0
+        reset = 1
 
 
     # This is where the drink is made

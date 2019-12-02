@@ -13,14 +13,33 @@
     JUNE "{color=#4969de}''Hey, get me a Cinna-monster would you? I went around and tried all the stuff you told me to. Turns out, cinnamon doesn’t taste all that bad.''"
 
     MAX "{color=#34B7EB}''Really? Well, I’m happy to hear it! One Cinna-monster coming right up!''"
+
+    $ order = 1
+
     while makingdrink == 0:
         "{color=#34B7EB}I sure hope she isn’t expecting the cinnamon to cancel out the coffee completely, but I guess we’ll find out. One Cinna-monster it is!"
         #pause
 
     $ makingdrink = 0
+    $ order = 0
 
     # Drink making goes here.
     # Doesn't matter what drink.
+
+    python:
+        coffee = 0
+        Espresso = 0
+        Milk = 0
+        Cinnamon = 0
+        Chocolate = 0
+        Pumpkin = 0
+        foam = 0
+        ExtraShot = 0
+        creamer = 0
+        whip_cream = 0
+        steam = 0
+        reset = 1
+
 
     MAX "{color=#34B7EB}''Here you go! Hope you actually like it!''"
 
@@ -147,7 +166,7 @@
     hide june with dissolve
     play sound2 "sfx_room_door_main_close.ogg"
     stop music fadeout 3.0
-    
+
     "{color=#34B7EB}I’m not going to think too hard about what that might mean."
 
     jump D5I2

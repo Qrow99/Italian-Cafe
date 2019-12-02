@@ -6,6 +6,7 @@
 
     play sound2 "sfx_room_door_main_open.ogg"
     play sound "sfx_room_door_main_bellchime.ogg"
+    play music "mus_main_loop_cafejazz8.ogg" fadein 3.0
 
     """
     {color=#34B7EB}She seems to be in a good mood because she's flashing a tight smile—so tight her braces look like they're about to pop off of her teeth. She immediately darts to the counter and slams what seems to be a new neon pink hydro flask.
@@ -59,13 +60,30 @@
     hide sahbreena with dissolve
 
     "{color=#34B7EB}She tiptoes carefully to a nearby table and stubs her toe in the process. Weirdly out of character, she says a resounding 'FRICK.'"
+
+    $ order = 1
+
     "{color=#34B7EB}Ignoring that, did she ask for a Dinkles or a Benny Goodman...? I don't actually remember if she wanted to take my suggestion or not."
     while makingdrink == 0:
         "{color=#34B7EB}Ignoring that, did she ask for a Dinkles or a Benny Goodman...? I don't actually remember if she wanted to take my suggestion or not."
         #pause
 
     $ makingdrink = 0
+    $ order = 0
     # Coffee making gameplay ensues. You're not allowed to fail because you just can't.
+    python:
+        coffee = 0
+        Espresso = 0
+        Milk = 0
+        Cinnamon = 0
+        Chocolate = 0
+        Pumpkin = 0
+        foam = 0
+        ExtraShot = 0
+        creamer = 0
+        whip_cream = 0
+        steam = 0
+        reset = 1
 
     MAX "{color=#34B7EB}''Sahbreena! You're order is ready!''"
 

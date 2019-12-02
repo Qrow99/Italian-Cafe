@@ -54,11 +54,11 @@ screen Ingredients2():
 screen Prevbutton():
     if pagenum == 1:
         imagebutton:
-            xalign 0.7719 yalign 0.1846
+            xalign 0.7719 yalign 0.1876
             idle "Prev_Page_Highlight.PNG"
     else:
         imagebutton:
-            xalign 0.7719 yalign 0.1846
+            xalign 0.7719 yalign 0.1876
             idle "Prev_Page_Idle.PNG"
             hover "Prev_Page_Highlight.PNG"
             action Notify("Previous"), SetVariable("pagenum", 1),Show("MilkButton"), Show("CinnamonButton"),Show("ChocolateButton"), Show("PumpkinButton"), Hide("foamButton"), Hide("espressoSHOTButton"), Hide("whipButton"), Hide("creamerButton") , Hide("steamedMilk"), Show("CoffeeButton"), Show("EspressoButton"), Hide("Ingredients2"), Play("sound", "sfx_ui_click1.ogg")

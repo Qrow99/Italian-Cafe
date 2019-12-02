@@ -45,6 +45,9 @@
     """
     {color=#34B7EB}The Beatniks cheer and give me the money with a large tip. They wait nearby while bobbing their heads to the jazz music—I gave up on trying to find out where the source is.
     """
+
+    $ order = 1
+
     "{color=#34B7EB}I make the coffee with a sway in my hips. I'm pretty confident in my ability to make the Entertainer at this point."
 
     #*coffee gameplay*
@@ -53,6 +56,22 @@
         #pause
 
     $ makingdrink = 0
+    $ order = 0
+
+    python:
+        coffee = 0
+        Espresso = 0
+        Milk = 0
+        Cinnamon = 0
+        Chocolate = 0
+        Pumpkin = 0
+        foam = 0
+        ExtraShot = 0
+        creamer = 0
+        whip_cream = 0
+        steam = 0
+        reset = 1
+
 
     "{color=#34B7EB}I put the drinks on the counter and call them out."
 

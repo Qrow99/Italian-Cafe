@@ -10,6 +10,9 @@
 
     MAX "{color=#34B7EB}''How are you doing today?''"
 
+    if chichi == 0:
+        jump chichisad
+
     #Got previous order right:
     AMC "{color=#ff7566}''Really tired. Work sucks, am I right?''"
     "{color=#34B7EB}She opens her jacket to reveal a parking attendant badge. My boss looks over and locks eyes with me."
@@ -25,6 +28,9 @@
 
     AMC "{color=#ff7566}''Yeah, I already did my midterm, which I think I did pretty good on, so just the one is good enough.''"
     MAX "{color=#34B7EB}''Congrats! One Song of Seasons coming right up!''"
+
+    $ order = 1
+
     "{color=#34B7EB}I make the drink. Song of Seasons isn't too complicated."
     #(No change in interaction if you get it wrong.)
     while makingdrink == 0:
@@ -32,12 +38,26 @@
         #pause
 
     $ makingdrink = 0
+    $ order = 0
     if chichi == 1:
         jump chichihappy
     else:
         jump chichisad
     MAX "{color=#34B7EB}''Amnesty, I have your Song of Seasons with one espresso shot!''"
     label chichihappy:
+    python:
+        coffee = 0
+        Espresso = 0
+        Milk = 0
+        Cinnamon = 0
+        Chocolate = 0
+        Pumpkin = 0
+        foam = 0
+        ExtraShot = 0
+        creamer = 0
+        whip_cream = 0
+        steam = 0
+        reset = 1
     show amecie happy
 
     AMC "{color=#ff7566}''Thanks! Hey I forgot to tell you! My audition went really well too and my friends and I are in the dance show tomorrow night! Do you want to come?''"

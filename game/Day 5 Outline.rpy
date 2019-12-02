@@ -186,6 +186,7 @@
     MAX "{color=#34B7EB}''Oh Ed, I’ll take this one! You just... keep doing what you’re doing.''"
 
     play sound2 "<from 1.5 to 2.75>sfx_room_footsteps_exit.ogg"
+    stop music fadeout 3.0
     show ed sick neutral at Position(xpos=-400, xanchor=0, yalign=0.205) with ease
 
     "{color=#34B7EB}He doesn’t make a move, but I figure that’s as close to an ‘okay’ as I’m getting at this point."
@@ -203,6 +204,7 @@
     {color=#34B7EB}Turning around, I find this hand belongs to the only other person behind the counter. Shocker.
     """
 
+    play music "mus_main_loop_cafejazz1.ogg" fadein 3.0
     play sound2 "<from 1.5 to 2.75>sfx_room_footsteps_enter.ogg"
     show ed sick neutral at Position(xalign=0.3, yalign=0.205) with ease
 
@@ -263,14 +265,33 @@
 
     MAX "{color=#34B7EB}''I don’t really get what you mean by that, but alright?! I’ll make you the best drink I can, then!''"
 
+    $ order = 1
+
     "{color=#34B7EB}Ignoring the potential judgement that could befall me from revealing such information to him, I make Ed my favorite beverage..."
 
     #(another drink making section goes here. it doesn’t matter what the result is, though.)
+
     while makingdrink == 0:
         "{color=#34B7EB}Ignoring the potential judgement that could befall me from revealing such information to him, I make Ed my favorite beverage..."
         #pause
 
     $ makingdrink = 0
+    $ order = 0
+
+    python:
+        coffee = 0
+        Espresso = 0
+        Milk = 0
+        Cinnamon = 0
+        Chocolate = 0
+        Pumpkin = 0
+        foam = 0
+        ExtraShot = 0
+        creamer = 0
+        whip_cream = 0
+        steam = 0
+        reset = 1
+
 
     "{color=#34B7EB}In a single gulp, Ed finishes the drink. He closes his eyes, scratches his chin, and then nods."
 

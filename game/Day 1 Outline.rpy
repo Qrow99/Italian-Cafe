@@ -60,7 +60,7 @@
         #pause
 
     $ makingdrink = 0
-    #$ order = 0
+    $ order = 0
 
     MAX "{color=#34B7EB}''Here you go, sir!''"
 
@@ -79,6 +79,19 @@
     # (if drink is correct)
     #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     label interaction1good:
+    python:
+        coffee = 0
+        Espresso = 0
+        Milk = 0
+        Cinnamon = 0
+        Chocolate = 0
+        Pumpkin = 0
+        foam = 0
+        ExtraShot = 0
+        creamer = 0
+        whip_cream = 0
+        steam = 0
+        reset = 1
 
     ED "{color=#EBB134}''Not bad.''"
 
@@ -120,6 +133,20 @@
     # (if drink is incorrect)
     #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     label interaction1bad:
+    python:
+        coffee = 0
+        Espresso = 0
+        Milk = 0
+        Cinnamon = 0
+        Chocolate = 0
+        Pumpkin = 0
+        foam = 0
+        ExtraShot = 0
+        creamer = 0
+        whip_cream = 0
+        steam = 0
+        reset = 1
+
     ED "{color=#EBB134}''It could use some work.''"
 
     MAX "{color=#34B7EB}''Oh, I see...''"
@@ -150,9 +177,8 @@
         Cinnamon = 0
         Chocolate = 0
         Pumpkin = 0
-        pagenum = 0
         foam = 0
-        espresso = 0
+        ExtraShot = 0
         creamer = 0
         whip_cream = 0
         steam = 0
@@ -298,7 +324,7 @@
     show ed neutral at Position(xpos=-400, xanchor=0, yalign=0.205)
 
     """
-    {color=#34B7EB}As I exited into the back room, Ed only gave a quick grunt and a slight nod.
+    {color=#34B7EB}As I exit into the back room, Ed only gives a quick grunt and a slight nod.
     Though I’m sure he meant it in the best way possible.
 
     {color=#34B7EB}It seemed as though Ed had done a pretty good job cleaning up the break room, though I can’t actually remember what it looked like last week well enough to say for certain.
@@ -379,17 +405,5 @@
     """
     pause
 
-    python:
-        coffee = 0
-        Espresso = 0
-        milk = 0
-        Cinnamon = 0
-        Chocolate = 0
-        Pumpkin = 0
-        pagenum = 0
-        foam = 0
-        espresso = 0
-        creamer = 0
-        whip_cream = 0
-        steam = 0
+
     jump DAY2

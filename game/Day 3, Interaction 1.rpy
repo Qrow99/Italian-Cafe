@@ -52,7 +52,7 @@ label D3I1:
 
     "{color=#34B7EB}The leader leans a little more and his glasses scoot down so I can see his steel gray eyes. They pierce through my soul."
 
-    show roberto neutral
+    show roberto sans
 
     URTO "{color=#e0e0e0}''Focus your radio, man. If you make us some slammin coffee, we'll become your Gin mill cowboys and give you some of our good dollars. Capiche?''"
 
@@ -60,6 +60,8 @@ label D3I1:
     "{color=#34B7EB}Is that slang he's using? And is he... is he making an ultimatum with me? I'll still appease them because well ...it's my job."
 
     MAX "{color=#34B7EB}''Okay... so um... what drink would you like?''"
+
+    show roberto neutral
 
     URTO "{color=#e0e0e0}''Dark Sun.''"
 
@@ -74,6 +76,9 @@ label D3I1:
     "{color=#34B7EB}They walk back in step and shimmy their shoulders as they sit down to wait."
     "{color=#34B7EB}I'm a little perplexed if they'll like them or not. Guess I'll find out in a bit...maybe an intense bongo solo will play?"
     #*Coffee gameplay ensues*
+
+    $ order = 1
+
     while makingdrink == 0:
         "{color=#34B7EB}Bongos aside, what did they want again? I think one was a Dark Sun..."
         #pause
@@ -82,16 +87,16 @@ label D3I1:
     python:
         coffee = 0
         Espresso = 0
-        milk = 0
+        Milk = 0
         Cinnamon = 0
         Chocolate = 0
         Pumpkin = 0
-        pagenum = 0
         foam = 0
-        espresso = 0
+        ExtraShot = 0
         creamer = 0
         whip_cream = 0
         steam = 0
+        reset = 1
 
     while makingdrink == 0:
         "{color=#34B7EB}Ok one down, next one was a Goodmoon? Wait, crap we dont serve that! Then what was it...?"
@@ -102,36 +107,37 @@ label D3I1:
     python:
         coffee = 0
         Espresso = 0
-        milk = 0
+        Milk = 0
         Cinnamon = 0
         Chocolate = 0
         Pumpkin = 0
-        pagenum = 0
         foam = 0
-        espresso = 0
+        ExtraShot = 0
         creamer = 0
         whip_cream = 0
         steam = 0
+        reset = 1
 
     while makingdrink == 0:
         "{color=#34B7EB}Ok, then the last one was a Jhonny Moonman... or was it a fly me to Benny?"
         #pause
 
     $ makingdrink = 0
+    $ order = 0
 
     python:
         coffee = 0
         Espresso = 0
-        milk = 0
+        Milk = 0
         Cinnamon = 0
         Chocolate = 0
         Pumpkin = 0
-        pagenum = 0
         foam = 0
-        espresso = 0
+        ExtraShot = 0
         creamer = 0
         whip_cream = 0
         steam = 0
+        reset = 1
 
     MAX "{color=#34B7EB}''Here you go!''"
 

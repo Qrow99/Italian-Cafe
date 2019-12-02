@@ -44,13 +44,17 @@ label D1I2:
 
     """
     {color=#34B7EB}Amnesty laughs like a hyena, not answering my rhetorical question. Three shots might be too much considering her current energy level...
-    {color=#34B7EB}Then again she probably knows her limits right? Right?? Time to make her drink!
+    """
+    $ order = 1
+    """
+    {color=#34B7EB}Then again she probably knows her limits right? Right?? Time to make a Song of Seasons... with extra espresso.
     """
     while makingdrink == 0:
-        "{color=#34B7EB}Then again she probably knows her limits right? Right?? Time to make her drink!"
+        "{color=#34B7EB}Then again she probably knows her limits right? Right?? Time to make a Song of Seasons... with extra espresso."
         #pause
 
     $ makingdrink = 0
+    $ order = 0
     #Make it as she asks it, with extra shots
     if coffee == 1 and Pumpkin == 1 and foam == 1 and ExtraShot == 1:
         $ chichi = 1
@@ -59,6 +63,19 @@ label D1I2:
         jump missingshot
 
     label godwhy:
+    python:
+        coffee = 0
+        Espresso = 0
+        Milk = 0
+        Cinnamon = 0
+        Chocolate = 0
+        Pumpkin = 0
+        foam = 0
+        ExtraShot = 0
+        creamer = 0
+        whip_cream = 0
+        steam = 0
+        reset = 1
     "{color=#34B7EB}Against my better judgement, I make the drink – with as much espresso as I put in it."
     MAX "{color=#34B7EB}''Amnesty, I have your Song of Seasons with three espresso shots!''"
     AMC "{color=#ff7566}''Thank you so much!!''"
@@ -78,6 +95,19 @@ label D1I2:
 
 
     label missingshot:
+    python:
+        coffee = 0
+        Espresso = 0
+        Milk = 0
+        Cinnamon = 0
+        Chocolate = 0
+        Pumpkin = 0
+        foam = 0
+        espresso = 0
+        creamer = 0
+        whip_cream = 0
+        steam = 0
+        reset = 1
     #Make it without an extra shot
     "{color=#34B7EB}I decide it's probably for the best not to fuel this fire."
     MAX "{color=#34B7EB}''Amnesty, I have your Song of Seasons with three espresso shots!''"
@@ -99,17 +129,5 @@ label D1I2:
     jump D1I2END
 
     label D1I2END:
-    python:
-        coffee = 0
-        Espresso = 0
-        milk = 0
-        Cinnamon = 0
-        Chocolate = 0
-        Pumpkin = 0
-        pagenum = 0
-        foam = 0
-        espresso = 0
-        creamer = 0
-        whip_cream = 0
-        steam = 0
+
     jump D1Break

@@ -57,6 +57,7 @@
 
     JUNE "{color=#4969de}''That would be nice, yes.''"
 
+    $ order = 1
     "{color=#34B7EB}Alright, Song of Seasons. That should be pretty easy, but why ask for directions...?"
 
     while makingdrink == 0:
@@ -64,6 +65,7 @@
         #pause
 
     $ makingdrink = 0
+    $ order = 0
 
 # here's where the drink making minigame is. Customer asks for Song of Seasons, but it doesn't matter what's made.
     if Pumpkin == 1 and foam == 1:
@@ -72,6 +74,19 @@
         jump interaction3good
 
     label interaction3good:
+    python:
+        coffee = 0
+        Espresso = 0
+        Milk = 0
+        Cinnamon = 0
+        Chocolate = 0
+        Pumpkin = 0
+        foam = 0
+        ExtraShot = 0
+        creamer = 0
+        whip_cream = 0
+        steam = 0
+        reset = 1
     MAX "{color=#34B7EB}''Here’s your drink! Enjoy!''"
 
     show june angry
@@ -109,7 +124,7 @@
 
     MAX "{color=#34B7EB}''Hey, you mind if I ask why you wanted to know how I made your drink?''"
 
-    "{color=#34B7EB}For at least a solid ten seconds she didn’t respond, again appearing as if she hadn’t heard me. Though, once again, she eventually manages to get some words out."
+    "{color=#34B7EB}For at least a solid ten seconds she doesn’t respond, again appearing as if she hadn’t heard me. Though, once again, she eventually manages to get some words out."
 
     show june neutral
 
@@ -155,17 +170,4 @@
     play sound2 "sfx_room_door_main_close.ogg"
     stop music fadeout 3.0
 
-    python:
-        coffee = 0
-        Espresso = 0
-        milk = 0
-        Cinnamon = 0
-        Chocolate = 0
-        Pumpkin = 0
-        pagenum = 0
-        foam = 0
-        espresso = 0
-        creamer = 0
-        whip_cream = 0
-        steam = 0
     jump D1I4

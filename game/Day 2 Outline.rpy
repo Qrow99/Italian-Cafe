@@ -201,7 +201,7 @@
     stop music fadeout 5.0
 
     """
-    {color=#34B7EB}At a pace that was significantly quicker than my walking speed but not quite as fast as a full sprint, I leave the premises. The end of my shift certainly could’ve gone better, but the rest of it wasn’t too bad, I don’t think.
+    {color=#34B7EB}At a pace significantly quicker than my walking speed but not quite as fast as a full sprint, I leave the premises. The end of my shift certainly could’ve gone better, but the rest of it wasn’t too bad, I don’t think.
 
     {color=#34B7EB}Regardless, I decide at home that maybe my best course of action in the future would be to question Laura less. Or, maybe it should be to question her more.
 

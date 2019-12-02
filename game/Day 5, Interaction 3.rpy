@@ -1,8 +1,10 @@
     label D5I3:
 
+
     "{color=#34B7EB}Through the doors enters an equally formidable and familiar man, head hung low and arms firmly crossed."
 
     play sound "sfx_room_footsteps_enter.ogg"
+    play music "mus_main_loop_cafejazz6.ogg" fadein 3.0
     show brad neutral at Position(xalign=0.3, yalign=0.205) with dissolve
 
     MAX "{color=#34B7EB}''Welcome back to La Piovosita, mister!''"
@@ -52,11 +54,30 @@
     I’d be happy to do some rambling over a drink! Let’s see here... how about an Entertainer?''"
 
     MAX "{color=#34B7EB}''Coming right up, sir!''"
+
+    $ order = 1
+
     while makingdrink == 0:
         "{color=#34B7EB}I’m still not sure how I feel about being called ‘lad,’ but I guess it doesn’t matter. One Entertainer coming up!"
         #pause
 
     $ makingdrink = 0
+    $ order = 0
+
+    python:
+        coffee = 0
+        Espresso = 0
+        Milk = 0
+        Cinnamon = 0
+        Chocolate = 0
+        Pumpkin = 0
+        foam = 0
+        ExtraShot = 0
+        creamer = 0
+        whip_cream = 0
+        steam = 0
+        reset = 1
+
 
 
 # Drink making minigame does here
@@ -135,6 +156,7 @@
 
     BRAD "{color=#d9d97e}''I want you to keep being yourself, young man! Just do that, and I’m sure your girl trouble will be gone before you know it! Hahaha!''"
 
+    stop music fadeout 3.0
     play sound2 "sfx_room_door_main_close.ogg"
 
     jump D5I4

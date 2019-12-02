@@ -2,9 +2,11 @@
 
     play sound2 "sfx_room_door_main_open.ogg"
     play sound "sfx_room_door_main_bellchime.ogg"
+    stop music fadeout 5.0
 
     "{color=#34B7EB}As I scrub the counter for seemingly the twenty seventh time in the past hour, my endless monotony is thankfully cut short by the sound of heavy footsteps. At the door, an unusually wide man in a clean suit walks up to the counter."
 
+    play music "mus_main_loop_cafejazz6.ogg" fadein 3.0
     play sound "sfx_room_footsteps_enter.ogg"
     show brad neutral at Position(xalign=0.3, yalign=0.205) with dissolve
 
@@ -24,6 +26,9 @@
     BRAD "{color=#d9d97e}''...Yes.''"
 
     MAX "{color=#34B7EB}''Okay, then. I’ll see what I can do!''"
+
+    $ order = 1
+
     "{color=#34B7EB}He didn’t sound totally certain about it, but I guess the customer is always right.
     So the drink with the most caffeine... that’d be the Entertainer, right? I think that’s its whole deal..."
     while makingdrink == 0:
@@ -32,18 +37,44 @@
         #pause
 
     $ makingdrink = 0
-
+    $ order = 0
 
 # Drink making minigame goes here.
 # Anything works
 
 
     label D2I3good:
+    python:
+        coffee = 0
+        Espresso = 0
+        Milk = 0
+        Cinnamon = 0
+        Chocolate = 0
+        Pumpkin = 0
+        foam = 0
+        ExtraShot = 0
+        creamer = 0
+        whip_cream = 0
+        steam = 0
+        reset = 1
     MAX "{color=#34B7EB}''Alright, this one’s called the Entertainer! It has the most caffeine of anything on the menu!''"
 
     show brad neutral
 
     label D2I3bad:
+    python:
+        coffee = 0
+        Espresso = 0
+        Milk = 0
+        Cinnamon = 0
+        Chocolate = 0
+        Pumpkin = 0
+        foam = 0
+        ExtraShot = 0
+        creamer = 0
+        whip_cream = 0
+        steam = 0
+        reset = 1
     BRAD "{color=#d9d97e}''Thank you.''"
 
     "{color=#34B7EB}The man takes a hearty sip and shows no reaction. Wiping his beard of residual coffee, he places the drink back on the counter while failing to cover a burp with his fist."
@@ -124,6 +155,7 @@
     BRAD "{color=#d9d97e}''I want you to keep on the straight and narrow, and always do your best!''"
 
     play sound2 "sfx_room_door_main_close.ogg"
+    stop music fadeout 5.0
 
     """
     {color=#34B7EB}The man then turns back around and leaves as if something unbelievably cheesy didn’t just come out of his mouth. Even ignoring the fact that he asked for two things, not one, I have no idea how to react to that.
@@ -132,7 +164,5 @@
 
     {color=#34B7EB}Maybe I could use a drink right about now...
     """
-
-
 
     jump D2I4

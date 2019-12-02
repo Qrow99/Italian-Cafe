@@ -30,7 +30,9 @@
     {color=#34B7EB}The man doesn't respond. He just continues to stare forward, unflinchingly. I wait a moment for a response, assuming he's just deep in thought, but the only sound I hear is a strange, low buzzing noise.
 
     {color=#34B7EB}Quickly, it stops. I suddenly feel compelled to make this man's drink as quickly as possible.
-
+    """
+    $ order = 1
+    """
     {color=#34B7EB}He said he wanted a latte, right? The Fairytale of New York is a latte I'm pretty sure. Guess I should just make that...
     """
     while makingdrink == 0:
@@ -38,6 +40,20 @@
         #pause
 
     $ makingdrink = 0
+    $ order = 0
+    python:
+        coffee = 0
+        Espresso = 0
+        Milk = 0
+        Cinnamon = 0
+        Chocolate = 0
+        Pumpkin = 0
+        foam = 0
+        ExtraShot = 0
+        creamer = 0
+        whip_cream = 0
+        steam = 0
+        reset = 1
 
     """
     {color=#34B7EB}As I finish making the drink, the man jolts to attention, staring at me now instead of the wall.
@@ -79,17 +95,5 @@
 
     {color=#34B7EB}I suddenly remember that I absolutely hate wasps.
     """
-    python:
-        coffee = 0
-        Espresso = 0
-        milk = 0
-        Cinnamon = 0
-        Chocolate = 0
-        Pumpkin = 0
-        pagenum = 0
-        foam = 0
-        espresso = 0
-        creamer = 0
-        whip_cream = 0
-        steam = 0
+    
     jump D2I2

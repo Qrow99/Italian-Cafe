@@ -2,17 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/newscreens.rpy", line 13: screen expects a non-empty block.
-    screen ResetButton():
-                         ^
-
-File "game/newscreens.rpy", line 15: expected statement.
-    imagebutton:
-               ^
-
-File "game/newscreens.rpy", line 19: expected statement.
-    imagebutton:
-               ^
+File "game/Day 4, Interaction 4.rpy", line 59: expected python code
+    $
+     ^
 
 Ren'Py Version: Ren'Py 7.2.2.491
-Sun Dec 01 21:24:53 2019
+Mon Dec 02 02:07:44 2019

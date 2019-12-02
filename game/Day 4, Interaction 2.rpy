@@ -101,6 +101,8 @@ label D4I2:
     MAX "{color=#34B7EB}''...
     Alright, I'll whip something up for you, I guess!''"
 
+    $ order = 1
+
     "{color=#34B7EB}What the heck am I even supposed to make here? I guess I'll get her... something."
 
     #(literally any drink works)
@@ -109,6 +111,21 @@ label D4I2:
         #pause
 
     $ makingdrink = 0
+    $ order = 0
+
+    python:
+        coffee = 0
+        Espresso = 0
+        Milk = 0
+        Cinnamon = 0
+        Chocolate = 0
+        Pumpkin = 0
+        foam = 0
+        ExtraShot = 0
+        creamer = 0
+        whip_cream = 0
+        steam = 0
+        reset = 1
 
     MAX "{color=#34B7EB}''Alright, here's a drink! I hope you like it!''"
 
