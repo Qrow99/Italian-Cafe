@@ -1,9 +1,14 @@
 label D4I2:
 
+    play sound2 "sfx_room_door_main_open.ogg"
+    play sound "sfx_room_door_main_bellchime.ogg"
+
     """
     {color=#34B7EB}The shadows and relentless snaps of the preceding figures fade, and in the process I nearly miss the entrance of a thin, short haired girl.
     """
 
+    play music "mus_main_loop_cafejazz7.ogg" fadein 3.0
+    play sound "sfx_room_footsteps_enter.ogg"
     show errin neutral at Position(xalign=0.3, yalign=0.205) with dissolve
 
     """
@@ -101,7 +106,7 @@ label D4I2:
     #(literally any drink works)
     while makingdrink == 0:
         "{color=#34B7EB}What the heck am I even supposed to make here? I guess I'll get her... something."
-        pause
+        #pause
 
     $ makingdrink = 0
 
@@ -117,7 +122,7 @@ label D4I2:
 
     show errin gross
 
-    "{color=#34B7EB}For a moment she sits in silence, and a moment after she looks as though she's about the throw up. The expression didn't last long, but it was nearly enough to make me regret getting out of bed this morning."
+    "{color=#34B7EB}For a moment she sits in silence, and a moment after she looks as though she's about the throw up. The expression doesn't last long, but it's nearly enough to make me regret getting out of bed this morning."
 
     show errin neutral
 
@@ -155,8 +160,9 @@ label D4I2:
 
     ERN "{color=#ffd6ff}''I see. I'll be on my way, then.''"
 
-    #SE
+    play sound "sfx_room_footsteps_exit.ogg"
     hide errin with dissolve
+    play sound2 "sfx_room_door_main_close.ogg"
 
     """
     {color=#34B7EB}Taking light, nearly silent steps that tonally clash with the music still blasting into her ears, the girl leaves the building, though not before taking cautious glances in every direction on her way out.

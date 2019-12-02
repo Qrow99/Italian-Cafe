@@ -1,10 +1,11 @@
     label D4I3:
 
-    # play sound "sfx_room_bell_enter.ogg"
-    play sound "sfx_room_footsteps_enter.ogg"
+    play sound2 "sfx_room_door_main_open.ogg"
+    play sound "sfx_room_door_main_bellchime.ogg"
 
     "{color=#34B7EB}A girl comes in and the faint sound of explosive EDM accompanies her. She hums along to the music as she walks in, and upon further inspection said music appears to be coming out of a massive headset she has positioned on her shoulders."
 
+    play sound "sfx_room_footsteps_enter.ogg"
     show brenda neutral at Position(xalign=0.3, yalign=0.205) with dissolve
 
     MAX "{color=#34B7EB}''Welcome to La Piovosita! Can I get you something?''"
@@ -69,7 +70,7 @@
     MAX "{color=#34B7EB}''I’m on it!''"
     while makingdrink == 0:
         "{color=#34B7EB}Alright, a Dark Sun. For some reason, I feel like I’m supposed to be doing something right now? Not sure why. Weird."
-        pause
+        #pause
     $ makingdrink = 0
 
 
@@ -151,7 +152,7 @@
 # Both correct and incorrect drinks converge here
     label D4I3Converge:
 
-    play sound "sfx_room_footsteps_exit.ogg"
+    play sound2 "<from 1.5 to 2.75>sfx_room_footsteps_exit.ogg"
     hide brenda with dissolve
 
     """
@@ -170,17 +171,29 @@
     {color=#34B7EB}Is there anything special about today? A sort of joke holiday or mass amnesia? Probably not.
 
     {color=#34B7EB}The only difference I can think of is that... Ed isn’t here. He wasn’t here to give me a break. Which he does at the same time every day.
+    """
 
+    play sound "sfx_room_textmessage_send.ogg"
+
+    """
     {color=#34B7EB}I decide to shoot Ed a quick text. ‘Hey, do you know this Brenda girl who just walked in?’
-
+    """
+    play sound "sfx_room_textmessage_receive.ogg"
+    """
     {color=#EBB134}‘Did she say anything about me?’ {color=#34B7EB}he responds. Not what I was expecting.
-
+    """
+    play sound "sfx_room_textmessage_send.ogg"
+    """
     {color=#34B7EB}‘She told me to tell you hi.’ I text. {color=#EBB134}‘Can you tell her hi back?’ {color=#34B7EB}he responds rather quickly.
 
     {color=#34B7EB}I don’t think I’ll be able to get to her from behind that headset, but Ed doesn’t have to know that.
-
+    """
+    play sound "sfx_room_textmessage_send.ogg"
+    """
     {color=#34B7EB}‘Sure thing.’ I respond.
-
+    """
+    play sound "sfx_room_textmessage_receive.ogg"
+    """
     {color=#34B7EB}He says {color=#EBB134}‘thanks,’ {color=#34B7EB}and I decide there’s no real need to say any more, especially while he’s sick and I’m at work.
 
     {color=#34B7EB}I wonder why he was so insistent on knowing about what she said. Ed’s never been all that good with subtlety, but he really seemed to be cutting to the chase.
@@ -189,5 +202,19 @@
 
     {color=#34B7EB}I guess I shouldn’t assume stuff like that, but on the other hand, that would explain a lot of the things he did this week... I think I’ll just ask him after my shift.
     """
+
+    python:
+        coffee = 0
+        Espresso = 0
+        milk = 0
+        Cinnamon = 0
+        Chocolate = 0
+        Pumpkin = 0
+        pagenum = 0
+        foam = 0
+        espresso = 0
+        creamer = 0
+        whip_cream = 0
+        steam = 0
 
     jump D4I4

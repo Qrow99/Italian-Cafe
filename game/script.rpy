@@ -100,6 +100,7 @@ label start:
         secondguy = 0
         firstguy = 0
         Brenda = 0
+        order = 0
     # The Background
     scene bg room
 

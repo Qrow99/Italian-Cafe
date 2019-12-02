@@ -4,12 +4,19 @@
     {color=#34B7EB}I casually stand at the counter, letting my mind wander. Once again, I hear the familiar sounds of faint music.
 
     {color=#34B7EB}Instead of one instrument, I hear a full band of music: the strum of a bass guitar, the gentle tap of a drum, jazzy piano and the smooth sax. Have they reached their final form?
+    """
 
+    play sound2 "sfx_room_door_main_open.ogg"
+    play sound "sfx_room_door_main_bellchime.ogg"
+
+    """
     {color=#34B7EB}The upbeat music fills me with excitement and I slightly sway to the beat until I hear the sound of the doorbell jingling. The three of them enter and bob their head as they snap. They twirl and they greet me with a finger gun.
 
     {color=#34B7EB}I can tell they're in a good mood.
     """
 
+    play music "mus_main_loop_cafejazz3.ogg" fadein 3.0
+    play sound "sfx_room_footsteps_enter.ogg"
     show roberto neutral at Position(xalign=0.3, yalign=0.205) with dissolve
     show cynthia neutral at Position(xalign=0.0, yalign=0.205) with dissolve
     show bridget neutral at Position(xalign=0.6, yalign=0.205) with dissolve
@@ -43,7 +50,7 @@
     #*coffee gameplay*
     while makingdrink == 0:
         "{color=#34B7EB}I make the coffee with a sway in my hips. I'm pretty confident in my ability to make the Entertainer at this point."
-        pause
+        #pause
 
     $ makingdrink = 0
 
@@ -66,7 +73,7 @@
     MAX "{color=#34B7EB}''Uh, Hey! Wait! Can I ask you guys something? If you have time?''"
 
     """
-    {color=#34B7EB}I suddenly remembered that I had to ask them something, some advice for Ed. Perhaps these cool cats may have had some experience with love? Anything would help.
+    {color=#34B7EB}I suddenly remembered that I could ask them something, some advice for Ed. Perhaps these cool cats may have had some experience with love? Anything would help.
 
     {color=#34B7EB}The music abruptly stops and Roberto stands there in confusion as the other two girls hand him his drink. They walk over to me precariously.
     """
@@ -134,15 +141,19 @@
 
     RTO "{color=#e0e0e0}''Thanks man, you're a real angel. Anytime ya need a friend, we're here for ya alright? Laters!''"
 
+    play sound "sfx_room_footsteps_exit.ogg"
     hide roberto with dissolve
 
     CYN "{color=#d4d4d4}''Good luck with your friend! I believe in you!''"
 
+    play sound "sfx_room_footsteps_exit.ogg"
     hide cynthia with dissolve
 
     BGT "{color=#d4d4d4}''Au revoir, tell your friend I said hi.''"
 
+    play sound "sfx_room_footsteps_exit.ogg"
     hide bridget with dissolve
+    play sound2 "sfx_room_door_main_close.ogg"
 
     "{color=#34B7EB}And with a flash, they snap out and start dancing like maniacs when they take a sip of their drink. I hope they have fun at their party."
 

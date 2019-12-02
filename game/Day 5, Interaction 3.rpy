@@ -1,9 +1,8 @@
     label D5I3:
 
-    play sound "sfx_room_footsteps_enter.ogg"
-
     "{color=#34B7EB}Through the doors enters an equally formidable and familiar man, head hung low and arms firmly crossed."
 
+    play sound "sfx_room_footsteps_enter.ogg"
     show brad neutral at Position(xalign=0.3, yalign=0.205) with dissolve
 
     MAX "{color=#34B7EB}''Welcome back to La Piovosita, mister!''"
@@ -55,7 +54,7 @@
     MAX "{color=#34B7EB}''Coming right up, sir!''"
     while makingdrink == 0:
         "{color=#34B7EB}I’m still not sure how I feel about being called ‘lad,’ but I guess it doesn’t matter. One Entertainer coming up!"
-        pause
+        #pause
 
     $ makingdrink = 0
 
@@ -102,7 +101,7 @@
 
     show brad neutral
 
-    BRAD "{color=#d9d97e}''And one last thing when the time comes that you do really start to come down with a bad case of feelings, never forget the most effective way of letting someone know how you feel about them.''"
+    BRAD "{color=#d9d97e}''And one last thing: when the time comes that you do really start to come down with a bad case of feelings, never forget the most effective way of letting someone know how you feel about them.''"
 
     MAX "{color=#34B7EB}''What’s that?''"
 
@@ -123,6 +122,7 @@
 
     MAX "{color=#34B7EB}''Likewise.''"
 
+    play sound "sfx_room_footsteps_exit.ogg"
     hide brad with dissolve
 
     "{color=#34B7EB}As he got up from his seat and began to leave, the memory of his first appearance in the café returned to me. I’ve gotta know..."
@@ -135,6 +135,6 @@
 
     BRAD "{color=#d9d97e}''I want you to keep being yourself, young man! Just do that, and I’m sure your girl trouble will be gone before you know it! Hahaha!''"
 
-    play sound "sfx_room_footsteps_exit.ogg"
+    play sound2 "sfx_room_door_main_close.ogg"
 
     jump D5I4

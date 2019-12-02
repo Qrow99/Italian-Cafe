@@ -1,26 +1,56 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/options.rpy", line 53, in script
-    init -1 python:
-  File "game/options.rpy", line 54, in <module>
-    renpy.music.register_channel("sound2", mixer= "sfx", loop=false)
-NameError: name 'false' is not defined
+  File "renpy/common/00start.rpy", line 203, in script call
+    call _load_reload_game from _call__load_reload_game_1
+  File "renpy/common/00keymap.rpy", line 450, in script
+    python hide:
+  File "renpy/common/00start.rpy", line 203, in script call
+    call _load_reload_game from _call__load_reload_game_1
+  File "renpy/common/00keymap.rpy", line 450, in script
+    python hide:
+  File "renpy/common/00keymap.rpy", line 450, in <module>
+    python hide:
+  File "renpy/common/00keymap.rpy", line 451, in _execute_python_hide
+    renpy.rename_save("_reload-1", "_reload-2")
+WindowsError: [Error 32] The process cannot access the file because it is being used by another process
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/options.rpy", line 53, in script
-    init -1 python:
+  File "C:\Users\Cornelius\Desktop\renpy-7.2.2-sdk\renpy\bootstrap.py", line 313, in bootstrap
+    renpy.main.main()
+  File "C:\Users\Cornelius\Desktop\renpy-7.2.2-sdk\renpy\main.py", line 525, in main
+    run(restart)
+  File "C:\Users\Cornelius\Desktop\renpy-7.2.2-sdk\renpy\main.py", line 139, in run
+    renpy.execution.run_context(True)
+  File "C:\Users\Cornelius\Desktop\renpy-7.2.2-sdk\renpy\execution.py", line 892, in run_context
+    context.run()
+  File "renpy/common/00start.rpy", line 203, in script call
+    call _load_reload_game from _call__load_reload_game_1
+  File "renpy/common/00keymap.rpy", line 450, in script
+    python hide:
+  File "renpy/common/00start.rpy", line 203, in script call
+    call _load_reload_game from _call__load_reload_game_1
+  File "renpy/common/00keymap.rpy", line 450, in script
+    python hide:
   File "C:\Users\Cornelius\Desktop\renpy-7.2.2-sdk\renpy\ast.py", line 900, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
   File "C:\Users\Cornelius\Desktop\renpy-7.2.2-sdk\renpy\python.py", line 1930, in py_exec_bytecode
     exec bytecode in globals, locals
-  File "game/options.rpy", line 54, in <module>
-    renpy.music.register_channel("sound2", mixer= "sfx", loop=false)
-NameError: name 'false' is not defined
+  File "renpy/common/00keymap.rpy", line 450, in <module>
+    python hide:
+  File "renpy/common/00keymap.rpy", line 451, in _execute_python_hide
+    renpy.rename_save("_reload-1", "_reload-2")
+  File "C:\Users\Cornelius\Desktop\renpy-7.2.2-sdk\renpy\loadsave.py", line 775, in rename_save
+    location.rename(old, new)
+  File "C:\Users\Cornelius\Desktop\renpy-7.2.2-sdk\renpy\savelocation.py", line 473, in rename
+    l.rename(old, new)
+  File "C:\Users\Cornelius\Desktop\renpy-7.2.2-sdk\renpy\savelocation.py", line 298, in rename
+    os.rename(old, new)
+WindowsError: [Error 32] The process cannot access the file because it is being used by another process
 
 Windows-8-6.2.9200
 Ren'Py 7.2.2.491
- 
-Sun Dec 01 00:19:11 2019
+Scenes From an Italian Cafe 0.10
+Sun Dec 01 15:43:51 2019

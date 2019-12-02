@@ -1,7 +1,11 @@
     label DAY5:
 
-    show laura tired at Position(xpos=-400, xanchor=0, yalign=0.205) with ease
-    show ed sick neutral at Position(xalign=0.3, yalign=0.205) with ease
+    show laura tired at Position(xpos=-400, xanchor=0, yalign=0.205)
+    show ed sick neutral at Position(xalign=0.3, yalign=0.205)
+
+    "{color=#34B7EB}{b}The next day..."
+
+    pause
 
     """
     {color=#34B7EB}Walking into work, I feel the effects of my first Friday taking hold of me. I’m simultaneously excited to be here and excited to leave. I’m both determined to work and too lazy to want to. I’m two other contradictory things.
@@ -10,6 +14,7 @@
     """
 
     hide black box with dissolve
+    play music "mus_main_loop_cafejazz1.ogg"
 
     MAX "{color=#34B7EB}''Hey Ed, I’m here- woah! Are you okay!? You look terrible!''"
 
@@ -73,7 +78,9 @@
     {color=#34B7EB}Right on cue, Laura found a way to sneak her way into the main room undetected, and for the first time I’m grateful for it.
     """
 
+    play sound "sfx_room_door_wood_open.ogg"
     show ed sick think at Position(xalign=0.1, yalign=0.205) with ease
+    play sound2 "<from 1.5 to 2.75>sfx_room_footsteps_enter.ogg"
     show laura angry at Position(xalign=0.5, yalign=0.205) with ease
 
     LAURA "{color=#ff3636}''Edward, you look awful. Also, you’ve been slacking all day! Are you sure you’re actually fit to work today?''"
@@ -89,13 +96,17 @@
 
     ED "{color=#EBB134}''I’ll get the mop.''"
 
+    play sound2 "<from 1.5 to 2.75>sfx_room_footsteps_exit.ogg"
     show ed sick neutral at Position(xpos=-400, xanchor=0, yalign=0.205) with ease
+    play sound "sfx_room_door_wood_close.ogg"
     show laura inquire at Position(xalign=0.3, yalign=0.205) with ease
     show laura neutral
 
     LAURA "{color=#ff3636}''Perfect! And Max, I’m assuming you know what to do by this point, so just do it, alright!? I’m going back to my office.''"
 
+    play sound2 "<from 1.5 to 2.75>sfx_room_footsteps_exit.ogg"
     show laura neutral at Position(xpos=-400, xanchor=0, yalign=0.205) with ease
+    play sound "sfx_room_door_wood_close.ogg"
 
     MAX "{color=#34B7EB}''Uh, yeah! Of course! I’ll just be here, I guess...''"
 
@@ -118,6 +129,8 @@
 
     "{color=#34B7EB}Suddenly Ed bursts into the room from the break room, his face bright red and the rest of his body not looking much better."
 
+    play sound "sfx_room_door_wood_open.ogg"
+    play sound2 "<from 1.5 to 2.75>sfx_room_footsteps_enter.ogg"
     show ed sick neutral at Position(xalign=0.3, yalign=0.205) with ease
 
     ED "{color=#EBB134}''Max, break time.''"
@@ -135,6 +148,7 @@
     MAX "{color=#34B7EB}''Uh, alright then. If you say so.''"
 
     show black box at Position(xalign=0, yalign=0) with dissolve
+    play sound2 "sfx_room_door_wood_open.ogg"
 
     """
     {color=#34B7EB}Ed’s never been all that flowery with his words, but this is probably the most pushy I’ve ever heard him. As much as I’d like to try and help calm him down, if he needs space then maybe that’s the best thing I can give him.
@@ -146,7 +160,9 @@
     {color=#34B7EB}Sitting in the seat most optimally angled to give the greatest view of the room as a whole, I find myself losing all sense of time and space to the aesthetically immaculate collection of intricate senses and feelings that is the break room.
     """
 
+    show ed sick neutral
     hide black box with dissolve
+    play sound2 "sfx_room_door_wood_close.ogg"
 
     """
     {color=#34B7EB}And then I leave, and Ed is just standing at the counter, staring at the door.
@@ -158,12 +174,18 @@
 
     """
     {color=#34B7EB}Walking back to my post, I can see his foot tapping under and hear him breathe heavily and inconsistently. Somehow, he manages to look even worse than he did five minutes ago. Is he really that nervous?
+    """
 
+    play sound2 "sfx_room_door_main_open.ogg"
+    play sound "sfx_room_door_main_bellchime.ogg"
+
+    """
     {color=#34B7EB}I begin to walk over to him to offer him the advice I’ve accumulated throughout my shift, but an incoming customer interrupts me.
     """
 
     MAX "{color=#34B7EB}''Oh Ed, I’ll take this one! You just... keep doing what you’re doing.''"
 
+    play sound2 "<from 1.5 to 2.75>sfx_room_footsteps_exit.ogg"
     show ed sick neutral at Position(xpos=-400, xanchor=0, yalign=0.205) with ease
 
     "{color=#34B7EB}He doesn’t make a move, but I figure that’s as close to an ‘okay’ as I’m getting at this point."
@@ -181,7 +203,8 @@
     {color=#34B7EB}Turning around, I find this hand belongs to the only other person behind the counter. Shocker.
     """
 
-    show ed sick think at Position(xalign=0.3, yalign=0.205) with ease
+    play sound2 "<from 1.5 to 2.75>sfx_room_footsteps_enter.ogg"
+    show ed sick neutral at Position(xalign=0.3, yalign=0.205) with ease
 
     """
     {color=#34B7EB}I don’t even know if I should give Ed any advice at this point. I mean, I’ve certainly accumulated a lot throughout the day, but it just seems so... I don’t know, obvious?
@@ -220,6 +243,7 @@
     ED "{color=#EBB134}''What?''"
 
     MAX "{color=#34B7EB}''You don’t know how much longer she’ll want to hang around this café! Heck, you don’t really know that much about her at all! But the only why you can find out is to talk to her, you know?''"
+    MAX "{color=#34B7EB}''Like, you gotta start somewhere, daddy-o...!?''"
 
     ED "{color=#EBB134}''...Were you preparing that?''"
 
@@ -227,7 +251,7 @@
 
     "{color=#34B7EB}Ed stood still for a moment, looking like I had just spoken to him in several different languages, all long dead."
 
-    show ed sick think
+    show ed sick neutral
 
     ED "{color=#EBB134}''Make me your favorite drink.''"
 
@@ -244,13 +268,11 @@
     #(another drink making section goes here. it doesn’t matter what the result is, though.)
     while makingdrink == 0:
         "{color=#34B7EB}Ignoring the potential judgement that could befall me from revealing such information to him, I make Ed my favorite beverage..."
-        pause
+        #pause
 
     $ makingdrink = 0
 
     "{color=#34B7EB}In a single gulp, Ed finishes the drink. He closes his eyes, scratches his chin, and then nods."
-
-    show ed sick think
 
     ED "{color=#EBB134}''Alright, I get it.''"
 
@@ -262,6 +284,8 @@
 
     "{color=#34B7EB}Before I could ask another stupid question, Ed turned around and started marching toward the table at the furthest corner of the room."
 
+    play sound2 "<from 1.5 to 2.75>sfx_room_footsteps_exit.ogg"
+    stop music fadeout 3.0
     show black box at Position(xalign=0, yalign=0) with dissolve
     show ed sick surprise at Position(xalign=0.1, yalign=0.205) with ease
     show brenda surprise behind black at Position(xalign=0.5, yalign=0.205)
@@ -272,11 +296,14 @@
     {color=#34B7EB}He cleared his throat, tapped her on the shoulder, and as she removed her headphones he lifted up his arm and...
 
     {color=#34B7EB}His elbow knocked against her cup of coffee, spilling it all over her lap.
-
-    {color=#34B7EB}For the first couple of moments neither of them said anything. Ed stood completely frozen and bug eyed as Brenda bit her bottom lip, I can only assume as a reaction to having scalding liquid poured all over her.
     """
 
     hide black box with dissolve
+    play music "mus_main_loop_cafejazz4.ogg"
+
+    """
+    {color=#34B7EB}For the first couple of moments neither of them said anything. Ed stood completely frozen and bug eyed as Brenda bit her bottom lip, I can only assume as a reaction to having scalding liquid poured all over her.
+    """
 
     ED "{color=#EBB134}''I’m so sorry, I’ll get some more napkins.''"
 
@@ -354,6 +381,7 @@
     MAX "{color=#34B7EB}''Sounds good to me!''"
 
     show black box at Position(xalign=0, yalign=0) with dissolve
+    hide ending placeholder
 
     """
     {color=#34B7EB}After taking a moment to share a quick goodbye with everyone in the building, I ran out the doors of La Piovosita and into the cool evening air.

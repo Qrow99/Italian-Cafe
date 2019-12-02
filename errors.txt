@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/Day 3, Interaction 3.rpy", line 138: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
-    play sound "sfx_room_footsteps_exit.ogg"
-    ^
+File "game/Day 5, Interaction 3.rpy", line 138: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+        play sound2 "sfx_room_door_main_close.ogg""
 
 Ren'Py Version: Ren'Py 7.2.2.491
-Sun Dec 01 02:01:03 2019
+Sun Dec 01 16:43:07 2019

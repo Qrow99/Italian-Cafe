@@ -1,5 +1,9 @@
 label D4I1:
 
+    play sound2 "sfx_room_door_main_open.ogg"
+    play sound "sfx_room_door_main_bellchime.ogg"
+    stop music fadeout 5.0
+
     """
     {color=#34B7EB}A piano plays from a distance, playing a jazzy tune that makes me tap my foot in tempo.
 
@@ -9,7 +13,8 @@ label D4I1:
 
     {color=#34B7EB}I see them walk in the café shimmying their shoulders and the leader does a spin and finalizes his move with an arm on the counter. He winks at me. Why is my heart beating so fast?
     """
-
+    play music "mus_main_loop_cafejazz3.ogg" fadein 3.0
+    play sound "sfx_room_footsteps_enter.ogg"
     show roberto neutral at Position(xalign=0.3, yalign=0.205) with dissolve
     show cynthia neutral at Position(xalign=0.0, yalign=0.205) with dissolve
     show bridget neutral at Position(xalign=0.6, yalign=0.205) with dissolve
@@ -33,7 +38,7 @@ label D4I1:
     """
     while makingdrink == 0:
         "{color=#34B7EB}Alright, another big order, just need to take a deep breath and... make a Deep Breath."
-        pause
+        #pause
 
     $ makingdrink = 0
 
@@ -56,7 +61,7 @@ label D4I1:
 
     while makingdrink == 0:
         "{color=#34B7EB}Thats one, next up, I should try making an Entertainer"
-        pause
+        #pause
 
     $ makingdrink = 0
 
@@ -79,8 +84,8 @@ label D4I1:
         steam = 0
 
     while makingdrink == 0:
-        "{color=#34B7EB}Two down, one dinkle to go. Is it still dinkles if there's just one?."
-        pause
+        "{color=#34B7EB}Two down, one dinkle to go. Is it still dinkles if there's just one?"
+        #pause
 
     $ makingdrink = 0
 
@@ -122,9 +127,12 @@ label D4I1:
     {color=#34B7EB}He hops from the table and bursts through the door and the girls hurry immediately, trying to catch up with him.
     """
 
+    play sound "sfx_room_footsteps_exit.ogg"
     hide roberto with dissolve
     hide cynthia with dissolve
     hide bridget with dissolve
+    play sound2 "sfx_room_door_main_close.ogg"
+    stop music fadeout 3.0
 
     """
     {color=#34B7EB}He starts dancing with a random stranger to the beat of the music—coming from who knows where. The girls try to pry him off.

@@ -11,6 +11,7 @@
     """
 
     hide black box with dissolve
+    play music "mus_main_loop_cafejazz7.ogg"
 
     LAURA "{color=#ff3636}''It’s about time you showed up, newbie! Get over here, chop chop!!''"
 
@@ -35,17 +36,20 @@
     LAURA "{color=#ff3636}''Employees are expensive, alright? Get off my case!
     Anyways, it doesn’t matter! I’m sure tubby’s just faking it all so he can come in extra late today...''"
 
-    # (phone begins to ring)
+    play sound "sfx_room_textmessage_receive.ogg"
     "{color=#34B7EB}Before Laura could continue her rant, a generic ringtone sounded from her pocket, accompanied by the sound of a vibrating mechanical device."
 
     show laura angry
 
-    LAURA "{color=#ff3636}''It’s Edward! He’d better be calling to say his sickness miraculously disappeared, or else!''"
+    LAURA "{color=#ff3636}''It’s a text! From Edward! He says he want needs to talk to me!''"
+    LAURA "{color=#ff3636}''He’d better say his sickness miraculously disappeared, or else!''"
 
+    play sound2 "<from 1.5 to 2.75>sfx_room_footsteps_exit.ogg"
     show laura angry at Position(xpos=-400, xanchor=0, yalign=0.205) with ease
+    play sound "sfx_room_door_wood_close.ogg"
 
     """
-    {color=#34B7EB}Laura left in a huff into her office and began wildly screaming at her cell phone.
+    {color=#34B7EB}Laura leaves in a huff into her office and begins wildly screaming at her cell phone.
 
     {color=#34B7EB}I’m not sure if the conversation is supposed to be private, but I’m holding out the hope that it’s not, considering Laura’s inability to keep her voice down...
     """
@@ -66,12 +70,14 @@
     {color=#ff3636}''That’s not a no, so I’ll take it as a yes! See you tomorrow, bub!''
     """
 
+    play sound "sfx_room_door_wood_open.ogg"
+    play sound2 "<from 1.5 to 2.75>sfx_room_footsteps_enter.ogg"
     show laura tired at Position(xalign=0.3, yalign=0.205) with ease
 
     LAURA "{color=#ff3636}''Well, newbie, looks like it’s just me and you this afternoon.''"
     LAURA "{color=#ff3636}''But don’t fret, I know that you and Edward have been getting all chummy as of late, so in his absence, I shall be your replacement Edward!''"
 
-    "{color=#34B7EB}Laura jolts into an upright position and puffed out her cheeks, while putting on a face that looked like someone trying their absolute hardest to be apathetic."
+    "{color=#34B7EB}Laura jolts into an upright position and puffs out her cheeks, putting on a face that looks like someone trying their absolute hardest to be apathetic."
 
     show laura impersonation
 
@@ -96,14 +102,16 @@
 
     LAURA "{color=#ff3636}''I thought so! You just wait, newbie! When I’m done, it’ll be like Edward never left!''"
 
+    play sound2 "<from 1.5 to 2.75>sfx_room_footsteps_exit.ogg"
     show laura happy at Position(xpos=-400, xanchor=0, yalign=0.205) with ease
+    play sound "sfx_room_door_wood_close.ogg"
 
     """
-    {color=#34B7EB}Laura took a jaunty strut to her office and left me completely alone.
+    {color=#34B7EB}Laura takes a jaunty strut to her office, leaving me completely alone.
 
     {color=#34B7EB}Not that it’s really all that different from what usually happens during my shift, but without Ed it feels a little bit emptier...
 
-    {color=#34B7EB}I guess I shouldn't be thinking about that right now, though. Not while I have a job to do! Especially since Ed isn’t here! I need to be on the top of my game today! Now if only I really knew what that meant...
+    {color=#34B7EB}I guess I shouldn't dwell on it too much, though. Not while I have a job to do! Especially since Ed isn’t here! I need to be on the top of my game today! Now if only I really knew what that meant...
     """
 
     #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -117,6 +125,7 @@
 
     label D4Break:
 
+    play sound2 "<from 1.5 to 2.75>sfx_room_footsteps_enter.ogg"
     show laura neutral at Position(xalign=0.3, yalign=0.205) with ease
 
     LAURA "{color=#ff3636}''How goes it, newbie?''"
@@ -160,7 +169,9 @@
     LAURA "{color=#ff3636}''I’m sure you understand, I can’t do all that AND work the counter!
     Tomorrow maybe, but I just told me that I gotta clean the bathrooms again, and I can’t be doing that and letting you slack off at the same time.''"
 
+    play sound2 "<from 1.5 to 2.75>sfx_room_footsteps_exit.ogg"
     show laura tired at Position(xpos=-400, xanchor=0, yalign=0.205) with ease
+    play sound "sfx_room_door_wood_close.ogg"
 
     """
     {color=#34B7EB}That was surprisingly pleasant, at least as far as interactions with Laura go. Maybe she isn’t as abrasive as I thought...
@@ -186,6 +197,7 @@
 
     "{color=#34B7EB}I began to reach down for my favorite counter-cleaning rag when a familiar shadow slunk its way toward my location."
 
+    play sound2 "<from 1.5 to 2.75>sfx_room_footsteps_enter.ogg"
     show laura happy at Position(xalign=0.3, yalign=0.205) with ease
 
     LAURA "{color=#ff3636}''Hey Max, shift’s over. Go home, you did good today.''"
@@ -212,16 +224,19 @@
     LAURA "{color=#ff3636}''Fine, I get it. You can stop blubbering.
     It doesn’t matter anyways; I was just trying to say something Edward would say, since you two are so buddy-buddy and all...''"
 
-    "{color=#34B7EB}For the first time I think ever, Laura broke eye contact with me and turned away. But not a second later, she was back to staring me down like usual."
+    "{color=#34B7EB}For the first time I think ever, Laura breaks eye contact with me and turns away. But not a second later, she's back to staring me down like usual."
 
     show laura angry
 
     LAURA "{color=#ff3636}''But impression or not, you heard me didn’t you!? Scram, before I kick you out!''"
 
+    play sound "sfx_room_footsteps_exit.ogg"
     show black box at Position(xalign=0, yalign=0) with dissolve
+    play sound2 "sfx_room_door_main_close.ogg"
+    stop music fadeout 5.0
 
     """
-    {color=#34B7EB}Not wanting to disobey after such a disjointed interaction, I proceeded to scram without a word more.
+    {color=#34B7EB}Not wanting to disobey after such a disjointed interaction, I proceed to scram without a word more.
 
     {color=#34B7EB}I wonder how much Laura actually meant the compliment she gave me...
 
@@ -239,5 +254,7 @@
     # (if Brenda told Max everything)
     label BrendaHappy:
     "{color=#34B7EB}But I can’t be thinking about that now! I’ve got something more important to do, and that’s call Ed! If my hunch is right and Ed does have a crush, then I’ve got something to tell him..."
+
+    pause
 
     jump DAY5

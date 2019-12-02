@@ -51,12 +51,16 @@
 
     MAX "{color=#34B7EB}''A Deep Breath? Got it!''"
 
+    python:
+        order = 1
+
     "{color=#34B7EB}Alright, a Deep Breath, that shouldn’t be hard. I just gotta look it up in the menu, and then put everything together, just like he taught me..."
     while makingdrink == 0:
         "{color=#34B7EB}Alright, a Deep Breath, that shouldn’t be hard. I just gotta look it up in the menu, and then put everything together, just like he taught me..."
         pause
 
     $ makingdrink = 0
+    #$ order = 0
 
     MAX "{color=#34B7EB}''Here you go, sir!''"
 
@@ -152,6 +156,7 @@
         creamer = 0
         whip_cream = 0
         steam = 0
+    
     show ed neutral at Position(xalign=0.1, yalign=0.205) with ease
 
     play sound2 "<from 1.5 to 2.75>sfx_room_footsteps_enter.ogg"
@@ -163,7 +168,7 @@
 
     ED "{color=#EBB134}''I’m testing Max before his shift.''"
 
-    LAURA "{color=#ff3636}''Testing, huh? Well that’s funny, because I didn’t think I was paying you to be a Teacher!''"
+    LAURA "{color=#ff3636}''Testing, huh? Well that’s funny, because I didn’t think I was paying you to be a teacher!''"
 
     ED "{color=#EBB134}''You were last week.''"
 

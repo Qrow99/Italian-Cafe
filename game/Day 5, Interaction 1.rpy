@@ -1,6 +1,12 @@
     label D5I1:
 
-    # play sound "sfx_room_bell_enter.ogg"
+    play sound2 "sfx_room_door_main_open.ogg"
+    play sound "sfx_room_door_main_bellchime.ogg"
+    stop music fadeout 5.0
+
+    "{color=#34B7EB}What are the odds I can just happen upon something that could help me in this very specific situation?"
+
+    play music "mus_main_loop_cafejazz10.ogg" fadein 3.0
     play sound "sfx_room_footsteps_enter.ogg"
     show june neutral at Position(xalign=0.3, yalign=0.205) with dissolve
 
@@ -9,7 +15,7 @@
     MAX "{color=#34B7EB}''Really? Well, I’m happy to hear it! One Cinna-monster coming right up!''"
     while makingdrink == 0:
         "{color=#34B7EB}I sure hope she isn’t expecting the cinnamon to cancel out the coffee completely, but I guess we’ll find out. One Cinna-monster it is!"
-        pause
+        #pause
 
     $ makingdrink = 0
 
@@ -57,9 +63,12 @@
     JUNE "{color=#4969de}''Hmph. Fine. If you insist, I’ll give you a little summary and then give you the link.
     Gimme your phone for a second.''"
 
+    play sound "sfx_room_typing_soft_single.ogg"
+
     "{color=#34B7EB}I unlock my phone and hand it to her. Her fingernails make a satisfying clicking sound as she stares at the screen, plinking away at it."
 
     show june think
+    stop sound
 
     JUNE "{color=#4969de}''So it’s like... uh... how do I put it? Well, here’s a start; have you ever heard of 'Water Crest?'''"
 
@@ -134,10 +143,11 @@
     JUNE "{color=#4969de}''Yup, you really are weird.
     Oh, one last thing; if you really do intend on reading what I wrote, maybe consider not doing it in a public place. See you.''"
 
-    hide june with dissolve
-    # play sound "sfx_room_bell_enter.ogg"
     play sound "sfx_room_footsteps_exit.ogg"
-
+    hide june with dissolve
+    play sound2 "sfx_room_door_main_close.ogg"
+    stop music fadeout 3.0
+    
     "{color=#34B7EB}I’m not going to think too hard about what that might mean."
 
     jump D5I2

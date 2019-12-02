@@ -1,9 +1,10 @@
     label D4I4:
 
     python:
-        milk = 0
+        Milk = 0
 
-    play sound "sfx_room_footsteps_enter.ogg"
+    play sound2 "sfx_room_door_main_open.ogg"
+    play sound "sfx_room_door_main_bellchime.ogg"
 
     """
     {color=#34B7EB}As I ponder how nosy I intend to be in regards to my coworker, two boys enter the building, making idle chat as they walk in. I’m still not quite sure how to address groups of people, since I don’t want to interrupt their conversation, but I’d hate to come off as rude.
@@ -11,6 +12,7 @@
     {color=#34B7EB}I guess the basic introduction has worked pretty well thus far, so I won’t bother trying to fix what isn’t broken.
     """
 
+    play sound "sfx_room_footsteps_enter.ogg"
     show chase neutral at Position(xalign=0.5, yalign=0.22) with dissolve
     show roy neutral at Position(xalign=0.1, yalign=0.22) with dissolve
 
@@ -56,17 +58,17 @@
     MAX "{color=#34B7EB}''Uh, sure! I’ll do the best I can!''"
     while makingdrink == 0:
         "{color=#34B7EB}I don’t think there’s much in the Deep Breath except milk... Guess I’ll just have to improvise?"
-        pause
+        #pause
 
     $ makingdrink = 0
 
 
 # Drink minigame here
 # If the drink has milk in it, it's a fail. Anything else is fine.
-    if coffee == 1 and whip_cream == 1:
-        jump d4i4good
-    else:
+    if Milk == 1 or Steamed Milk == 1:
         jump d4i4bad
+    else:
+        jump d4i4good
 
     MAX "{color=#34B7EB}''Alright, here you go! Two Deep Breaths, special ordered!''"
 
@@ -83,7 +85,6 @@
 
     {color=#34B7EB}The tall one immediately takes a large slurp of his beverage, while the short one blows on his before taking a cautious sip. Neither make a particularly disgusted reaction, so that’s at least comforting.
     """
-
 
     # (if drink has no milk)
     label d4i4good:
@@ -153,7 +154,7 @@
     """
     {color=#34B7EB}The tall boy finishes his drink and exerts a mild sigh as the short one sips his slowly. He doesn’t look like he’s going to finish it any time soon.
 
-    {color=#34B7EB}I guess both of them know that too, since they both got up as soon as the first one was finished.
+    {color=#34B7EB}I guess both of them realize that too, since they both get up as soon as the first one finishes.
     """
 
     CHASE "{color=#FFCB70}''Well, that was nice. Thanks for the drink, mister barista guy! We’ll be heading out now.''"
@@ -164,20 +165,21 @@
 
     MAX "{color=#34B7EB}''Alright, bye then! Hope to see you back again soon!''"
 
+    play sound "sfx_room_footsteps_exit.ogg"
     hide chase with dissolve
     hide roy with dissolve
 
     """
     {color=#34B7EB}The short boy grabs his drink and leaves quickly while the tall one lobs his empty cup toward the trash can.
 
-    {color=#34B7EB}He misses by at least a couple feet, and almost doesn’t pick it up before his buddy nags him to do so. They continue to make idle banter all the while.
+    {color=#34B7EB}He misses by at least a couple feet, and almost doesn’t pick it up until his buddy nags him to do so. They continue to make idle banter all the while.
     """
 
     ROY "{color=#82C26E}''Sheesh. That barista guy probably thinks I’m a total geek...''"
 
     CHASE "{color=#FFCB70}''Either that or just a big idiot.''"
 
-    play sound "sfx_room_footsteps_exit.ogg"
+    play sound2 "sfx_room_door_main_close.ogg"
 
     "{color=#34B7EB}The last thing I hear before the doors close is the short boy making a wide range of unintelligible, goblin-like noises."
 
@@ -202,7 +204,7 @@
 
     {color=#34B7EB}The tall one immediately takes a large slurp of his beverage, while the short one blows on his before taking a cautious sip. Neither make a particularly disgusted reaction, so that’s at least comforting.
     """
-    
+
     MAX "{color=#34B7EB}''So, how do you guys like it?''"
 
     show roy neutral
@@ -210,7 +212,7 @@
     ROY "{color=#82C26E}''It’s alright.''"
 
     show chase neutral
-    # play stomach gurgling sound effect
+    play sound "sfx_room_stomach_loud.ogg"
 
     CHASE "{color=#FFCB70}''...That isn’t good.''"
 
@@ -218,15 +220,17 @@
 
     ROY "{color=#82C26E}''What isn’t?''"
 
-    "{color=#34B7EB}A loud gurgling noise sounded from the tall boy’s stomach. The short boy was visibly concerned, but the one doing the gurgling seemed no worse for wear."
+    "{color=#34B7EB}A loud gurgling noise sounds from the tall boy’s stomach. The short boy is visibly concerned, but the one doing the gurgling seems no worse for wear."
 
     CHASE "{color=#FFCB70}''Do you guys have a bathroom here?''"
 
     MAX "{color=#34B7EB}''Uh, yeah. It’s on the right hand side of the back wall.''"
 
-    "{color=#34B7EB}The tall boy made a brisk speed walk in the direction I pointed while the short one glared in my direction."
+    "{color=#34B7EB}The tall boy makes a brisk speed walk in the direction I pointed while the short one glares in my direction."
 
+    play sound2 "<from 1.5 to 2.75>sfx_room_footsteps_exit.ogg"
     show chase neutral at Position(xpos=-400, xanchor=0, yalign=0.22) with ease
+    play sound "sfx_room_door_wood_close.ogg"
     show roy inquire at Position(xalign=0.3, yalign=0.205) with ease
     show roy angry
 
@@ -236,7 +240,9 @@
 
     "{color=#34B7EB}I don’t really have anything to say to that. He’s right, I did screw up the literal only direction they gave me... I hope Laura doesn’t find out about this."
 
+    play sound "sfx_room_door_wood_open.ogg"
     show roy angry at Position(xalign=0.1, yalign=0.22) with ease
+    play sound2 "<from 1.5 to 2.75>sfx_room_footsteps_enter.ogg"
     show chase neutral at Position(xalign=0.5, yalign=0.22) with ease
 
     CHASE "{color=#FFCB70}''Phew, okay, I think we should be heading home now. I’m not feeling too great.''"
@@ -251,10 +257,10 @@
 
     CHASE "{color=#FFCB70}''It’s alright! Mistakes happen, you know?''"
 
+    play sound "sfx_room_footsteps_exit.ogg"
     hide chase with dissolve
     hide roy with dissolve
-
-    play sound "sfx_room_footsteps_exit.ogg"
+    play sound2 "sfx_room_door_main_close.ogg"
 
     "{color=#34B7EB}The two leave in quite a hurry, with the short one giving me the evil eye until we were out of each other’s view. Did I just do something awful?"
     "{color=#34B7EB}Maybe I should leave the rest of the specialty orders to Ed in the future..."

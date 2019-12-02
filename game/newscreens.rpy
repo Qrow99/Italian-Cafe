@@ -13,11 +13,16 @@ screen ResetButton():
         action Notify("reset order"), SetVariable("coffee", 0), SetVariable('Espresso', 0), SetVariable("Milk", 0), SetVariable("Cinnamon", 0), SetVariable("Chocolate", 0), SetVariable("Pumpkin", 0), Play("sound", "sfx_ui_click1.ogg")
 
 screen ConfirmButton():
-    imagebutton:
-        xalign 0.97 yalign 0.57
-        idle "Submit_Idle.PNG"
-        hover "Submit_Highlight.PNG"
-        action Notify("ORDER UP"), SetVariable("makingdrink", 1), Play("sound", "sfx_ui_click1.ogg"), Play("sound", "sfx_room_coffee_pour.ogg")
+    if order == 1:
+        imagebutton:
+            xalign 0.97 yalign 0.57
+            idle "Submit_Idle.PNG"
+            hover "Submit_Highlight.PNG"
+            action Notify("ORDER UP"), SetVariable("makingdrink", 1), Play("sound", "sfx_ui_click1.ogg"), Play("sound", "sfx_room_coffee_pour.ogg")
+    else:
+        imagebutton:
+            xalign 0.97 yalign 0.57
+            idle "Submit_Inactive.PNG"
 
 screen NextButton():
     imagebutton:
