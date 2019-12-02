@@ -68,9 +68,9 @@
     $ order = 0
 
 # here's where the drink making minigame is. Customer asks for Song of Seasons, but it doesn't matter what's made.
-    if Pumpkin == 1 and foam == 1:
+    if coffee == 1 and Pumpkin == 1 and foam == 1:
         jump interaction3good
-    else:
+    elif Espresso == 1 or Milk == 1 or Cinnamon == 1 or Chocolate == 1 or ExtraShot == 1 or creamer == 1 or whip_cream == 1 or steam == 1:
         jump interaction3good
 
     label interaction3good:

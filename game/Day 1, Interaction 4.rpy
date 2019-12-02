@@ -73,7 +73,7 @@
 
     if coffee == 1 and Milk == 1 and whip_cream == 1 and steam == 1:
         jump D1I4GOOD
-    else:
+    elif Espresso == 1 or Cinnamon == 1 or Chocolate == 1 or Pumpkin == 1 or foam == 1 or ExtraShot == 1 or creamer == 1:
         jump D1I4BAD
 
     # Bad outcome:

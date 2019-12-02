@@ -26,9 +26,9 @@
     $ makingdrink = 0
     $ order = 1
 
-    if coffee == 1 and Pumpkin == 1 and foam == 1:
+    if coffee == 1 and Pumpkin == 1 and foam == 1 and ExtraShot == 1 :
         "{color=#34B7EB}Ok! Four seasons, sounds about right."
-    else:
+    elif Espresso == 1 or Milk == 1 or Cinnamon == 1 or Chocolate == 1 or creamer == 1 or whip_cream == 1 or steam == 1:
         "{color=#34B7EB}Ok I think thats right? Only one way to find out..."
 
     python:

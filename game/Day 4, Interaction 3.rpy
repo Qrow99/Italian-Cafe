@@ -83,7 +83,7 @@
     if Espresso == 1 and Chocolate == 1 and foam == 1 and ExtraShot == 1:
         jump d4i3good
         $ Brenda = 1
-    else:
+    elif coffee == 1 or Milk == 1 or Cinnamon == 1 or Pumpkin == 1 or creamer == 1 or whip_cream == 1 or steam == 1:
         jump d4i3bad
 
     "{color=#34B7EB}I hand her the drink, and she gives it a few good puffs of air before taking a sip. She licks her lips and then puts on a face of rumination, as if she were pondering deeply on the flavor."

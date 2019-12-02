@@ -45,6 +45,8 @@ label D4I1:
 
     if coffee == 1 and Milk == 1 and whip_cream == 1:
         $ thirdguy = 1
+    elif Espresso == 1 or steam == 1 or Cinnamon == 1 or Chocolate == 1 or Pumpkin == 1 or foam == 1 or ExtraShot == 1 or creamer == 1 :
+        $ thirdguy = 0
 
     python:
         coffee = 0
@@ -67,8 +69,10 @@ label D4I1:
     $ makingdrink = 0
 
 
-    if coffee == 1 and Chocolate == 1 and espresso == 1:
+    if coffee == 1 and Chocolate == 1 and ExtraShot == 1:
         $ secondguy = 1
+    elif Espresso == 1 or Milk == 1 or Cinnamon == 1 or Pumpkin == 1 or foam == 1 or creamer == 0 or whip_cream == 1 or steam == 1:
+        $ secondguy = 0
 
     python:
         coffee = 0
@@ -92,6 +96,8 @@ label D4I1:
 
     if coffee == 1 and Milk == 1 and whip_cream == 1:
         $ firstguy = 1
+    elif Espresso == 1 or Cinnamon == 1 or Chocolate == 1 or Pumpkin == 1 or foam == 1 or ExtraShot == 1 or creamer == 1:
+        $ firstguy = 0
 
     $ order = 0
 

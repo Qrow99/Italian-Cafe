@@ -45,6 +45,7 @@
     SBNA "{color=#fa9def}''O.M.G. That soundsksk yumilicious! I'll have that please! With a cherry on top!''"
 
     # (A/N: God, I hate myself)
+    # you should be ashamed of this
 
     MAX "{color=#34B7EB}''Yes and no. My manager, Laura, is too cheap to buy cherries. But comin' right up!''"
 

@@ -36,7 +36,7 @@
 # here's the drink. The order is the Dinkles.
     if coffee == 1 and Milk == 1 and steam == 1:
         jump d3i3good
-    else:
+    elif Espresso == 1 or Cinnamon == 1 or Chocolate == 1 or Pumpkin == 1 or foam == 1 or ExtraShot == 1 or creamer == 1 or whip_cream == 1 :
         jump d3i3bad
 
     MAX "{color=#34B7EB}''Here you go! Enjoy!''"
