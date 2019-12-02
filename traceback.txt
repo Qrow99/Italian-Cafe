@@ -1,56 +1,24 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "renpy/common/00start.rpy", line 203, in script call
-    call _load_reload_game from _call__load_reload_game_1
-  File "renpy/common/00keymap.rpy", line 450, in script
-    python hide:
-  File "renpy/common/00start.rpy", line 203, in script call
-    call _load_reload_game from _call__load_reload_game_1
-  File "renpy/common/00keymap.rpy", line 450, in script
-    python hide:
-  File "renpy/common/00keymap.rpy", line 450, in <module>
-    python hide:
-  File "renpy/common/00keymap.rpy", line 451, in _execute_python_hide
-    renpy.rename_save("_reload-1", "_reload-2")
-WindowsError: [Error 32] The process cannot access the file because it is being used by another process
+  File "game/Day 4, Interaction 4.rpy", line 68, in script
+    if Milk == 1 or Steamed Milk == 1:
+SyntaxError: invalid syntax (game/Day 4, Interaction 4.rpy, line 68)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "C:\Users\Cornelius\Desktop\renpy-7.2.2-sdk\renpy\bootstrap.py", line 313, in bootstrap
-    renpy.main.main()
-  File "C:\Users\Cornelius\Desktop\renpy-7.2.2-sdk\renpy\main.py", line 525, in main
-    run(restart)
-  File "C:\Users\Cornelius\Desktop\renpy-7.2.2-sdk\renpy\main.py", line 139, in run
-    renpy.execution.run_context(True)
-  File "C:\Users\Cornelius\Desktop\renpy-7.2.2-sdk\renpy\execution.py", line 892, in run_context
-    context.run()
-  File "renpy/common/00start.rpy", line 203, in script call
-    call _load_reload_game from _call__load_reload_game_1
-  File "renpy/common/00keymap.rpy", line 450, in script
-    python hide:
-  File "renpy/common/00start.rpy", line 203, in script call
-    call _load_reload_game from _call__load_reload_game_1
-  File "renpy/common/00keymap.rpy", line 450, in script
-    python hide:
-  File "C:\Users\Cornelius\Desktop\renpy-7.2.2-sdk\renpy\ast.py", line 900, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\Cornelius\Desktop\renpy-7.2.2-sdk\renpy\python.py", line 1930, in py_exec_bytecode
-    exec bytecode in globals, locals
-  File "renpy/common/00keymap.rpy", line 450, in <module>
-    python hide:
-  File "renpy/common/00keymap.rpy", line 451, in _execute_python_hide
-    renpy.rename_save("_reload-1", "_reload-2")
-  File "C:\Users\Cornelius\Desktop\renpy-7.2.2-sdk\renpy\loadsave.py", line 775, in rename_save
-    location.rename(old, new)
-  File "C:\Users\Cornelius\Desktop\renpy-7.2.2-sdk\renpy\savelocation.py", line 473, in rename
-    l.rename(old, new)
-  File "C:\Users\Cornelius\Desktop\renpy-7.2.2-sdk\renpy\savelocation.py", line 298, in rename
-    os.rename(old, new)
-WindowsError: [Error 32] The process cannot access the file because it is being used by another process
+  File "game/Day 4, Interaction 4.rpy", line 68, in script
+    if Milk == 1 or Steamed Milk == 1:
+  File "C:\Users\Qrow99\Documents\renpy-7.3.3-sdk\renpy\ast.py", line 1832, in execute
+    if renpy.python.py_eval(condition):
+  File "C:\Users\Qrow99\Documents\renpy-7.3.3-sdk\renpy\python.py", line 2057, in py_eval
+    code = py_compile(code, 'eval')
+  File "C:\Users\Qrow99\Documents\renpy-7.3.3-sdk\renpy\python.py", line 692, in py_compile
+    raise e
+SyntaxError: invalid syntax (game/Day 4, Interaction 4.rpy, line 68)
 
 Windows-8-6.2.9200
-Ren'Py 7.2.2.491
+Ren'Py 7.3.5.606
 Scenes From an Italian Cafe 0.10
-Sun Dec 01 15:43:51 2019
+Sun Dec 01 18:31:55 2019

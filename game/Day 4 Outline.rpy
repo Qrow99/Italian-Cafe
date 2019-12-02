@@ -41,7 +41,7 @@
 
     show laura angry
 
-    LAURA "{color=#ff3636}''It’s a text! From Edward! He says he want needs to talk to me!''"
+    LAURA "{color=#ff3636}''It’s a text! From Edward! He says he needs to talk to me!''"
     LAURA "{color=#ff3636}''He’d better say his sickness miraculously disappeared, or else!''"
 
     play sound2 "<from 1.5 to 2.75>sfx_room_footsteps_exit.ogg"

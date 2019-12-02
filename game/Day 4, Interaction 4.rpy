@@ -65,7 +65,7 @@
 
 # Drink minigame here
 # If the drink has milk in it, it's a fail. Anything else is fine.
-    if Milk == 1 or Steamed Milk == 1:
+    if Milk == 1 or steam == 1:
         jump d4i4bad
     else:
         jump d4i4good
