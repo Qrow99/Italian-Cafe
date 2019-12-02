@@ -2,9 +2,17 @@
 errors listed below, and try again.
 
 
-File "game/Day 5, Interaction 3.rpy", line 138: is not terminated with a newline. (Check strings and parenthesis.)
-(Perhaps you left out a " at the end of the first line.)
-        play sound2 "sfx_room_door_main_close.ogg""
+File "game/newscreens.rpy", line 13: screen expects a non-empty block.
+    screen ResetButton():
+                         ^
+
+File "game/newscreens.rpy", line 15: expected statement.
+    imagebutton:
+               ^
+
+File "game/newscreens.rpy", line 19: expected statement.
+    imagebutton:
+               ^
 
 Ren'Py Version: Ren'Py 7.2.2.491
-Sun Dec 01 16:43:07 2019
+Sun Dec 01 21:24:53 2019

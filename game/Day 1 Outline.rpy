@@ -57,7 +57,7 @@
     "{color=#34B7EB}Alright, a Deep Breath, that shouldn’t be hard. I just gotta look it up in the menu, and then put everything together, just like he taught me..."
     while makingdrink == 0:
         "{color=#34B7EB}Alright, a Deep Breath, that shouldn’t be hard. I just gotta look it up in the menu, and then put everything together, just like he taught me..."
-        pause
+        #pause
 
     $ makingdrink = 0
     #$ order = 0
@@ -146,7 +146,7 @@
     python:
         coffee = 0
         Espresso = 0
-        milk = 0
+        Milk = 0
         Cinnamon = 0
         Chocolate = 0
         Pumpkin = 0
@@ -156,7 +156,8 @@
         creamer = 0
         whip_cream = 0
         steam = 0
-    
+        reset = 1
+
     show ed neutral at Position(xalign=0.1, yalign=0.205) with ease
 
     play sound2 "<from 1.5 to 2.75>sfx_room_footsteps_enter.ogg"

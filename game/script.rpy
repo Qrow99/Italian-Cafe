@@ -87,7 +87,7 @@ label start:
         Cinnamon = 0
         Chocolate = 0
         Pumpkin = 0
-        pagenum = 0 #will be used later for switching pages (possibly, not quite sure how im gonna do that atm)
+        pagenum = 1 #will be used later for switching pages (possibly, not quite sure how im gonna do that atm)
         foam = 0
         Espresso = 0
         ExtraShot = 0
@@ -101,6 +101,8 @@ label start:
         firstguy = 0
         Brenda = 0
         order = 0
+        reset = 1
+        openmenu = 0
     # The Background
     scene bg room
 
