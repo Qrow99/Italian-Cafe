@@ -59,7 +59,7 @@ label D1I2:
     if coffee == 1 and Pumpkin == 1 and foam == 1 and ExtraShot == 1:
         $ chichi = 1
         jump godwhy
-    else:
+    elif Espresso == 1 or Milk == 1 or Cinnamon == 1 or Chocolate == 1 or Pumpkin == 1 or creamer == 1 or whip_cream == 1 or steam == 1 :
         jump missingshot
 
     label godwhy:
