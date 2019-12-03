@@ -10,7 +10,7 @@
     play sound "sfx_room_door_main_bellchime.ogg"
 
     """
-    {color=#34B7EB}The upbeat music fills me with excitement and I slightly sway to the beat until I hear the sound of the doorbell jingling. The three of them enter and bob their head as they snap. They twirl and they greet me with a finger gun.
+    {color=#34B7EB}The upbeat music fills me with excitement, and I slightly sway to the beat until I hear the sound of the doorbell jingling. The three of them enter and bob their heads as they snap. They twirl and each greet me with a finger gun.
 
     {color=#34B7EB}I can tell they're in a good mood.
     """
@@ -38,7 +38,7 @@
 
     show roberto neutral
 
-    "{color=#34B7EB}The girl snickers at her sly comment and Roberto rolls his eyes and the other girl gives me pleading puppy dog eyes for the drink. This is one of the easiest orders I've had in days."
+    "{color=#34B7EB}The girl snickers at her sly comment and Roberto rolls his eyes while the other girl gives me pleading puppy dog eyes for the drink. This is one of the easiest orders I've had in days."
 
     MAX "{color=#34B7EB}''So three orders of The Entertainer coming right up!''"
 
@@ -173,6 +173,7 @@
     play sound "sfx_room_footsteps_exit.ogg"
     hide bridget with dissolve
     play sound2 "sfx_room_door_main_close.ogg"
+    stop music fadeout 3.0
 
     "{color=#34B7EB}And with a flash, they snap out and start dancing like maniacs when they take a sip of their drink. I hope they have fun at their party."
 

@@ -57,7 +57,7 @@ label D3I1:
     URTO "{color=#e0e0e0}''Focus your radio, man. If you make us some slammin coffee, we'll become your Gin mill cowboys and give you some of our good dollars. Capiche?''"
 
     "{color=#34B7EB}I'm stunned for a moment."
-    "{color=#34B7EB}Is that slang he's using? And is he... is he making an ultimatum with me? I'll still appease them because well ...it's my job."
+    "{color=#34B7EB}Is that slang he's using? And is he... is he making an ultimatum with me? I'll still appease them because, well, it's my job."
 
     MAX "{color=#34B7EB}''Okay... so um... what drink would you like?''"
 

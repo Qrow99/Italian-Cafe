@@ -152,7 +152,7 @@
 
     show brenda angry
 
-    BND "{color=#b459ff}''I can’t stand anything above, like, sixty degrees. And the dorm I live in doesn't have a functioning AC, so, yeah the fans here are a pretty big plus.''"
+    BND "{color=#b459ff}''I can’t stand anything above, like, sixty degrees. And the dorm I live in doesn't have a functioning AC so, yeah, the fans here are a pretty big plus.''"
 
     MAX "{color=#34B7EB}''Does your dorm not have wifi either?''"
 
@@ -242,7 +242,6 @@
         Cinnamon = 0
         Chocolate = 0
         Pumpkin = 0
-        pagenum = 0
         foam = 0
         espresso = 0
         creamer = 0

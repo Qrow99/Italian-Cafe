@@ -122,7 +122,7 @@
 
     show brad neutral
 
-    BRAD "{color=#d9d97e}''And one last thing: when the time comes that you do really start to come down with a bad case of feelings, never forget the most effective way of letting someone know how you feel about them.''"
+    BRAD "{color=#d9d97e}''And one last thing: when the time comes that you really do start to come down with a bad case of feelings, never forget the most effective way of letting someone know how you feel about them.''"
 
     MAX "{color=#34B7EB}''What’s that?''"
 
@@ -146,7 +146,7 @@
     play sound "sfx_room_footsteps_exit.ogg"
     hide brad with dissolve
 
-    "{color=#34B7EB}As he got up from his seat and began to leave, the memory of his first appearance in the café returned to me. I’ve gotta know..."
+    "{color=#34B7EB}As the man got up from his seat and began to leave, the memory of his first appearance in the café returned to me. I’ve gotta know..."
 
     MAX "{color=#34B7EB}''Wait sir! Before you go, is there anything else you need from me?''"
 

@@ -7,7 +7,7 @@
     pause
 
     """
-    {color=#34B7EB}The day’s events pretty much flew by in an instant - from the second I woke up to this very moment.
+    {color=#34B7EB}The day’s events pretty much fly by in an instant - from the second I woke up to this very moment.
 
     {color=#34B7EB}Before, in between, and even during my classes, all I could think about was going back to work today. Partially due to excitement of this shift’s prospects and partially due to nervousness, I assume.
 
@@ -72,7 +72,7 @@
 
     ED "{color=#EBB134}''You had my back.''"
 
-    "{color=#34B7EB}Ed closed his eyes and come closer to a smile than I’ve ever seen him, but only for a second."
+    "{color=#34B7EB}Ed closes his eyes and comes closer to a smile than I’ve ever seen him, but only for a second."
 
     show ed neutral
 
@@ -85,7 +85,7 @@
     """
     {color=#34B7EB}I wonder what that was about. But not enough to distract me from my job! It’s day number two alright, and whatever Laura and Ed are expecting of me, I intend to deliver!
 
-    {color=#34B7EB}I continued to hype myself up for about twenty seven minutes straight, until the sound of the front doors opening fell on my ears and I immediately transitioned through all five stages of grief with the knowledge that I’d have to converse with random strangers again.
+    {color=#34B7EB}I continue to hype myself up for about twenty seven minutes straight, until the sound of the front doors opening fall on my ears and I immediately transitions through all five stages of grief with the knowledge that I’ll have to converse with random strangers again.
     """
 
     #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -138,7 +138,7 @@
     play sound2 "sfx_room_door_wood_close.ogg"
 
     """
-    {color=#34B7EB}Regardless, as my fifth minute in the break room drew to its close, I resume my position at the bar next to Ed, who is once again busy with a customer.
+    {color=#34B7EB}Regardless, as my fifth minute in the break room draws to its close, I resume my position at the bar next to Ed, who is once again busy with a customer.
 
     {color=#34B7EB}I make the decision to not remind him about his cleaning duties, and promptly stand in place, waiting for the next thirsty patron to walk through those doors.
     """

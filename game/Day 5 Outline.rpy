@@ -66,7 +66,7 @@
 
     ED "{color=#EBB134}''Not at all.''"
 
-    MAX "{color=#34B7EB}''Oh, I see..."
+    MAX "{color=#34B7EB}''Oh, I see...''"
 
     """
     {color=#34B7EB}It occurs to me that I have no idea about anything regarding basic human interaction, let alone how someone could format a first encounter with someone who they have a big fat crush on.
@@ -75,7 +75,7 @@
 
     {color=#34B7EB}I wonder if there’s any way I can help him out...
 
-    {color=#34B7EB}Right on cue, Laura found a way to sneak her way into the main room undetected, and for the first time I’m grateful for it.
+    {color=#34B7EB}Right on cue, Laura finds a way to sneak her way into the main room undetected, and for the first time I’m grateful for it.
     """
 
     play sound "sfx_room_door_wood_open.ogg"
@@ -129,6 +129,7 @@
 
     "{color=#34B7EB}Suddenly Ed bursts into the room from the break room, his face bright red and the rest of his body not looking much better."
 
+    play music "mus_main_loop_cafejazz1.ogg" fadein 3.0
     play sound "sfx_room_door_wood_open.ogg"
     play sound2 "<from 1.5 to 2.75>sfx_room_footsteps_enter.ogg"
     show ed sick neutral at Position(xalign=0.3, yalign=0.205) with ease
@@ -173,7 +174,7 @@
     ED "{color=#EBB134}''She’s not here yet.''"
 
     """
-    {color=#34B7EB}Walking back to my post, I can see his foot tapping under and hear him breathe heavily and inconsistently. Somehow, he manages to look even worse than he did five minutes ago. Is he really that nervous?
+    {color=#34B7EB}Walking back to my post, I can see his foot tapping under the counter and hear him breathe heavily and inconsistently. Somehow, he manages to look even worse than he did five minutes ago. Is he really that nervous?
     """
 
     play sound2 "sfx_room_door_main_open.ogg"
@@ -199,7 +200,7 @@
     label D5I4:
 
     """
-    {color=#34B7EB}Before the faded, yellow smile and wrinkled thumbs up given by the strange man fully fade away, a minor chill courses through my body in reaction to a hand being placed gently on my shoulder.
+    {color=#34B7EB}Before the faded, yellow smile and wrinkled thumbs up given by the strange man could fully fade away, a minor chill coursed through my body in reaction to a hand being placed gently on my shoulder.
 
     {color=#34B7EB}Turning around, I find this hand belongs to the only other person behind the counter. Shocker.
     """
@@ -244,10 +245,14 @@
 
     ED "{color=#EBB134}''What?''"
 
-    MAX "{color=#34B7EB}''You don’t know how much longer she’ll want to hang around this café! Heck, you don’t really know that much about her at all! But the only why you can find out is to talk to her, you know?''"
+    MAX "{color=#34B7EB}''You don’t know how much longer she’ll want to hang around this café! Heck, you don’t really know that much about her at all! But the only way you can find out is by talking to her, you know?''"
     MAX "{color=#34B7EB}''Like, you gotta start somewhere, daddy-o...!?''"
 
-    ED "{color=#EBB134}''...Were you preparing that?''"
+    ED "{color=#EBB134}''...''"
+
+    show ed sick neutral
+
+    ED "{color=#EBB134}''Were you preparing that?''"
 
     MAX "{color=#34B7EB}''I may have gotten some help...''"
 
@@ -326,7 +331,7 @@
     {color=#34B7EB}For the first couple of moments neither of them said anything. Ed stood completely frozen and bug eyed as Brenda bit her bottom lip, I can only assume as a reaction to having scalding liquid poured all over her.
     """
 
-    ED "{color=#EBB134}''I’m so sorry, I’ll get some more napkins.''"
+    ED "{color=#EBB134}''I’m so sorry, I’ll go get some napkins.''"
 
     show brenda inquire
 

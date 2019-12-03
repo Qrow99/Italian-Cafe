@@ -298,14 +298,14 @@
 
     label D1Break:
 
-    "{color=#34B7EB}As the customer leaves the building, I can hear the loud footsteps of a familiar body coming out from behind me."
+    "{color=#34B7EB}As the customer leaves my view, I can hear the loud footsteps of a familiar body coming out from behind me."
 
     play sound2 "<from 1.5 to 2.75>sfx_room_footsteps_enter.ogg"
     show ed neutral at Position(xalign=0.3, yalign=0.205) with ease
 
     ED "{color=#EBB134}''You’re doing good so far.''"
 
-    MAX "{color=#34B7EB}''You really think so? I feel like I have no idea what to say when it’s just me and a customer alone together.''"
+    MAX "{color=#34B7EB}''You really think so? I felt like I had no idea what to say when it was just me and the customer alone together.''"
 
     ED "{color=#EBB134}''It happens, don’t sweat it.
     Take a quick break. I’ll cover you.''"
@@ -334,7 +334,7 @@
     play sound2 "sfx_room_door_wood_close.ogg"
 
     """
-    {color=#34B7EB}Sure enough, five minutes had passed relatively quickly. As I stick my head out of the break room, I see making idle chat with a customer while Laura is nowhere to be seen, so I figure returning to my post is the best option.
+    {color=#34B7EB}Sure enough, five minutes had passed relatively quickly. As I stick my head out of the break room, I see Ed making idle chat with a customer while Laura is nowhere to be seen, so I figure returning to my post is the best option.
     """
     #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     # Interaction 3 here
@@ -401,7 +401,7 @@
     """
     {color=#34B7EB}In retrospect, I think the day went relatively well. There may have been a few hiccups, maybe an awkward moment here and there, but I think Ed’s compliment might have actually been genuine, and not just a means to save me from Laura.
 
-    {color=#34B7EB}I decided to keep said thought in my mind as a motivator to do well tomorrow, and to not disappoint Ed or Laura during my next shift.
+    {color=#34B7EB}I decide to keep said thought in my mind as a motivator to do well tomorrow, and to not disappoint Ed or Laura during my next shift.
     """
     pause
 

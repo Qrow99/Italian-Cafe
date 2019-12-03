@@ -8,14 +8,14 @@
 
     {color=#34B7EB}It’s essentially just as clean as it was when I got here, save for a minor stain of condensation where the beatniks' drinks were, but I still feel like I should be doing... something.
 
-    {color=#34B7EB}Thankfully, the opportunity to do something revealed itself, as another customer made her way through the front door.
+    {color=#34B7EB}Thankfully, the opportunity to do something revealed itself, as another customer makes her way through the front door.
     """
 
     play sound2 "sfx_room_door_main_open.ogg"
     play sound "sfx_room_door_main_bellchime.ogg"
 
     """
-    {color=#34B7EB}As she approached the counter she stared intently around the building, quickly darting her eyes back and forth, though her head remained completely motionless.
+    {color=#34B7EB}As she approachs the counter, she stares intently around the building, quickly darting her eyes back and forth, though her head remains completely motionless.
 
     {color=#34B7EB}In fact, a lot of things about her seem kind of... off. Her footsteps are unusually rhythmic, and I don’t think I’ve seen her blink once since she entered the room.
     """
@@ -97,9 +97,9 @@
 
     show karen inquire
 
-    KRN "{color=#4BE54B}''Pardon me? Is it unusual for people to order a beverages and converse with baristas at cafés such as this?''"
+    KRN "{color=#4BE54B}''Pardon me? Is it unusual for people to order beverages and/or converse with baristas at cafés such as this?''"
 
-    MAX "{color=#34B7EB}''Well, no. Actually, it isn’t unusual at all when you put it like that. Sorry if I came off as kind of pushy.''"
+    MAX "{color=#34B7EB}''Well, no. Actually, it isn’t unusual at all when you put it like that. Sorry if I came off as rude.''"
 
     show karen neutral
 
@@ -121,7 +121,7 @@
     play sound2 "sfx_room_door_main_close.ogg"
     stop music fadeout 3.0
 
-    "{color=#34B7EB}In the same straight faced, rhythmic fashion she entered, the girl leaves the building. It then suddenly dawned upon me that she hadn’t taken with her the drink she purchased, nor did she actually, you know, drink any of it. I’m honestly not that surprised."
+    "{color=#34B7EB}In the same straight faced, rhythmic fashion she entered, the girl leaves the building. It then suddenly dawns upon me that she hadn’t taken with her the drink she purchased, nor did she actually, you know, drink any of it. I’m honestly not that surprised."
 
 
     # This is the end of the interaction

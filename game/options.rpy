@@ -18,18 +18,25 @@ define config.name = _("Scenes From an Italian Cafe")
 ## Determines if the title given above is shown on the main menu screen. Set
 ## this to False to hide the title.
 
-define gui.show_name = True
+define gui.show_name = False
 
 
 ## The version of the game.
 
-define config.version = "0.10"
+define config.version = "1.0"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
 ## triple-quotes, and leave a blank line between paragraphs.
 
 define gui.about = _p("""
+Programmers: Benjamin Chiaro, Jamison McLaughlin
+
+Audio: Jack Bueermann
+
+Writing: Jamison McLaughlin, Mariah Rosario, Michelle Fredericks, Anna Salieva
+
+Art: Mariah Rosario
 """)
 
 

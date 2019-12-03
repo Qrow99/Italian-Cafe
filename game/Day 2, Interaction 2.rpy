@@ -60,8 +60,8 @@
         reset = 1
     show amecie happy
 
-    AMC "{color=#ff7566}''Thanks! Hey I forgot to tell you! My audition went really well too and my friends and I are in the dance show tomorrow night! Do you want to come?''"
-    MAX "{color=#34B7EB}''I'd love to, but I'm working that night.''"
+    AMC "{color=#ff7566}''Thanks! Hey I forgot to tell you! My audition went really well, and my friends and I are in the dance show tomorrow night! Do you want to come?''"
+    MAX "{color=#34B7EB}''I'd love to, but I'm working tomorrow.''"
     AMC "{color=#ff7566}''Awww that's ok, I'll come visit after!''"
     MAX "{color=#34B7EB}''Can't wait! See you then!''"
 

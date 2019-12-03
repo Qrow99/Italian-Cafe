@@ -39,7 +39,7 @@
     MAX "{color=#34B7EB}''Uuuuuuh... we don’t sell perfume?''"
 
     LAURA "{color=#ff3636}''Wrong! Well okay you’re not technically wrong, but fundamentally wrong!
-    The real difference is the fact that the café doesn’t smell awful!''"
+    The real difference is the fact that this café doesn’t smell awful!''"
 
     MAX "{color=#34B7EB}''Is that a bad thing?''"
 
@@ -69,8 +69,10 @@
 
     """
     {color=#34B7EB}I'm too busy trying to keep down my recently consumed lunch to get offended. Thankfully, me and Laura’s chorus of violent coughing is interrupted by Ed, who emerges from the break room with a small electric fan in hand.
-
-    {color=#34B7EB}With a quick deactivation of the ceiling fan and the plugging in of the electrical one, the overwhelming musk of artificial fruit soon exited the building.
+    """
+    play sound "sfx_room_door_wood_open.ogg"
+    """
+    {color=#34B7EB}With a quick deactivation of the ceiling fan and the plugging in of the electrical one, the overwhelming musk of artificial fruit soon exits the building.
     """
 
     show laura angry at Position(xalign=0.5, yalign=0.205) with ease

@@ -34,7 +34,7 @@ label D4I1:
 
     {color=#34B7EB}Oh gosh, this is a predicament. I don't have much confidence in my skills like Ed, I'm still a trainee after all... I say a silent prayer to him, hoping for a boost.
 
-    {color=#34B7EB}I pick three drinks from the coffee menu because if I remember correctly, they picked espressos. Hmmm ...I'll choose Deep Breath, The Entertainer, and The Dinkles—two simple drinks and one with a shot of energy.
+    {color=#34B7EB}I pick three drinks from the coffee menu because, if I remember correctly, they all picked espressos last time. Hmmm ...I'll choose Deep Breath, The Entertainer, and The Dinkles—two simple drinks and one with a shot of energy.
     """
     $ order = 1
     while makingdrink == 0:
@@ -63,7 +63,7 @@ label D4I1:
         reset = 1
 
     while makingdrink == 0:
-        "{color=#34B7EB}Thats one, next up, I should try making an Entertainer"
+        "{color=#34B7EB}Thats one, next up, I should try making an Entertainer."
         #pause
 
     $ makingdrink = 0
@@ -89,7 +89,7 @@ label D4I1:
         reset = 1
 
     while makingdrink == 0:
-        "{color=#34B7EB}Two down, one dinkle to go. Is it still dinkles if there's just one?"
+        "{color=#34B7EB}Two down, one dinkle to go. Is it still 'Dinkles' if there's just one?"
         #pause
 
     $ makingdrink = 0
@@ -133,7 +133,7 @@ label D4I1:
 
     {color=#34B7EB}But wow, I didn't expect that...I need to clean that table immediately.
 
-    {color=#34B7EB}He hops from the table and bursts through the door and the girls hurry immediately, trying to catch up with him.
+    {color=#34B7EB}He hops from the table and bursts through the door; the girls follow suit, trying to catch up with him.
     """
 
     play sound "sfx_room_footsteps_exit.ogg"
@@ -144,7 +144,7 @@ label D4I1:
     stop music fadeout 3.0
 
     """
-    {color=#34B7EB}He starts dancing with a random stranger to the beat of the music—coming from who knows where. The girls try to pry him off.
+    {color=#34B7EB}He starts dancing with a random stranger to the beat of the music that's still coming from who knows where. The girls try to pry him off.
 
     {color=#34B7EB}That Espresso shot must've given him a hell of a boost.
     """

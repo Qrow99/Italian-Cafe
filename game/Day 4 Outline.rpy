@@ -195,7 +195,7 @@
 
     label D4Outro:
 
-    "{color=#34B7EB}I began to reach down for my favorite counter-cleaning rag when a familiar shadow slunk its way toward my location."
+    "{color=#34B7EB}I began to reach down for my favorite counter-cleaning rag when I'm interrupted by a familiar shadow slinking its way toward my location."
 
     play sound2 "<from 1.5 to 2.75>sfx_room_footsteps_enter.ogg"
     show laura happy at Position(xalign=0.3, yalign=0.205) with ease

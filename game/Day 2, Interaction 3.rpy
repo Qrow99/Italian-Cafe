@@ -4,7 +4,7 @@
     play sound "sfx_room_door_main_bellchime.ogg"
     stop music fadeout 5.0
 
-    "{color=#34B7EB}As I scrub the counter for seemingly the twenty seventh time in the past hour, my endless monotony is thankfully cut short by the sound of heavy footsteps. At the door, an unusually wide man in a clean suit walks up to the counter."
+    "{color=#34B7EB}Before long, my endless monotony is thankfully cut short by the sound of heavy footsteps. At the door, an unusually wide man in a clean suit walks up to the counter."
 
     play music "mus_main_loop_cafejazz6.ogg" fadein 3.0
     play sound "sfx_room_footsteps_enter.ogg"

@@ -1,13 +1,13 @@
 label D1I2:
 
-    "{color=#34B7EB}My first customer bounds up to the coun-"
+    "{color=#34B7EB}I can already see my first customer bounding up to the coun-"
 
     play sound2 "sfx_room_door_main_open.ogg"
     play sound "sfx_room_door_main_bellchime.ogg"
 
     UAMC "{color=#ff7566}''HEEELLLLLOOOOOO''"
     """
-    {color=#34B7EB}Her guttural greeting booms through the cafe, turning the heads of all the other patrons. The redhead in front of me is already vibrating with energy, despite the early morning hour. I brace yourself for whatever comes next.
+    {color=#34B7EB}A guttural greeting booms through the cafe, turning the heads of all the other patrons. A woman appears in front of me, vibrating with energy, despite the sleepy afternoon hour. I brace myself for whatever comes next.
     """
     play sound "sfx_room_footsteps_enter.ogg"
     show amecie happy at Position(xalign=0.3, yalign=0.205) with dissolve
@@ -23,7 +23,7 @@ label D1I2:
 
     UAMC "{color=#ff7566}''Yeah! She hit me!''"
     MAX "{color=#34B7EB}''Oh.''"
-    "{color=#34B7EB}Your eyes follow the redhead's foot as she stretches her leg over her head, perpendicular to the ground."
+    "{color=#34B7EB}My eyes follow the redhead's foot as she stretches her leg over her head, perpendicular to the ground."
     MAX "{color=#34B7EB}''Very impressive.''"
     "{color=#34B7EB}She gives an endearing smile and giggles."
     UAMC "{color=#ff7566}''Thank you! I'm practicing for my ballet class!''"

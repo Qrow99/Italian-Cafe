@@ -120,7 +120,7 @@
     It might be a little more, uh, intense...''"
 
     """
-    {color=#34B7EB}Suddenly she blushes and stops talking altogether. I decide to ignore the implications of her actions in favor of pondering another possibility maybe this girl could be my ticket to getting some advice on how to help Ed!
+    {color=#34B7EB}Suddenly she blushes and stops talking altogether. I decide to ignore the implications of her actions in favor of pondering another possibility: maybe this girl could be my ticket to getting some advice on how to help Ed!
 
     {color=#34B7EB}Not that I really think this strange, awkward girl has much experience in the realm of legitimate romance, but hey neither do I, so what’s the worst that could happen?
     """
@@ -160,7 +160,7 @@
     show june neutral
 
     JUNE "{color=#4969de}''Yup, you really are weird.
-    Oh, one last thing; if you really do intend on reading what I wrote, maybe consider not doing it in a public place. See you.''"
+    Oh, one last thing: if you really do intend on reading what I wrote, maybe consider not doing it in a public place. See you.''"
 
     play sound "sfx_room_footsteps_exit.ogg"
     hide june with dissolve

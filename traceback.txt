@@ -1,24 +1,61 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/Day 4, Interaction 4.rpy", line 68, in script
-    if Milk == 1 or Steamed Milk == 1:
-SyntaxError: invalid syntax (game/Day 4, Interaction 4.rpy, line 68)
+  File "game/Day 5 Outline.rpy", line 6, in script
+    "{color=#34B7EB}{b}The next day..."
+  File "game/newscreens.rpy", line 1, in execute
+    screen MenuButton():
+  File "game/newscreens.rpy", line 1, in execute
+    screen MenuButton():
+  File "game/newscreens.rpy", line 2, in execute
+    if openmenu == 0:
+NameError: name 'openmenu' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/Day 4, Interaction 4.rpy", line 68, in script
-    if Milk == 1 or Steamed Milk == 1:
-  File "C:\Users\Qrow99\Documents\renpy-7.3.3-sdk\renpy\ast.py", line 1832, in execute
-    if renpy.python.py_eval(condition):
-  File "C:\Users\Qrow99\Documents\renpy-7.3.3-sdk\renpy\python.py", line 2057, in py_eval
-    code = py_compile(code, 'eval')
-  File "C:\Users\Qrow99\Documents\renpy-7.3.3-sdk\renpy\python.py", line 692, in py_compile
-    raise e
-SyntaxError: invalid syntax (game/Day 4, Interaction 4.rpy, line 68)
+  File "game/Day 5 Outline.rpy", line 6, in script
+    "{color=#34B7EB}{b}The next day..."
+  File "C:\Users\Cornelius\Desktop\renpy-7.2.2-sdk\renpy\ast.py", line 694, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\Users\Cornelius\Desktop\renpy-7.2.2-sdk\renpy\exports.py", line 1322, in say
+    who(what, *args, **kwargs)
+  File "C:\Users\Cornelius\Desktop\renpy-7.2.2-sdk\renpy\character.py", line 1127, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, **display_args)
+  File "C:\Users\Cornelius\Desktop\renpy-7.2.2-sdk\renpy\character.py", line 842, in do_display
+    **display_args)
+  File "C:\Users\Cornelius\Desktop\renpy-7.2.2-sdk\renpy\character.py", line 591, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "C:\Users\Cornelius\Desktop\renpy-7.2.2-sdk\renpy\ui.py", line 289, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\Cornelius\Desktop\renpy-7.2.2-sdk\renpy\display\core.py", line 2690, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
+  File "C:\Users\Cornelius\Desktop\renpy-7.2.2-sdk\renpy\display\core.py", line 3074, in interact_core
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "C:\Users\Cornelius\Desktop\renpy-7.2.2-sdk\renpy\display\core.py", line 534, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\Cornelius\Desktop\renpy-7.2.2-sdk\renpy\display\core.py", line 534, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\Cornelius\Desktop\renpy-7.2.2-sdk\renpy\display\core.py", line 534, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\Cornelius\Desktop\renpy-7.2.2-sdk\renpy\display\screen.py", line 424, in visit_all
+    callback(self)
+  File "C:\Users\Cornelius\Desktop\renpy-7.2.2-sdk\renpy\display\core.py", line 3074, in <lambda>
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "C:\Users\Cornelius\Desktop\renpy-7.2.2-sdk\renpy\display\screen.py", line 434, in per_interact
+    self.update()
+  File "C:\Users\Cornelius\Desktop\renpy-7.2.2-sdk\renpy\display\screen.py", line 619, in update
+    self.screen.function(**self.scope)
+  File "game/newscreens.rpy", line 1, in execute
+    screen MenuButton():
+  File "game/newscreens.rpy", line 1, in execute
+    screen MenuButton():
+  File "game/newscreens.rpy", line 2, in execute
+    if openmenu == 0:
+  File "<screen language>", line 2, in <module>
+NameError: name 'openmenu' is not defined
 
 Windows-8-6.2.9200
-Ren'Py 7.3.5.606
-Scenes From an Italian Cafe 0.10
-Sun Dec 01 18:31:55 2019
+Ren'Py 7.2.2.491
+Scenes From an Italian Cafe 1.0
+Mon Dec 02 19:01:38 2019

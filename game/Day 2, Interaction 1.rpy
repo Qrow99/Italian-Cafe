@@ -5,13 +5,16 @@
 
     """
     {color=#34B7EB}Outside the sun looks like it's just about to begin its descent into the horizon.
-    {color=#34B7EB}A man enters the café, drenched head-to-toe. It isn't raining. He approaches the counter, an eerie smile on his face. His arms are long and thin, and his hands twitch nervously. He's dressed in an oversized trenchcoat. I feel unnerved.
+
+    {color=#34B7EB}A man enters the café, drenched head-to-toe. It isn't raining.
+
+    {color=#34B7EB}He approaches the counter, an eerie smile on his face. His arms are long and thin, and his hands twitch nervously. He's dressed in an oversized trenchcoat. I feel unnerved.
     """
 
     play sound "sfx_room_footsteps_enter.ogg"
     show alien neutral at Position(xalign=0.3, yalign=0.205) with dissolve
 
-    MAX "{color=#34B7EB}''Hello, sir? How may I help you?''"
+    MAX "{color=#34B7EB}''Hello, sir? Can I help you?''"
 
     show alien happy
 
@@ -95,5 +98,5 @@
 
     {color=#34B7EB}I suddenly remember that I absolutely hate wasps.
     """
-    
+
     jump D2I2

@@ -69,7 +69,7 @@
     """
     play sound "sfx_room_typing_soft_many.ogg"
     """
-    {color=#34B7EB}She then proceeds to take out her laptop and begin taking notes as she had last time, but the discomfort on her face lasts long after she finishes drinking.
+    {color=#34B7EB}She then proceeds to take out her laptop and begins taking notes as she had last time, but the discomfort on her face lasts long after she finishes drinking.
     """
     jump d3i3converge
 
@@ -94,7 +94,7 @@
     """
     play sound "sfx_room_typing_soft_many.ogg"
     """
-    {color=#34B7EB}She then proceeds to take out her laptop and begin taking notes as she had last time, but the discomfort on her face lasts long after she finishes drinking.
+    {color=#34B7EB}She then proceeds to take out her laptop and begins taking notes as she had last time, but the discomfort on her face lasts long after she finishes drinking.
     """
     jump d3i3converge
 

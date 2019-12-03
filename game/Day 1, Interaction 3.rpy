@@ -89,7 +89,7 @@
         reset = 1
     MAX "{color=#34B7EB}''Here’s your drink! Enjoy!''"
 
-    show june angry
+    show june think
 
     "{color=#34B7EB}She walks up to the counter, snatches the drink, takes a meager sip, and then grimaces. It doesn’t look like she likes it, but she doesn’t complain, so I guess I can’t either?"
 
@@ -113,7 +113,7 @@
     play sound "sfx_room_typing_soft_many.ogg"
 
     """
-    {color=#34B7EB}The girl resumes clacking on her keyboard silently, now spending the rare moments she looks up to inspect the coffee machine or her drink instead of myself, which gives me some relief.
+    {color=#34B7EB}The girl resumes clacking on her keyboard silently, now spending the rare moments she looks up inspecting the coffee machine or her drink instead of myself, which gives me some relief.
 
     {color=#34B7EB}I wonder if Laura would get mad that I just nonchalantly gave away a recipe to a customer. Not like it’s a particularly complex or unorthodox way of making a drink, but still...
 

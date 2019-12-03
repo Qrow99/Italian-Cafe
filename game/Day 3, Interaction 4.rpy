@@ -15,10 +15,13 @@
     "{color=#34B7EB}She does a pirouette. I applaud."
     MAX "{color=#34B7EB}''Looks like you did a great job! Can I get you anything?''"
     AMC "{color=#ff7566}''We ALL did great! I'd like to order four Song of Seasons! Can you put espresso shots in mine though? Surprise me!''"
+
+    $ order = 1
+
     "{color=#34B7EB}She winks. Well, no way to mess this one up. Time to make some coffee!"
 
     #here's where the coffee's made
-    $ order = 1
+
     while makingdrink == 0:
         "{color=#34B7EB}She winks. Well, no way to mess this one up. Time to make some coffee!"
         #pause

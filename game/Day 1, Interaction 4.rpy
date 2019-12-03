@@ -10,7 +10,7 @@
     """
     {color=#34B7EB}A blonde girl carrying a large metal water bottle and wearing a bright, purple backpack that looks like it was meant especially for Swedish kindergarteners bursts into the coffee shop.
 
-    {color=#34B7EB}She walks in there with purpose like she was on a mission. She's glued on to her phone, almost running into a chair and table, and says 'and I Oop' in response.
+    {color=#34B7EB}She walks in with purpose, as if she were on a mission. She's glued on to her phone, almost running into a chair and table, and says 'and I Oop' in response.
     """
 
     play sound "sfx_room_footsteps_enter.ogg"
@@ -19,7 +19,7 @@
     """
     {color=#34B7EB}As she gets to me, she slams her gigantic bottle onto the counter. I practically flinch in fear. She shines me a bright smile, showing off her colorful braces.
 
-    {color=#34B7EB}As she begins to talk, I feel myself begin to shake and stutter my speech.
+    {color=#34B7EB}As I begin to talk, I feel myself begin to shake and stutter my speech.
     """
 
     MAX "{color=#34B7EB}''H-hi, h-how are you? What would you like to order today?''"
