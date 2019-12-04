@@ -104,7 +104,7 @@ label start:
         reset = 1
         openmenu = 0
     # The Background
-    scene bg room
+    scene background
 
 
     # Buttons
