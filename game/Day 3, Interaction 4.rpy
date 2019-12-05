@@ -27,7 +27,7 @@
         #pause
 
     $ makingdrink = 0
-    $ order = 1
+    $ order = 0
 
     if coffee == 1 and Pumpkin == 1 and foam == 1 and ExtraShot == 1 :
         "{color=#34B7EB}Ok! Four seasons, sounds about right."
